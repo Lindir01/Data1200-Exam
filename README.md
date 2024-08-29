@@ -9,7 +9,7 @@ Repository for the Data1200 Exam fall semester 2024, at OsloMet
   
 ### Index
 - recreate the [matmod](https://www.oslomet.no/studier/tkd/matematisk-modellering-datavitenskap) in plain HTML5 and CSS3
-- semester subjects, displayed in a table visual representation, but does not mandate the <table>
+- semester subjects, displayed in a table visual representation, but does not mandate the "< table >"
 - can create own visual design
 - can reinvent the structure and layout of the page
   
@@ -25,7 +25,7 @@ Repository for the Data1200 Exam fall semester 2024, at OsloMet
 
 ### Accessibility
 - site passes automated tests
-- 
+
 
 ### Activity
 - chose an activity
