@@ -1,3 +1,12 @@
 body{
     background-color: blueviolet;
+    margin: 0%;
+}
+header{
+    background-color: yellowgreen;
+    text-align: center;
+    padding: 50px;
+}
+main{
+    text-align: center;
 }
