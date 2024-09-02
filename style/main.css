@@ -5,8 +5,11 @@ body{
 }
 header{
     background-color: yellowgreen;
-    text-align: center;
     padding: 50px;
+}
+.logo{
+    width: 10%;
+    min-width: 150px;
 }
 main{
     text-align: center;
@@ -15,4 +18,18 @@ main{
 footer{
     text-align: center;
     background-color: greenyellow;
+}
+article{
+
+    width: 40%;
+    min-width: 500px;
+    margin: 10px;
+    border-style: double;
+    border-color: black;
+}
+.container-side-by-side{
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+
 }

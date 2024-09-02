@@ -10,7 +10,7 @@
 <body>
     <header>
         <!-- width parameter is css i think?? move it out of here at some point-->
-        <img src="media/images/shared/OsloMet_logo_svart_OsloMet.svg" alt="Logo for OsloMet" width="250">
+        <img class="logo" src="media/images/shared/OsloMet_logo_svart_OsloMet.svg" alt="Logo for OsloMet">
         <nav>
             <p>
                 Studieoversikt
@@ -22,7 +22,14 @@
         <h1>
             this is the h1 element
         </h1>
+        <p>
+            scaling the window, also scales the two blocks, and sorts them into a column if the size gets too small.
+        </p>
+
+        <!--Structure is currently a section inside of an article inside of a section. probably bad practice-->
+        <section  class="container-side-by-side">
         <article>
+            <section>
             <h2>the first article element starts here with an h2 element</h2>
             <p>
                 this is the paragraph underneath the h2 element
@@ -30,7 +37,7 @@
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
-            <section>
+
                 <h3>this is the h3 element</h3>
                 <p>
                     this is the paragraph underneath the h3 element
@@ -79,6 +86,7 @@
                 </p>
             </section>
         </article>
+    </section>
     </main>
 
     <footer>
