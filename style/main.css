@@ -1,10 +1,10 @@
 body{
-    background-color: blueviolet;
+    background-color: aliceblue;
     margin: 0%;
     font-family: Arial, Helvetica, sans-serif;
 }
 header{
-    background-color: yellowgreen;
+    background-color: yellow;
     padding: 50px;
 }
 .logo{
@@ -13,14 +13,15 @@ header{
 }
 main{
     text-align: center;
-
 }
 footer{
     text-align: center;
-    background-color: greenyellow;
+    background-color: yellow;
+    padding: 30px;
+    position: sticky;
+    bottom: 0px;
 }
 article{
-
     width: 40%;
     min-width: 500px;
     margin: 10px;
@@ -31,5 +32,16 @@ article{
     align-items: flex-start;
     display: flex;
     flex-wrap: wrap;
-
 }
+/* all elements inside of this will only display when max monitor size is x px wide */
+@media only screen and (max-width: 800px){
+    article {
+        background-color: brown;
+        width: 100%;
+        min-width: 200px;
+        margin: 10px;
+        border-style: double;
+        border-color: black;
+    }
+}
+
