@@ -4,7 +4,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 header{
-    background-color: yellow;
+    background-color: hsl(50, 100%, 50%);
     padding: 50px;
 }
 .logo{
@@ -16,7 +16,7 @@ main{
 }
 footer{
     text-align: center;
-    background-color: yellow;
+    background-color: hsl(50, 100%, 50%);
     padding: 30px;
     position: sticky;
     bottom: 0px;
