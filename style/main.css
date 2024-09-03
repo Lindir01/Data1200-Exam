@@ -14,6 +14,9 @@ header{
 main{
     text-align: center;
 }
+table, th, td{
+    border:1px solid black;
+}
 footer{
     text-align: center;
     background-color: hsl(50, 100%, 50%);
@@ -32,6 +35,10 @@ article{
     align-items: flex-start;
     display: flex;
     flex-wrap: wrap;
+}
+.center{
+    margin-left:auto;
+    margin-right:auto;
 }
 .navbar{
     list-style-type: none;
