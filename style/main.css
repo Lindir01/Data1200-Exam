@@ -2,7 +2,7 @@
     General Styles
     Utilities
     Site Wide
-    Phone Screen
+    Thin Screen
     Ultrawide
 */
 
@@ -39,12 +39,12 @@ footer{
     position: sticky;
     bottom: 0px;
 }
-.logo{
-    width: 10%;
-    min-width: 150px;
-    padding: 20px;
+video{
+    padding: 10px;
+    padding-top: 50px;
+    width: 80%;
+    max-width: 1000px;
 }
-
 table, th, td{
     border:1px solid black;
 }
@@ -56,7 +56,11 @@ table, th, td{
     border-top:1px solid black;
     padding: 10px
 }
-
+.logo{
+    width: 10%;
+    min-width: 150px;
+    padding: 20px;
+}
 .container-side-by-side{
     align-items: flex-start;
     display: flex;
@@ -91,12 +95,7 @@ table, th, td{
   }
 
 
-
-video{
-    padding: 10px;
-}
-
-/* || PHONESCREEN */
+/* || THINSCREEN */
 /* all elements inside of this will only display when max monitor size is 800 px wide */
 @media only screen and (max-width: 800px){
     article {
