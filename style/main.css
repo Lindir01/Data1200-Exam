@@ -1,31 +1,24 @@
+/* CSS STRUCTURE
+    General Styles
+    Utilities
+    Site Wide
+    Phone Screen
+    Ultrawide
+*/
+
+/* || GENERAL STYLES */
 body{
     background-color: aliceblue;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
 }
-header{
-    background-color: hsl(50, 100%, 50%);
-    width: 100%;
-}
 main{
     text-align: center;
 }
-.logo{
-    width: 10%;
-    min-width: 150px;
-    padding: 20px;
-}
-
-table, th, td{
-    border:1px solid black;
-}
-footer{
-    text-align: center;
+header{
     background-color: hsl(50, 100%, 50%);
-    padding: 30px;
-    position: sticky;
-    bottom: 0px;
+    width: 100%;
 }
 article{
     width: 60%;
@@ -39,7 +32,36 @@ section{
     margin-right: auto;
     flex-basis: 25%;
 }
+footer{
+    text-align: center;
+    background-color: hsl(50, 100%, 50%);
+    padding: 30px;
+    position: sticky;
+    bottom: 0px;
+}
+.logo{
+    width: 10%;
+    min-width: 150px;
+    padding: 20px;
+}
 
+table, th, td{
+    border:1px solid black;
+}
+
+li {
+    float: right;
+  }
+  
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* || UTILITIES */
 .top-border{
     border-top:1px solid black;
     padding: 10px
@@ -61,18 +83,10 @@ section{
     overflow: hidden;
     background-color: #333;
 }
-li {
-    float: right;
-  }
+
   
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-  
+/* || SITEWIDE */
+
 /* Change the link color to #111 (black) on hover */
 li a:hover {
   background-color: #111;
@@ -81,7 +95,8 @@ video{
     padding: 10px;
 }
 
-/* all elements inside of this will only display when max monitor size is x px wide */
+/* || PHONESCREEN */
+/* all elements inside of this will only display when max monitor size is 800 px wide */
 @media only screen and (max-width: 800px){
     article {
         background-color: brown;
@@ -98,3 +113,4 @@ video{
     }
 }
 
+/* || ULTRAWIDE */
