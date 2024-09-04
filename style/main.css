@@ -1,19 +1,21 @@
 body{
     background-color: aliceblue;
-    margin: 0%;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 header{
     background-color: hsl(50, 100%, 50%);
-    padding: 50px;
+    width: 100%;
+}
+main{
+    text-align: center;
 }
 .logo{
     width: 10%;
     min-width: 150px;
 }
-main{
-    text-align: center;
-}
+
 table, th, td{
     border:1px solid black;
 }
@@ -25,12 +27,21 @@ footer{
     bottom: 0px;
 }
 article{
-    width: 40%;
+    width: 100%;
     min-width: 500px;
-    margin: 10px;
-    border-style: double;
-    border-color: black;
+    text-align: center;
 }
+section{
+    margin-left: auto;
+    margin-right: auto;
+    flex-basis: 25%;
+}
+
+.top-border{
+    border-top:1px solid black;
+    padding: 10px
+}
+
 .container-side-by-side{
     align-items: flex-start;
     display: flex;
@@ -62,6 +73,9 @@ li a {
 /* Change the link color to #111 (black) on hover */
 li a:hover {
   background-color: #111;
+}
+video{
+    padding: 10px;
 }
 
 /* all elements inside of this will only display when max monitor size is x px wide */
