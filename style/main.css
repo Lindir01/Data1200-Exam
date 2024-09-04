@@ -49,17 +49,7 @@ table, th, td{
     border:1px solid black;
 }
 
-li {
-    float: right;
-  }
-  
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+
 
 /* || UTILITIES */
 .top-border{
@@ -76,21 +66,32 @@ li a {
     margin-left:auto;
     margin-right:auto;
 }
-.navbar{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
+
 
   
 /* || SITEWIDE */
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #111;
+.navbar{
+    list-style-type: none;
+    margin: 0;
+    padding: 10;
+    overflow: hidden;
+    background-color: #333;
 }
+.navlist a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  float: right;
+}
+/* Change the link color to #111 (black) on hover */
+.navlist a:hover {
+    background-color: #111;
+  }
+
+
+
 video{
     padding: 10px;
 }
