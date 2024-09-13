@@ -15,6 +15,7 @@ body{
 }
 main{
     text-align: center;
+    overflow: hidden;
 }
 header{
     background-color: hsl(50, 100%, 50%);
@@ -46,14 +47,18 @@ video{
     max-width: 1000px;
 }
 table, th, td{
-    border:1px solid black;
+    border-width:1px;
+    border-style: solid;
+    border-color: black;
 }
 
 
 
 /* || UTILITIES */
 .top-border{
-    border-top:1px solid black;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color:  black;
     padding: 10px
 }
 .logo{
