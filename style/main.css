@@ -118,4 +118,16 @@ table, th, td{
     }
 }
 
+
+/* Center Pointlist*/
+.pointList{
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.pointList > ul{
+    display: inline-block;
+    text-align: left;
+}
+
+
 /* || ULTRAWIDE */
