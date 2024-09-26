@@ -132,6 +132,32 @@ table, th, td{
     text-align: left;
 }
 
+/* standard sections */
+.img-with-text-section{
+  padding: 2%;
+  align-self: center;
+  display: grid;
+  align-items: center; 
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10%;
+}
+
+
+/* Activity specific */
+.hero-activity {
+  background-image: url("../media/images/shared/hero-activity.png");
+  width: 100%;
+  height: 500px;
+}
+.activity-h1 {
+  padding: 10%;
+  font-size: 40px;
+  position: relative;
+}
+.img-article-activity{
+  height: 15vmax;
+  width: 50vmax;
+}
 
 
 /* || ULTRAWIDE */
