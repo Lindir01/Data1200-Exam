@@ -43,6 +43,14 @@ footer{
     /*position: sticky; | Tore har liten skjerm*/ 
     bottom: 0px;
 }
+footer h2 {
+    padding: 5px;
+}
+footer a {
+    background-color: #111;
+    padding: 15px;
+    color: white;
+}
 video{
     padding: 10px;
     padding-top: 50px;
