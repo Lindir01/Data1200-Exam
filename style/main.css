@@ -53,6 +53,7 @@ footer a {
     background-color: #111;
     padding: 15px;
     color: white;
+    text-decoration: none;
 }
 video{
     padding: 10px;
@@ -65,7 +66,6 @@ table, th, td{
     border-style: solid;
     border-color: black;
 }
-
 
 
 /* || UTILITIES */
