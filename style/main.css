@@ -8,7 +8,10 @@
 
 /* || GENERAL STYLES */
 html{
-    background-color: hsl(50, 100%, 50%);
+    background-color: var(--oslometgul);
+}
+:root{
+    --oslometgul:hsl(50,100%, 50%);
 }
 body{
     background-color: aliceblue;
@@ -21,7 +24,7 @@ main{
     overflow: hidden;
 }
 header{
-    background-color: hsl(50, 100%, 50%);
+    background-color: var(--oslometgul);
     width: 100%;
 }
 article{
@@ -38,7 +41,7 @@ section{
 }
 footer{
     text-align: center;
-    background-color: hsl(50, 100%, 50%);
+    background-color: var(--oslometgul);
     padding: 3px;
     /*position: sticky; | Tore har liten skjerm*/ 
     bottom: 0px;
