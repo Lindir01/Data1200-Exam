@@ -49,11 +49,22 @@ footer{
 footer h2 {
     padding: 5px;
 }
-footer a {
+footer h3 a{
     background-color: #111;
     padding: 15px;
     color: white;
+}
+footer a {
     text-decoration: none;
+    color: #111;
+}
+footer ol {
+    margin-left: 10%;
+    list-style: none;
+    font-weight: 700;
+}
+footer p {
+    margin-right: 25%;
 }
 video{
     padding: 10px;
