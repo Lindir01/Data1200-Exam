@@ -59,12 +59,12 @@ footer a {
     color: #111;
 }
 footer ol {
-    margin-left: 10%;
     list-style: none;
     font-weight: 700;
 }
-footer p {
-    margin-right: 25%;
+footer section {
+    display: flex;
+    flex-direction: row;
 }
 video{
     padding: 10px;
