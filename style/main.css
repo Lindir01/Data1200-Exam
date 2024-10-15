@@ -129,7 +129,6 @@ table, th, td{
 /* all elements inside of this will only display when max monitor size is 800 px wide */
 @media only screen and (max-width: 800px){
     article {
-        background-color: brown;
         width: 100%;
         min-width: 200px;
         margin: 10px;
