@@ -1,4 +1,5 @@
 /* CSS STRUCTURE
+    REMEMBER TO ADD SPECIFIC LINES TO FIND EACH SEGMENT :)
     General Styles
     Utilities
     Site Wide
@@ -90,8 +91,9 @@ table, th, td{
     padding: 10px
 }
 .logo{
-    width: 10%;
-    min-width: 150px;
+    width: 5%  ;
+    min-width: 50px;
+    max-height: 50;
     padding: 20px;
 }
 .container-side-by-side{
@@ -103,7 +105,15 @@ table, th, td{
     margin-left:auto;
     margin-right:auto;
 }
-
+.tag-cloud {
+    display: inline-block;
+    color: white;
+    padding: 8px 20px;
+    font-family: Arial;
+    border-radius: 25px;
+    background-color: black;
+    margin-top: 8px;
+  }
 
   
 /* || SITEWIDE */
@@ -132,7 +142,6 @@ table, th, td{
 /* all elements inside of this will only display when max monitor size is 800 px wide */
 @media only screen and (max-width: 800px){
     article {
-        background-color: brown;
         width: 100%;
         min-width: 200px;
         margin: 10px;
