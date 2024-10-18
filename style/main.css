@@ -137,8 +137,12 @@ table, th, td{
     border-radius: 25px;
     background-color: black;
     margin-top: 8px;
-  }
-
+}
+.icon{
+    width: 15px  ;
+    max-height: 50px;
+    padding: 0px;
+}
   
 /* || SITEWIDE */
 .navbar{
