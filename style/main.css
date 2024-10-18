@@ -67,8 +67,21 @@ footer li {
     padding: 0.3em;
 }
 footer section {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 30vw auto minmax(300px, 30vw) 1rem;
+    grid-auto-rows: minmax(100px, auto);
+}
+.info {
+    grid-column-start: 1;
+    grid-column-end:2;
+}
+.lenker {
+    grid-column-start: 2;
+    grid-column-end:3;
+}
+.sosiale {
+    grid-column-start: 3;
+    grid-column-end: 4;
 }
 video{
     padding: 10px;
