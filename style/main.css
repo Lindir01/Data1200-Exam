@@ -273,6 +273,7 @@ h1+p{
     border-radius: 25px;
     margin-top: 8px;
     max-width: 15px;
+    z-index: 99;
 
 
 }
