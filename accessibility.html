@@ -10,11 +10,11 @@
 </head>
 
 <body>
-    <header>
+    <header role="banner" aria-label="site header">
         <a href="index.html">
             <img class="logo" src="media/images/shared/logo_uten_Storbysuniversitetet.svg" alt="Logo for OsloMet">
         </a>
-        <nav>
+        <nav role="navigation" aria-label="site navigation">
             <ul class="navbar">
                 <li class="navlist"><a href="index.html">Home</a></li>
                 <li class="navlist"><a href="git.html">Git</a></li>
@@ -24,11 +24,86 @@
         </nav>
     </header>
 
-    <main>
-        <p>Hello world! this is the accessibility.html page</p>
+    <main role="main" aria-label="main content">
+        <h1>Accessibility</h1>
+        <nav role=navigation aria-label="page navigation">
+            <ul>
+                <p>Table of content:
+                <li><a href="#vision">Vision</a></li>
+                <li><a href="#wcag"> WWCAG</a></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+        </nav>
+        <h2 id="vision">Sight and dyslexia</h2>
+        <div class="checklist"></div>
+        <h3>Font</h3>
+
+      
+        <label>  
+            <input type="checkbox" name="fontsize">
+            Font size 1-1.2em
+        </label><br>
+        <label>
+            <input type="checkbox" name="fontfamily">
+            Sans serif font(Arial, Comic Sans, Verdana, Tahoma, Calibri,++)
+        </label><br>
+        <label>
+            <input type="checkbox" name="dos-and-donts">
+            Avoid underlines and italics, no continuous uppercase letters, use bold if you have to emphasise something
+        </label>
+
+        <h3>Color</h3>
+        <label>
+            <input type="checkbox" name="background">
+            Single color background, light but not white
+        </label><br>
+        <label>
+            <input type="checkbox" name="contrast">
+            Make sure the contrast is sufficient, f.ex. <a href="https://coolors.co/contrast-checker/ffaaaa-550022" aria-label="contrast checker website">here</a>
+        </label><br>
+        <label>
+            <input type="checkbox" name="colorblind">
+            Avoid green, pink and red, colorblindness exists
+        </label>
+
+        <h3>Misc</h3>
+        <label>
+            <input type="checkbox" name="tableofcontent">
+            Solid easy to follow table of content for every page( the side-nav? )
+        </label><br>
+        <label>
+            <input type="checkbox" name="whitespace">
+            Make sure we have padding/whitespace around elements
+        </label><br>
+        <label>
+            <input type="checkbox" name="leftalign">
+            Left-align text, we can center boxes, but it makes it hard to read and to find the start/end of sentences if they're not Left-aligned
+        </label> <br>
+        <label>
+            <input type="checkbox" name="media">
+            Make sure we have alt-text or aria-label for every media piece. Some images are smart for context on a quick view for sighted users
+        </label>
+        </div>
+        <h2 id="wcag">WCAG at a glance</h2>
+
+        <h3>Tidbits</h3>
+        <ul>
+            <li>Make content appear and operate in predictable ways.</li>
+            <li>Provide text alternatives for non-text content</li>
+            <li>Help users navigate and find content</li>
+            <ul>
+                <li>Look into aria landmarks to identify regions of a page, might be sufficient with the correct use of
+                <li>They request a way to know where you are on the page</li>
+
+            </ul>
+        </ul>
+
+        <h3></h3>
     </main>
     
-    <footer>
+    <footer role="contentinfo" aria-label="site footer">
         <div class="footer-top">
             <h2>
                 Hold deg oppdatert på hva som skjer på OsloMet.
@@ -74,5 +149,4 @@
         </section>
     </footer>
 </body>
-
-</html>
+</html>   
