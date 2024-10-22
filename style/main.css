@@ -157,9 +157,8 @@ table, th, td{
 }
 .icon{
     width: 15px  ;
-    max-height: 50px;
+    height: 15px;
     padding: 0px;
-    aspect-ratio: 3/4;
 }
   
 /* || SITEWIDE */
