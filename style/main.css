@@ -159,6 +159,7 @@ table, th, td{
     width: 15px  ;
     max-height: 50px;
     padding: 0px;
+    aspect-ratio: 3/4;
 }
   
 /* || SITEWIDE */
