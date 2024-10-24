@@ -36,22 +36,49 @@ article{
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+
 }
 section{
     margin-left: auto;
     margin-right: auto;
     flex-basis: 25%;
+    padding: 0 5%;
+
 }
 h1{
     margin-top: 0;
     padding-top: 0;
     margin-bottom: 0;
     padding-bottom: 0;
-    font-size: 7rem;
+    font-size: 3em;
+}
+
+
+/* fixes a bit of scaling(im tierd and dont remeber how it works) */
+main{
+    display: flex;
+    flex-direction: column;
+}
+*,*::before,*::after {
+    box-sizing: border-box; 
+}
+
+
+/*Make section of "studiets oppbygning" horozontily scrollable*/
+.scrollable_section {
+    overflow-x: auto; /* Enables horizontal scrolling */
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
 }
 
 
 
+
+
+
+
+
+/* -----Footer------ */
 footer{
     background-color: var(--oslometgul);
     padding: 3px;
@@ -189,13 +216,20 @@ table, th, td{
 /* || THINSCREEN */
 /* all elements inside of this will only display when max monitor size is 800 px wide */
 @media only screen and (max-width: 800px){
-    article {
-        width: 100%;
-        min-width: 200px;
-        margin: 10px;
-        border-style: double;
-        border-color: black;
+
+    .scrollable_section {
+        overflow-x: auto; /* Enables horizontal scrolling */
     }
+
+    .center {
+        white-space: nowrap; /* Prevent wrapping */
+    }
+
+    article {
+        width: 100%; /* Allow full width for smaller screens */
+        min-width: auto; /* Remove min-width to avoid overflow */
+    }
+
 
     video{
         width: 100%;
@@ -203,7 +237,8 @@ table, th, td{
     }
 
     .colorbox{
-        height: 0vmax;
+        display: none;
+        height: none;
     }
 
 }
@@ -255,7 +290,8 @@ table, th, td{
 /*Main page styling*/
 .colorbox{
     background-color: var(--oslometblue);
-    height: 20vmax;
+    height: 15vmax;
+    width: 100%;
 }
 h1+p{
     margin-top: 0;
@@ -264,53 +300,43 @@ h1+p{
 
 
 
-/*side bar navigation*/
 
+
+/*Navigation for scrolling*/
 .navdot{
-    background-color: white;
-    display: inline-block;
-    height: 15px;
-    color: black;
-    padding: 8px 20px;
-    border-style: solid;
+    height: 50px;
+    width: 50px;
     border-color: orange;
-    border-width: 2px;
-    font-family: Arial;
-    border-radius: 25px;
-    margin-top: 8px;
-    max-width: 15px;
-    z-index: 99;
-
-
-}
-
-.navdot:hover{
-    max-width: 100%;
-    color: white;
-    background-color: orange;
-}
-
-.hideNavSide{
+    border: 2px solid orange;
+    border-radius: 50%;
     display: inline-block;
-    max-width: 0%;
-    vertical-align: bottom;
-    overflow: hidden;
-    white-space: nowrap;
-
 }
 
-.navdot:hover .hideNavSide{
-    max-width: 100%;
+.pil{
+    margin-top: 10px;
+    margin-right: 9px;
+    height: 25px;
+    width: 25px;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
 
+.pil:hover{
+    transform: rotate(45deg);
+    margin-top: 10px;
+    margin-right: 0px;
+    border-color: orangered;
 }
 
 .sideNavList{
-    list-style-type: none;
-    position: fixed;
-    left: 0;
-    display: inline-block;
-    text-align: left;
+    list-style-type: none; 
 }
 
-
 /* || ULTRAWIDE */
+
+
+
