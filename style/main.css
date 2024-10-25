@@ -60,18 +60,22 @@ footer{
 }
 .footer-top {
     text-align: center;
+    padding: 1rem;
 }
-footer h2 {
-    padding: 5px;
+.footer-top p{
+    font-size: larger;
+    font-weight: 600;
+    padding: 0.5rem;
 }
 .footer-top a{
     background-color: #111;
-    padding: 15px;
+    padding: 1rem;
     color: white;
 }
 footer a{
     color: #111;
     text-decoration: none;
+    font-weight: 700;
 }
 footer a:hover {
     text-decoration-line: underline;
@@ -81,7 +85,7 @@ footer ol {
     font-weight: 700;
 }
 footer li {
-    padding-bottom: 0.3em;
+    padding-bottom: 0.4em;
 }
 footer section {
     display: grid;
@@ -106,6 +110,11 @@ footer img {
     width: 1.5rem;
     padding: 1%;
 }
+.infoTitle {
+    font-weight: 600;
+    font-size: large;
+}
+
 video{
     margin-top: -20%;
     padding: 10px;
@@ -127,7 +136,7 @@ table, th, td{
     border-top-color:  black;
     padding: 10px
 }
-.logo{
+.logo {
     width: 5%  ;
     min-width: 50px;
     max-height: 50;
