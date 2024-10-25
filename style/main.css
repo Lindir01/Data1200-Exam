@@ -73,22 +73,16 @@ main{
 
 
 
-
-
-
-
-
 /* -----Footer------ */
 footer{
     background-color: var(--oslometgul);
-    padding: 3px;
-    /*position: sticky; | Tore har liten skjerm*/ 
     bottom: 0px;
 }
 .footer-top {
     text-align: center;
     padding: 1rem;
 }
+
 .footer-top p{
     font-size: larger;
     font-weight: 600;
@@ -142,12 +136,22 @@ footer img {
     font-size: large;
 }
 
+.firstmedia{
+      margin-top: -12%;
+      width: 80%;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+      max-height: 600px;
+}
+
+
 video{
     margin-top: -20%;
     padding: 10px;
     padding-top: 50px;
     width: 80%;
-    max-width: 1000px;
+    max-width: 1300px;
 }
 table, th, td{
     border-width:1px;
@@ -164,10 +168,9 @@ table, th, td{
     padding: 10px
 }
 .logo {
-    width: 5%  ;
-    min-width: 50px;
-    max-height: 50;
-    padding: 20px;
+    width: 5%;
+    min-width: 100px;
+    padding: 15px;
 }
 .container-side-by-side{
     align-items: flex-start;
@@ -239,8 +242,7 @@ table, th, td{
         min-width: auto; /* Remove min-width to avoid overflow */
     }
 
-
-    video{
+    .smallermedia{
         width: 100%;
         margin: 10px;
     }
@@ -249,6 +251,29 @@ table, th, td{
         display: none;
         height: none;
     }
+
+
+    .footer-top{
+        grid-row: 1;
+        grid-column: 1;
+    }
+    .lenker{
+        grid-row: 3;
+        grid-column: 1;
+    }
+    .info{
+        grid-row: 2;
+        grid-column: 1;
+    }
+    .sosiale{
+        grid-row: 4;
+        grid-column: 1;
+    }
+
+footer img {
+    width: 1.5rem;
+    padding: 1%;
+}
 
 }
 
@@ -347,5 +372,9 @@ h1+p{
 
 /* || ULTRAWIDE */
 
-
+@media only screen and (min-width:2500px) {
+    video{
+        margin-top: -25%;
+    }
+}
 
