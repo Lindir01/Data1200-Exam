@@ -28,18 +28,8 @@ header{
     background-color: var(--oslometgul);
     width: 100%;
 }
-article{
-    width: 60%;
-    min-width: 50px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-section{
-    margin-left: auto;
-    margin-right: auto;
-    flex-basis: 25%;
-}
+
+
 footer{
     text-align: center;
     background-color: var(--oslometgul);
@@ -108,36 +98,32 @@ table, th, td{
 course0203-box would be the box for the third class in the second semester*/
 .emnegruppe{
     background-color: gray;
-    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
 }
-/*
-.semester-wrapper{
-    display: grid;
-    grid-auto-columns: minmax(200px, auto);
-    grid-auto-rows: minmax(100px, auto);
-    column-gap: 1%;
-} */
- .year-wrapper{
-    display: grid;
-    grid-template-columns: 15vw 10px 15vw 10px 15vw;
 
+ .year-wrapper{
+    display: inline-grid;
+    grid-template-columns: 20vw 20vw 20vw;
+    justify-items: center;
 
  }
 .semester-wrapper{
     display: grid;
-    grid-template-columns: 5vw 1vw 5vw;
-    grid-auto-rows: 5vh minmax(75px, 8vh);
+    grid-template-columns: 5vw 0.5vw 5vw;
+    grid-auto-rows: 6vh 6vh 6vh 6vh 6vh 6vh 6vh 6vh 6vh 6vh;
+    grid-gap: 5px;
 }
 .studieaar1{
     grid-column: 1;
 }
 .studieaar2{
-    grid-column: 3;
+    grid-column: 2;
 }
 .studieaar3{
-    grid-column: 5;
+    grid-column: 3;
 }
 
 .semester01{
@@ -145,7 +131,6 @@ course0203-box would be the box for the third class in the second semester*/
 }
 .semester02{
     grid-column: 3;
-    grid-row: 1;
 }
 .valgfag{
     grid-column: 1/4;
@@ -157,7 +142,6 @@ course0203-box would be the box for the third class in the second semester*/
     background-color: var(--courseboxes);
     width: 100%;
     border-radius: 15px;
-
 }
 .course0102-box{
     grid-column: 1;
