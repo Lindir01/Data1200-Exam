@@ -106,26 +106,36 @@ course0203-box would be the box for the third class in the second semester*/
 
  .year-wrapper{
     display: inline-grid;
-    grid-template-columns: 20vw 20vw 20vw;
+    grid-template-columns: 25vw 10px 25vw 10px 25vw;
     justify-items: center;
 
  }
 .semester-wrapper{
     display: grid;
-    grid-template-columns: 5vw 0.5vw 5vw;
-    grid-auto-rows: 6vh 6vh 6vh 6vh 6vh 6vh 6vh 6vh 6vh 6vh;
+    grid-template-columns: 10vw 0.5vw 10vw;
+    grid-auto-rows: 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh;
+    height: 100%;
+    width: 100%;
     grid-gap: 5px;
 }
+.semester-wrapper a{
+    text-decoration: none;
+}
+
 .studieaar1{
     grid-column: 1;
 }
 .studieaar2{
-    grid-column: 2;
-}
-.studieaar3{
     grid-column: 3;
 }
+.studieaar3{
+    grid-column: 5;
+}
 
+.slurp{
+
+    justify-content: center;
+}
 .semester01{
     grid-column: 1;
 }
