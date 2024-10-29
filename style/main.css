@@ -65,7 +65,8 @@ h1 {
 .text-decoration-none {
     text-decoration: none;
 }
-.field-of-study-list{
+
+.field-of-study-list {
     align-items: center;
     background-image: url(/build/images/arrow-right.svg);
     background-position: center right 1.25rem;
@@ -75,18 +76,21 @@ h1 {
     display: flex;
     padding: 1.1875rem 1.875rem 1.1875rem 0;
     text-decoration: none;
-    transition: background .1s cubic-bezier(.24,.59,.38,.94)
+    transition: background .1s cubic-bezier(.24, .59, .38, .94)
 }
-.field-of-study ul{
+
+.field-of-study ul {
     list-style-type: none;
     display: block;
     list-style: none
 }
-.field-of-study li{
-    display:inline-block;
+
+.field-of-study li {
+    display: inline-block;
     margin-right: 10px;
 }
-.field-of-study .item{
+
+.field-of-study .item {
     border-right: .0625rem solid #222;
     color: #222;
     display: inline;
@@ -95,21 +99,42 @@ h1 {
     margin-right: .625rem;
     padding-right: .625rem
 }
-.field-of-study .item:first-child{
+
+.field-of-study .item:first-child {
     margin-left: 0;
     padding-left: 0
 }
-.field-of-study .item:last-child{
-    border: none!important; /* !important rule overrides ALL previous styling rules for spesific property */
+
+.field-of-study .item:last-child {
+    border: none !important;
+    /* !important rule overrides ALL previous styling rules for spesific property */
     margin-right: 0;
     padding-right: 0
 }
+
 /* Tore slutter å leke seg */
-.section-yellow{
+.section-yellow {
     background-color: var(--oslometgul);
+    width: 100%;
 }
-.section-blue{
+
+.section-blue {
     background-color: var(--oslometblue);
+    width: 100%;
+}
+
+.card {
+    float: left;
+    box-sizing: border-box;
+    width: 50%;
+    min-width: 300px;
+    border: 5px solid red;/* just to visualize */
+}
+
+.card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* fixes a bit of scaling(im tierd and dont remeber how it works) */
@@ -127,12 +152,9 @@ main {
 
 /*Make section of "studiets oppbygning" horozontily scrollable*/
 .scrollable_section {
-    overflow-x: auto;
-    /* Enables horizontal scrolling */
-    margin: 0;
-    /* Reset margin */
-    padding: 0;
-    /* Reset padding */
+    overflow-x: auto;/* Enables horizontal scrolling */
+    margin: 0;/* Reset margin */
+    padding: 0; /* Reset padding */
 }
 
 
@@ -148,7 +170,7 @@ footer {
     padding: 1rem;
 }
 
-.footer-top p{
+.footer-top p {
     font-size: larger;
     font-weight: 600;
     padding: 0.5rem;
@@ -206,22 +228,23 @@ footer img {
     width: 1.5rem;
     padding: 1%;
 }
+
 .infoTitle {
     font-weight: 600;
     font-size: large;
 }
 
-.firstmedia{
-      margin-top: -12%;
-      width: 80%;
-      max-width: 1000px;
-      margin-left: auto;
-      margin-right: auto;
-      max-height: 600px;
+.firstmedia {
+    margin-top: -12%;
+    width: 80%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 600px;
 }
 
 
-video{
+video {
     margin-top: -20%;
     padding: 10px;
     padding-top: 50px;
@@ -245,6 +268,7 @@ td {
     border-top-color: black;
     padding: 10px
 }
+
 .logo {
     width: 5%;
     min-width: 100px;
@@ -261,6 +285,7 @@ td {
     margin-left: auto;
     margin-right: auto;
 }
+
 
 .tag-cloud {
     display: inline-block;
@@ -314,8 +339,7 @@ td {
 @media only screen and (max-width: 800px) {
 
     .scrollable_section {
-        overflow-x: auto;
-        /* Enables horizontal scrolling */
+        overflow-x: auto; /* Enables horizontal scrolling */
     }
 
     .center {
@@ -324,13 +348,11 @@ td {
     }
 
     article {
-        width: 100%;
-        /* Allow full width for smaller screens */
-        min-width: auto;
-        /* Remove min-width to avoid overflow */
+        width: 100%;/* Allow full width for smaller screens */
+        min-width: auto;/* Remove min-width to avoid overflow */
     }
 
-    .smallermedia{
+    .smallermedia {
         width: 100%;
         margin: 10px;
     }
@@ -341,27 +363,30 @@ td {
     }
 
 
-    .footer-top{
+    .footer-top {
         grid-row: 1;
         grid-column: 1;
     }
-    .lenker{
+
+    .lenker {
         grid-row: 3;
         grid-column: 1;
     }
-    .info{
+
+    .info {
         grid-row: 2;
         grid-column: 1;
     }
-    .sosiale{
+
+    .sosiale {
         grid-row: 4;
         grid-column: 1;
     }
 
-footer img {
-    width: 1.5rem;
-    padding: 1%;
-}
+    footer img {
+        width: 1.5rem;
+        padding: 1%;
+    }
 
 }
 
@@ -463,8 +488,7 @@ h1+p {
 /* || ULTRAWIDE */
 
 @media only screen and (min-width:2500px) {
-    video{
+    video {
         margin-top: -25%;
     }
 }
-
