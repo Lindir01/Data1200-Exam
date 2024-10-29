@@ -105,6 +105,12 @@ h1 {
     padding-right: 0
 }
 /* Tore slutter å leke seg */
+.section-yellow{
+    background-color: var(--oslometgul);
+}
+.section-blue{
+    background-color: var(--oslometblue);
+}
 
 /* fixes a bit of scaling(im tierd and dont remeber how it works) */
 main {
