@@ -81,16 +81,13 @@ h1 {
 
 .field-of-study ul {
     list-style-type: none;
-    display: block;
-    list-style: none
 }
 
 .field-of-study li {
     display: inline-block;
     margin-right: 10px;
 }
-
-.field-of-study .item {
+.field-of-study .item{
     border-right: .0625rem solid #222;
     color: #222;
     display: inline;
@@ -99,42 +96,21 @@ h1 {
     margin-right: .625rem;
     padding-right: .625rem
 }
-
-.field-of-study .item:first-child {
+.field-of-study .item:first-child{
     margin-left: 0;
     padding-left: 0
 }
-
-.field-of-study .item:last-child {
-    border: none !important;
-    /* !important rule overrides ALL previous styling rules for spesific property */
+.field-of-study .item:last-child{
+    border: none!important; /* !important rule overrides ALL previous styling rules for spesific property */
     margin-right: 0;
     padding-right: 0
 }
-
 /* Tore slutter å leke seg */
-.section-yellow {
+.section-yellow{
     background-color: var(--oslometgul);
-    width: 100%;
 }
-
-.section-blue {
+.section-blue{
     background-color: var(--oslometblue);
-    width: 100%;
-}
-
-.card {
-    float: left;
-    box-sizing: border-box;
-    width: 50%;
-    min-width: 300px;
-    border: 5px solid red;/* just to visualize */
-}
-
-.card-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 /* fixes a bit of scaling(im tierd and dont remeber how it works) */
@@ -200,7 +176,6 @@ footer ol {
 footer li {
     padding-bottom: 0.4em;
 }
-
 footer section {
     display: grid;
     grid-template-columns: 30vw auto minmax(300px, 30vw) 1rem;
@@ -208,20 +183,16 @@ footer section {
     margin: auto;
     padding-left: 2rem;
 }
-
 .info {
-    grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column: 1 / 2;
 }
 
 .lenker {
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column: 2 / 3;
 }
 
 .sosiale {
-    grid-column-start: 3;
-    grid-column-end: 4;
+    grid-column: 3 / 4;
 }
 
 footer img {
