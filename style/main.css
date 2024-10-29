@@ -108,9 +108,12 @@ h1 {
 /* Tore slutter å leke seg */
 .section-yellow{
     background-color: var(--oslometgul);
+    width: 100%;
 }
 .section-blue{
     background-color: var(--oslometblue);
+    width: 100%;
+
 }
 
 /* fixes a bit of scaling(im tierd and dont remeber how it works) */
