@@ -61,56 +61,15 @@ h1 {
 }
 
 /* || Utilities */
-/* Tore leker seg */
-.text-decoration-none {
-    text-decoration: none;
-}
-.field-of-study-list{
-    align-items: center;
-    background-image: url(/build/images/arrow-right.svg);
-    background-position: center right 1.25rem;
-    background-repeat: no-repeat;
-    border-top: .0625rem solid #e2e2e2;
-    color: #222;
-    display: flex;
-    padding: 1.1875rem 1.875rem 1.1875rem 0;
-    text-decoration: none;
-    transition: background .1s cubic-bezier(.24,.59,.38,.94)
-}
+
 .field-of-study ul{
     list-style-type: none;
-    display: block;
-    list-style: none
 }
 .field-of-study li{
     display:inline-block;
     margin-right: 10px;
 }
-.field-of-study .item{
-    border-right: .0625rem solid #222;
-    color: #222;
-    display: inline;
-    font-size: 1rem;
-    line-height: .875rem;
-    margin-right: .625rem;
-    padding-right: .625rem
-}
-.field-of-study .item:first-child{
-    margin-left: 0;
-    padding-left: 0
-}
-.field-of-study .item:last-child{
-    border: none!important; /* !important rule overrides ALL previous styling rules for spesific property */
-    margin-right: 0;
-    padding-right: 0
-}
-/* Tore slutter å leke seg */
-.section-yellow{
-    background-color: var(--oslometgul);
-}
-.section-blue{
-    background-color: var(--oslometblue);
-}
+
 
 /* fixes a bit of scaling(im tierd and dont remeber how it works) */
 main {
@@ -178,7 +137,6 @@ footer ol {
 footer li {
     padding-bottom: 0.4em;
 }
-
 footer section {
     display: grid;
     grid-template-columns: 30vw auto minmax(300px, 30vw) 1rem;
@@ -186,7 +144,6 @@ footer section {
     margin: auto;
     padding-left: 2rem;
 }
-
 .info {
     grid-column: 1 / 2;
 }
@@ -196,7 +153,7 @@ footer section {
 }
 
 .sosiale {
-    grid-column:3 / 4;
+    grid-column: 3 / 4;
 }
 
 footer img {
