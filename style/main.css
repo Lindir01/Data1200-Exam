@@ -132,10 +132,6 @@ course0203-box would be the box for the third class in the second semester*/
     grid-column: 5;
 }
 
-.slurp{
-
-    justify-content: center;
-}
 .semester01{
     grid-column: 1;
 }
@@ -144,7 +140,8 @@ course0203-box would be the box for the third class in the second semester*/
 }
 .valgfag{
     grid-column: 1/4;
-    grid-row: 8;
+    grid-row: 8/13;
+    background-color: coral;
 }
 .course0101-box{
     grid-column: 1;
@@ -153,129 +150,106 @@ course0203-box would be the box for the third class in the second semester*/
     width: 100%;
     border-radius: 15px;
 }
-.course0102-box{
-    grid-column: 1;
-    grid-row: 4/6;
+.course0101-box,
+.course0102-box,
+.course0103-box,
+.course0104-box,
+.course0201-box,
+.course0202-box,
+.course0203-box,
+.course0301-box,
+.course0302-box,
+.course0303-box,
+.course0401-box,
+.course0402-box,
+.course0403-box,
+.course0501-box,
+.course0502-box,
+.course0503-box,
+.course0601-box,
+.course0602-box {
+    display: flex;
+    justify-content: center; /* Horizontally centers content */
+    align-items: center; /* Vertically centers content */
+    text-align: center; /* Ensures text within the box is centered */
+    height: 100%; /* Ensures the entire box height is used for alignment */
+    width: 100%; /* Ensures the entire box width is used for alignment */
     background-color: var(--courseboxes);
     width: 100%;
     border-radius: 15px;
+}
+.course0102-box{
+    grid-column: 1;
+    grid-row: 4/6;
 }
 .course0103-box{
     grid-column: 1;
     grid-row: 6/7;
-    background-color: var(--courseboxes);
-    width: 100%;
-    border-radius: 15px;
 }
 .course0104-box{
     grid-column: 1;
     grid-row: 7/8;
-    background-color: var(--courseboxes);
-    width: 100%;
-    border-radius: 15px;
 }
 /* second semester */
 .course0201-box{
     grid-column: 3;
     grid-row: 2/4;
-    background-color: var(--courseboxes);
-    width: 100%;
-    border-radius: 15px;
 }
 .course0202-box{
     grid-column: 3;
     grid-row: 4/6;
-    background-color: var(--courseboxes);
-    width: 100%;
-    border-radius: 15px;
 }
 .course0203-box{
     grid-column: 3;
     grid-row: 6/8;
-    background-color: var(--courseboxes);
-    width: 100%;
-    border-radius: 15px;
 }
 /* Third semester */
 .course0301-box{
     grid-column: 1;
     grid-row: 2/4;
-    background-color: var(--courseboxes);
-    width: 100%;
-    border-radius: 15px;
 }
 .course0302-box{
     grid-column: 1;
     grid-row: 4/6;
-    background-color: var(--courseboxes);
-    width: 100%;
-    border-radius: 15px;
 }
 .course0303-box{
     grid-column: 1;
     grid-row: 6/8;
-    background-color: var(--courseboxes);
-    width: 100%;
-    border-radius: 15px;
 }
 /* fourth semester */
 .course0401-box{
     grid-column: 3;
     grid-row: 2/4;
-    background-color: var(--courseboxes);
-    width: 100%;
-    border-radius: 15px;
 }
 .course0402-box{
     grid-column: 3;
     grid-row: 4/6;
-    background-color: var(--courseboxes);
-    width: 100%;
-    border-radius: 15px;
 }
 .course0403-box{
     grid-column: 3;
     grid-row: 6/8;
-    background-color: var(--courseboxes);
-    width: 100%;
-    border-radius: 15px;
 }
 /* fifth semester */
 .course0501-box{
     grid-column: 1;
     grid-row: 2/4;
-    background-color: var(--courseboxes);
-    width: 100%;
-    border-radius: 15px;
 }
 .course0502-box{
     grid-column: 1;
     grid-row: 4/6;
-    background-color: var(--courseboxes);
-    width: 100%;
-    border-radius: 15px;
 }
 .course0503-box{
     grid-column: 1;
     grid-row: 6/8;
-    background-color: var(--courseboxes);
-    width: 100%;
-    border-radius: 15px;
 }
 /* sixth semester */
 .course0601-box{
     grid-column: 3;
     grid-row: 2/6;
-    background-color: var(--courseboxes);
-    width: 100%;
-    border-radius: 15px;
 }
 .course0602-box{
     grid-column: 3;
     grid-row: 6/8;
-    background-color: var(--courseboxes);
-    width: 100%;
-    border-radius: 15px;
 }
 
 
