@@ -93,6 +93,7 @@ table, th, td{
 }
 
 
+/* || Bachelor Structure */
 /* classes related to the preview of semesters through the bachelor degree */
 /* classes for the coruses are numerated by semester then class, 
 course0203-box would be the box for the third class in the second semester*/
@@ -103,12 +104,10 @@ course0203-box would be the box for the third class in the second semester*/
     margin-left: auto;
     margin-right: auto;
 }
-
  .year-wrapper{
     display: inline-grid;
     grid-template-columns: 25vw 10px 25vw 10px 25vw;
     justify-items: center;
-
  }
 .semester-wrapper{
     display: grid;
@@ -116,12 +115,11 @@ course0203-box would be the box for the third class in the second semester*/
     grid-auto-rows: 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh;
     height: 100%;
     width: 100%;
-    grid-gap: 5px;
+    grid-gap: 0.5vw;
 }
 .semester-wrapper a{
     text-decoration: none;
 }
-
 .studieaar1{
     grid-column: 1;
 }
@@ -143,13 +141,7 @@ course0203-box would be the box for the third class in the second semester*/
     grid-row: 8/13;
     background-color: coral;
 }
-.course0101-box{
-    grid-column: 1;
-    grid-row: 2/4;
-    background-color: var(--courseboxes);
-    width: 100%;
-    border-radius: 15px;
-}
+
 .course0101-box,
 .course0102-box,
 .course0103-box,
@@ -169,14 +161,19 @@ course0203-box would be the box for the third class in the second semester*/
 .course0601-box,
 .course0602-box {
     display: flex;
-    justify-content: center; /* Horizontally centers content */
-    align-items: center; /* Vertically centers content */
-    text-align: center; /* Ensures text within the box is centered */
-    height: 100%; /* Ensures the entire box height is used for alignment */
-    width: 100%; /* Ensures the entire box width is used for alignment */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
     background-color: var(--courseboxes);
     width: 100%;
     border-radius: 15px;
+}
+/* First semester */
+.course0101-box{
+    grid-column: 1;
+    grid-row: 2/4;
 }
 .course0102-box{
     grid-column: 1;
@@ -190,7 +187,7 @@ course0203-box would be the box for the third class in the second semester*/
     grid-column: 1;
     grid-row: 7/8;
 }
-/* second semester */
+/* Second semester */
 .course0201-box{
     grid-column: 3;
     grid-row: 2/4;
@@ -216,7 +213,7 @@ course0203-box would be the box for the third class in the second semester*/
     grid-column: 1;
     grid-row: 6/8;
 }
-/* fourth semester */
+/* Fourth semester */
 .course0401-box{
     grid-column: 3;
     grid-row: 2/4;
@@ -229,7 +226,7 @@ course0203-box would be the box for the third class in the second semester*/
     grid-column: 3;
     grid-row: 6/8;
 }
-/* fifth semester */
+/* Fifth semester */
 .course0501-box{
     grid-column: 1;
     grid-row: 2/4;
@@ -242,7 +239,7 @@ course0203-box would be the box for the third class in the second semester*/
     grid-column: 1;
     grid-row: 6/8;
 }
-/* sixth semester */
+/* Sixth semester */
 .course0601-box{
     grid-column: 3;
     grid-row: 2/6;
@@ -252,6 +249,29 @@ course0203-box would be the box for the third class in the second semester*/
     grid-row: 6/8;
 }
 
+/* || Bachelor structure Small screen */
+@media only screen and (max-width: 800px){
+    .year-wrapper .studieaar1,
+    .year-wrapper .studieaar2,
+    .year-wrapper .studieaar3{
+        grid-column: 1/ -1;
+        width: 100%;
+    }
+    .studieaar1,
+    .studieaar2,
+    .studieaar3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .semester-wrapper{
+        width: 80Vw;
+        justify-content: center;
+        align-items: center;
+        background-color: chocolate;
+    }
+
+}
 
 
   
@@ -280,13 +300,13 @@ course0203-box would be the box for the third class in the second semester*/
 /* || THINSCREEN */
 /* all elements inside of this will only display when max monitor size is 800 px wide */
 @media only screen and (max-width: 800px){
-    article {
+    /*article {
         width: 100%;
         min-width: 200px;
         margin: 10px;
         border-style: double;
         border-color: black;
-    }
+    }*/
 
     video{
         width: 100%;
