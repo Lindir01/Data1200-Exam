@@ -13,12 +13,27 @@
 
 <body>
     <header id="top">
-        <a href="index.html">
-            <img class="logo" src="media/images/shared/logo_uten_Storbysuniversitetet.svg" alt="Logo for OsloMet">
-        </a>
-        <nav>
-            <ul class="navbar">
-                <li class="navlist"><a href="index.html">Home</a></li>
+
+        <nav class="navbar">
+
+            <a href="index.html" class="logo-a">
+                <img class="logo" src="media/images/shared/logo_uten_Storbysuniversitetet.svg" alt="Logo for OsloMet">
+            </a>
+
+
+
+            
+            <label class="hamburger-toggle-container" for="burger-toggle">
+                <span class="burgerline1"></span>
+                <span class="burgerline2"></span>
+                <span class="burgerline3"></span>
+            </label>
+            <input id="burger-toggle" type="checkbox">
+
+            </div>
+            
+            <ul class="menu">
+                <li class="navlist"><a href="index.html" class="active">Home</a></li>
                 <li class="navlist"><a href="git.html">Git</a></li>
                 <li class="navlist"><a href="accessibility.html">Accessibility</a></li>
                 <li class="navlist"><a href="activity.html">Activity</a></li>
@@ -153,8 +168,8 @@
             <span class="tag-cloud" title="Studieplasser"><img src="/Data1200-Exam/media/images/shared/user-icon.svg"
                     class="icon"> 40 studieplasser</span>
         </section>
-        <section class="section-yellow">
-            <article>
+        <section class="section-yellow card-wrapper" >
+            <article class="card">
                 <h2>Studiestart</h2>
                 <p>
                     Informasjon om program, timeplaner, pensum, fadderuker og mye mer finner du på <a
@@ -171,7 +186,7 @@
                     klasse/gruppe. Dette skjer vanligvis uken før studiestart.
                 </p>
             </article>
-            <article>
+            <article class="card">
                 <h2>Opptakskrav og poeng</h2>
                 <p>For å søke på dette programmet må du ha</p>
                 <div class="pointList">
@@ -190,7 +205,7 @@
                     dette studiet om du har <a href="https://www.oslomet.no/studier/tkd/forkurs-ingenior">bestått
                         ettårig forkurs for ingeniørutdanning.</a></p>
             </article>
-            <article>
+            <article class="card">
                 <h2>Slik søker du</h2>
                 <p>Du søker på Samordna opptak med studiekode 215 503.</p>
                 <div class="pointList">
@@ -202,17 +217,17 @@
                 <p><a href="https://www.oslomet.no/studier/soknad-og-opptak/opptak-til-bachelor-aarsstudier">Mer om å
                         søke på bachelor.</a></p>
             </article>
-            <article>
-                <ph2>Hva lærer du?</h2>
-                    <p>Bachelor i matematisk modellering og datavitenskap kobler sammen matematikk, informatikk, fysikk
-                        og statistikk.</p>
-                    <p>Du får innsikt i matematiske modeller som brukes i praktisk problemløsning blant annet i
-                        medisinsk kjemi, biologiske prosesser og ulike samfunnssystemer.</p>
-                    <p>Det første studieåret har du emner i blant annet matematikk, programmering, fysikk og kjemi for å
-                        få en felles forståelse av tematikken.</p>
-                    <p>Det siste semesteret skriver du en bacheloroppgave tett knyttet til problemstillinger i
-                        arbeidslivet.</p>
-                    <p>Første året velger du hvilken av disse spesialiseringene du vil ta.</p>
+            <article class="card">
+                <h2>Hva lærer du?</h2>
+                <p>Bachelor i matematisk modellering og datavitenskap kobler sammen matematikk, informatikk, fysikk
+                    og statistikk.</p>
+                <p>Du får innsikt i matematiske modeller som brukes i praktisk problemløsning blant annet i
+                    medisinsk kjemi, biologiske prosesser og ulike samfunnssystemer.</p>
+                <p>Det første studieåret har du emner i blant annet matematikk, programmering, fysikk og kjemi for å
+                    få en felles forståelse av tematikken.</p>
+                <p>Det siste semesteret skriver du en bacheloroppgave tett knyttet til problemstillinger i
+                    arbeidslivet.</p>
+                <p>Første året velger du hvilken av disse spesialiseringene du vil ta.</p>
             </article>
         </section>
         <section class="scrollable_section section-blue">
@@ -459,8 +474,8 @@
                 </p>
             </article>
         </section>
-        <section class="section-yellow">
-            <article>
+        <section class="section-yellow card-wrapper">
+            <article class="card">
                 <h2>Hvordan foregår undervisningen</h2>
                 <p>Undervisningen er en kombinasjon av</p>
                 <div class="pointList">
@@ -481,7 +496,7 @@
                     studierelatert arbeid gjennom hele semesteret. 
                 </p>
             </article>
-            <article>
+            <article class="card">
                 <h2>Hva koster det?</h2>
                 <p><a href="https://student.oslomet.no/semesteravgift">Det er ikke studieavgift på dette studiet. Du
                         betaler en semesteravgift hvert semester
@@ -490,7 +505,7 @@
                         internasjonal student fra utenfor EU og EØS, må du betale studieavgift (student.oslomet.no). Det
                         er mulig å søke om unntak for betaling av denne studieavgiften.</a></p>
             </article>
-            <article>
+            <article class="card">
                 <h2>Hva kan du jobbe som?</h2>
                 <p>
                     Med dette studiet får du IT-kompetanse som er etterspurt i arbeidslivet, særlig om du velger
@@ -508,11 +523,11 @@
                     Datadrevne metoder og maskinlæring er i dag svært mye brukt i arbeidslivet.
                 </p>
             </article>
-            <article>
+            <article class="card">
                 <h2>Utveksling</h2>
                 <p>Du kan dra på utveksling i femte semester.</p>
             </article>
-            <article>
+            <article class="card">
                 <h2>Videre studiemuligheter ved OsloMet</h2>
                 <p>Anvendt data- og informasjonsteknologi(ACIT) Master</p>
             </article>
@@ -523,22 +538,23 @@
                 <a href="https://www.oslomet.no/om/studiested-pilestredet">Studiested Pilestredet i Oslo</a>
             </article>
             <article>
-                <div class="card"> <!-- https://www.w3schools.com/howto/howto_css_profile_card.asp -->
+                <div class=""> <!-- https://www.w3schools.com/howto/howto_css_profile_card.asp -->
                     <img src="" alt="Kristoffer" style="width:100%" , height="100%">
                     <h5>Kristoffer Herland Hellton</h5>
                     <p>Førsteamanuensis</p>
                     <p>+47 672 37 240</p>
                     <p>kristoffer.hellton@oslomet.no</p>
-                </div> 
+                </div>
             </article>
         </section>
         <!-- Tore leker seg -->
-        <section class="section-yellow">
+        <section>
             <article>
                 <h6>Er du kanskje også interesert i disse?</h6>
                 <ul class="field-of-study">
                     <li>
-                        <a href="https://www.oslomet.no/studier/tkd/anvendt-datateknologi" class="text-decoration-none field-of-study-list">
+                        <a href="https://www.oslomet.no/studier/tkd/anvendt-datateknologi"
+                            class="text-decoration-none field-of-study-list">
                             <p>Anvendt datateknologi</p>
                             <ul>
                                 <li class="item">Bachelorprogram</li>
