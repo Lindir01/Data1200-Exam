@@ -345,10 +345,11 @@ td {
         display: none;
     }
     .menu {
+        margin-top: 1.5rem;
         display: flex;
         flex-direction: row;
-        justify-content: center;
         list-style-type: none;
+        float: right;
     }
 
     .menu li {padding-right: 4rem;}
@@ -396,16 +397,8 @@ td {
 }
 
 
-/*
-.navbar li{
-    display: inline;
-}
 
-.navbar {
-    margin-top: 0.7rem;
-    float: right;
-    
-}
+
 
 .navbar .active {
     background-color: var(--oslometorange);
@@ -421,12 +414,14 @@ td {
     border-radius: 4px;
 }
 
-.navbar a:hover:not(.active) {
+
+/* Change the link color tohsl(50, 100%, 40%);(darker oslometgul) on hover accept the active one */
+
+.navbar a:hover:not(.active, .logo-a){
     background-color: hsl(50, 100%, 40%);
 }
 
-*/
-/* Change the link color tohsl(50, 100%, 40%);(darker oslometgul) on hover accept the active one */
+
 
 /* || THINSCREEN */
 /* all elements inside of this will only display when max monitor size is 800 px wide */
