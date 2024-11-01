@@ -101,8 +101,9 @@ course0203-box would be the box for the third class in the second semester*/
 .emnegruppe{
     background-color: rgb(78, 78, 78);
     color: white;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    margin-top: 2.5vh;
     margin-left: auto;
     margin-right: auto;
 }
@@ -114,7 +115,7 @@ course0203-box would be the box for the third class in the second semester*/
 .semester-wrapper{
     display: grid;
     grid-template-columns: 10vw 0.5vw 10vw;
-    grid-auto-rows: 8vh 8vh 8vh 8vh 8vh 8vh 8vh 4vh;
+    grid-template-rows: 4vh 8vh 8vh 8vh 8vh 8vh 8vh 4vh;
     height: 100%;
     width: 100%;
     grid-gap: 0.5vw;
@@ -144,6 +145,7 @@ course0203-box would be the box for the third class in the second semester*/
     background-color: var(--valgfagboxes);
     border-radius: 15px;
     margin-bottom: 0.5vh;
+    box-shadow: 1px 1px 4px black;
 }
 .valgfag-seperator{
     grid-column: 1/-1;
@@ -179,6 +181,7 @@ course0203-box would be the box for the third class in the second semester*/
     background-color: var(--courseboxes);
     width: 100%;
     border-radius: 15px;
+    box-shadow: 1px 1px 4px black;
 }
 .valgfag-box{
     background-color: var(--valgfagboxes); 
@@ -277,12 +280,21 @@ course0203-box would be the box for the third class in the second semester*/
         display: flex;
         justify-content: center;
         align-items: center;
+        grid-auto-flow: dense;
     }
     .semester-wrapper{
-        width: 80Vw;
+        width: 100Vw;
+        grid-template-columns: 45vw 2vw 45vw;
+        /* grid-template-rows: 4vh 5vh 5vh 5vh 5vh 5vh 5vh 0.1vh 1vh 1vh 1vh; */
         justify-content: center;
-        align-items: center;
-        background-color: chocolate;
+        grid-gap: 1vw;
+
+    }
+    .valgfag-info{
+        grid-row: 8/10;
+        content: "";
+        clear: both;
+        display: table;
     }
 
 }
