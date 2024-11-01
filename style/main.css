@@ -16,6 +16,7 @@ html {
 :root {
     --oslometgul: hsl(50, 100%, 50%);
     --oslometblue: #56CEDE;
+    --oslometorange: #FF8100;
 }
 
 body {
@@ -33,6 +34,7 @@ main {
 header {
     background-color: var(--oslometgul);
     width: 100%;
+    height: 4.5rem;
 }
 
 article {
@@ -293,31 +295,138 @@ td {
 }
 
 /* || SITEWIDE */
+
+#burger-toggle{ display: none;}
+
+
+.hamburger-toggle-container span {
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: black;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+}
+
+
+
+
+.hamburger-toggle-container span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+.hamburger-toggle-container span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+
+.hamburger-toggle-container .burger-toggle:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+
+
+
+@media (min-width:701px){
+    .hamburger-toggle-container span {
+        display: none;
+    }
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style-type: none;
+    }
+
+    .menu li {padding-right: 4rem;}
+    
+}
+
+
+@media (max-width:700px){
+    .hamburger-toggle-container span {
+        display: block;
+    }
+    .menu {
+        list-style-type: none;
+    }
+
+    .menu-icon {
+        display: block;
+        height: 40px;
+        width: 40px;
+    }
+
+    .hamburger-toggle-container {
+        cursor: pointer;
+    }
+
+    .menu li {
+        height: 0px;
+        overflow: hidden;
+    }
+
+    #burger-toggle:checked ~ .menu li {
+        height: 1rem;
+        width: auto;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        padding-bottom: 0.5rem;
+        background-color: var(--oslometgul);
+    }
+    
+    nav {
+        display: flex;
+        height: 40px;
+    }
+
+}
+
+
+/*
+.navbar li{
+    display: inline;
+}
+
 .navbar {
-    list-style-type: none;
-    margin: 0;
-    overflow: hidden;
-    background-color: #333;
-    display: flex;
-    justify-content: flex-end;
+    margin-top: 0.7rem;
+    float: right;
+    
 }
 
-.navlist a {
-    display: block;
-    color: rgb(255, 255, 255);
+.navbar .active {
+    background-color: var(--oslometorange);
+  }
+
+.navbar a {
+    color: black;
     text-align: center;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 12px;
     text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
 }
 
-/* Change the link color to #111 (black) on hover */
-.navlist a:hover {
-    background-color: #111;
+.navbar a:hover:not(.active) {
+    background-color: hsl(50, 100%, 40%);
 }
 
+*/
+/* Change the link color tohsl(50, 100%, 40%);(darker oslometgul) on hover accept the active one */
 
 /* || THINSCREEN */
 /* all elements inside of this will only display when max monitor size is 800 px wide */
