@@ -67,7 +67,9 @@ h1 {
 .text-decoration-none {
     text-decoration: none;
 }
-
+.border-black{
+    border: 5px solid black;
+}
 .field-of-study-list {
     align-items: center;
     background-image: url(/build/images/arrow-right.svg);
@@ -80,7 +82,9 @@ h1 {
     text-decoration: none;
     transition: background .1s cubic-bezier(.24, .59, .38, .94)
 }
-
+.field-of-study > ul{
+    border: 5px solid black;
+}
 .field-of-study ul {
     list-style-type: none;
 }
@@ -119,11 +123,18 @@ h1 {
 .card {
     float: left;
     box-sizing: border-box;
-    width: 50%;
+    width: 30%;
     min-width: 300px;
+    justify-content: space-evenly;
+    background-color: rgb(246, 242, 242);
     border: 5px solid red;/* just to visualize */
+    margin: 3em;
+    box-shadow: 10px 10px 5px #11111110;
 }
-
+.card ul{
+    text-align: left;
+    
+}
 .card-wrapper {
     display: flex;
     flex-wrap: wrap;
