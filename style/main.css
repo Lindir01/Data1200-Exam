@@ -138,6 +138,22 @@ h1 {
     flex-wrap: wrap;
     justify-content: center;
 }
+.profileCard{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #f6f2f2;
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  border: 5px solid black;
+}
+.profileCard h5{
+font-size: 1.2em; ;
+}
+.profileCard-position{
+    color: grey;
+  font-size: 18px;
+}
 /* fixes a bit of scaling(im tierd and dont remeber how it works) */
 main {
     display: flex;
