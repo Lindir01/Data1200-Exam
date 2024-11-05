@@ -69,18 +69,14 @@ h1 {
 }
 .border-black{
     border: 5px solid black;
+    padding: 2px;
 }
 .field-of-study-list {
     align-items: center;
-    background-image: url(/build/images/arrow-right.svg);
-    background-position: center right 1.25rem;
-    background-repeat: no-repeat;
-    border-top: .0625rem solid #e2e2e2;
     color: #222;
     display: flex;
     padding: 1.1875rem 1.875rem 1.1875rem 0;
     text-decoration: none;
-    transition: background .1s cubic-bezier(.24, .59, .38, .94)
 }
 .field-of-study > ul{
     border: 5px solid black;
