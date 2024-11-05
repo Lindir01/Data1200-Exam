@@ -15,6 +15,8 @@ html {
 
 :root {
     --oslometgul: hsl(50, 100%, 50%);
+    --courseboxes: hsl(0, 0%, 81%);
+    --valgfagboxes:  hsl(0, 0%, 60%); 
     --oslometblue: #56CEDE;
     --oslometorange: #FF8100;
 }
@@ -286,6 +288,418 @@ td {
 }
 
 
+/* || Bachelor Structure */
+/* classes related to the preview of semesters through the bachelor degree */
+/* classes for the coruses are numerated by semester then class, 
+course0203-box would be the box for the third class in the second semester*/
+.emnegruppe{
+    background-color: rgb(78, 78, 78);
+    color: white;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    margin-top: 2.5vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+ .year-wrapper{
+    display: inline-grid;
+    grid-template-columns: 25vw 0.5vh 25vw 0.5vh 25vw;
+    justify-items: center;
+ }
+.semester-wrapper{
+    display: grid;
+    grid-template-columns: 10vw 0.5vw 10vw;
+    grid-template-rows: 4vh 8vh 8vh 8vh 8vh 8vh 8vh 4vh;
+    height: 100%;
+    width: 100%;
+    grid-gap: 0.5vw;
+}
+.semester-wrapper a{
+    text-decoration: none;
+}
+.studieaar1{
+    grid-column: 1;
+}
+.studieaar2{
+    grid-column: 3;
+}
+.studieaar3{
+    grid-column: 5;
+}
+
+.semester01{
+    grid-column: 1;
+}
+.semester02{
+    grid-column: 3;
+}
+.valgfag-info{
+    grid-column: 1/4;
+    grid-row: 9/13;
+    background-color: var(--valgfagboxes);
+    border-radius: 15px;
+    margin-bottom: 0.5vh;
+    box-shadow: 1px 1px 4px black;
+}
+.valgfag-seperator{
+    grid-column: 1/-1;
+    grid-row: 8;
+    background-color: brown;
+}
+
+
+.course0101-box,
+.course0102-box,
+.course0103-box,
+.course0104-box,
+.course0201-box,
+.course0202-box,
+.course0203-box,
+.course0301-box,
+.course0302-box,
+.course0303-box,
+.course0401-box,
+.course0402-box,
+.course0403-box,
+.course0501-box,
+.course0502-box,
+.course0503-box,
+.course0601-box,
+.course0602-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background-color: var(--courseboxes);
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 1px 1px 4px black;
+}
+.valgfag-box{
+    background-color: var(--valgfagboxes); 
+}
+/* First semester */
+.course0101-box{
+    grid-column: 1;
+    grid-row: 2/4;
+}
+.course0102-box{
+    grid-column: 1;
+    grid-row: 4/6;
+}
+.course0103-box{
+    grid-column: 1;
+    grid-row: 6/7;
+}
+.course0104-box{
+    grid-column: 1;
+    grid-row: 7/8;
+}
+/* Second semester */
+.course0201-box{
+    grid-column: 3;
+    grid-row: 2/4;
+}
+.course0202-box{
+    grid-column: 3;
+    grid-row: 4/6;
+}
+.course0203-box{
+    grid-column: 3;
+    grid-row: 6/8;
+}
+/* Third semester */
+.course0301-box{
+    grid-column: 1;
+    grid-row: 2/4;
+}
+.course0302-box{
+    grid-column: 1;
+    grid-row: 4/6;
+}
+.course0303-box{
+    grid-column: 1;
+    grid-row: 6/8;
+}
+/* Fourth semester */
+.course0401-box{
+    grid-column: 3;
+    grid-row: 2/4;
+}
+.course0402-box{
+    grid-column: 3;
+    grid-row: 4/6;
+}
+.course0403-box{
+    grid-column: 3;
+    grid-row: 6/8;
+}
+/* Fifth semester */
+.course0501-box{
+    grid-column: 1;
+    grid-row: 2/4;
+}
+.course0502-box{
+    grid-column: 1;
+    grid-row: 4/6;
+}
+.course0503-box{
+    grid-column: 1;
+    grid-row: 6/8;
+}
+/* Sixth semester */
+.course0601-box{
+    grid-column: 3;
+    grid-row: 2/6;
+}
+.course0602-box{
+    grid-column: 3;
+    grid-row: 6/8;
+}
+
+
+/* || Bachelor structure Small screen */
+@media only screen and (max-width: 800px){
+    .year-wrapper .studieaar1,
+    .year-wrapper .studieaar2,
+    .year-wrapper .studieaar3{
+        grid-column: 1/ -1;
+        width: 100%;
+    }
+    .studieaar1,
+    .studieaar2,
+    .studieaar3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-auto-flow: dense;
+    }
+    .semester-wrapper{
+        width: 100Vw;
+        grid-template-columns: 45vw 2vw 45vw;
+        /* grid-template-rows: 4vh 5vh 5vh 5vh 5vh 5vh 5vh 0.1vh 1vh 1vh 1vh; */
+        justify-content: center;
+        grid-gap: 1vw;
+
+    }
+    .valgfag-info{
+        grid-row: 8/10;
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+}
+
+
+/* || Bachelor Structure */
+/* classes related to the preview of semesters through the bachelor degree */
+/* classes for the coruses are numerated by semester then class, 
+course0203-box would be the box for the third class in the second semester*/
+.emnegruppe{
+    background-color: rgb(78, 78, 78);
+    color: white;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    margin-top: 2.5vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+ .year-wrapper{
+    display: inline-grid;
+    grid-template-columns: 25vw 0.5vh 25vw 0.5vh 25vw;
+    justify-items: center;
+ }
+.semester-wrapper{
+    display: grid;
+    grid-template-columns: 10vw 0.5vw 10vw;
+    grid-template-rows: 4vh 8vh 8vh 8vh 8vh 8vh 8vh 4vh;
+    height: 100%;
+    width: 100%;
+    grid-gap: 0.5vw;
+}
+.semester-wrapper a{
+    text-decoration: none;
+}
+.studieaar1{
+    grid-column: 1;
+}
+.studieaar2{
+    grid-column: 3;
+}
+.studieaar3{
+    grid-column: 5;
+}
+
+.semester01{
+    grid-column: 1;
+}
+.semester02{
+    grid-column: 3;
+}
+.valgfag-info{
+    grid-column: 1/4;
+    grid-row: 9/13;
+    background-color: var(--valgfagboxes);
+    border-radius: 15px;
+    margin-bottom: 0.5vh;
+    box-shadow: 1px 1px 4px black;
+}
+.valgfag-seperator{
+    grid-column: 1/-1;
+    grid-row: 8;
+    background-color: brown;
+}
+
+
+.course0101-box,
+.course0102-box,
+.course0103-box,
+.course0104-box,
+.course0201-box,
+.course0202-box,
+.course0203-box,
+.course0301-box,
+.course0302-box,
+.course0303-box,
+.course0401-box,
+.course0402-box,
+.course0403-box,
+.course0501-box,
+.course0502-box,
+.course0503-box,
+.course0601-box,
+.course0602-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background-color: var(--courseboxes);
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 1px 1px 4px black;
+}
+.valgfag-box{
+    background-color: var(--valgfagboxes); 
+}
+/* First semester */
+.course0101-box{
+    grid-column: 1;
+    grid-row: 2/4;
+}
+.course0102-box{
+    grid-column: 1;
+    grid-row: 4/6;
+}
+.course0103-box{
+    grid-column: 1;
+    grid-row: 6/7;
+}
+.course0104-box{
+    grid-column: 1;
+    grid-row: 7/8;
+}
+/* Second semester */
+.course0201-box{
+    grid-column: 3;
+    grid-row: 2/4;
+}
+.course0202-box{
+    grid-column: 3;
+    grid-row: 4/6;
+}
+.course0203-box{
+    grid-column: 3;
+    grid-row: 6/8;
+}
+/* Third semester */
+.course0301-box{
+    grid-column: 1;
+    grid-row: 2/4;
+}
+.course0302-box{
+    grid-column: 1;
+    grid-row: 4/6;
+}
+.course0303-box{
+    grid-column: 1;
+    grid-row: 6/8;
+}
+/* Fourth semester */
+.course0401-box{
+    grid-column: 3;
+    grid-row: 2/4;
+}
+.course0402-box{
+    grid-column: 3;
+    grid-row: 4/6;
+}
+.course0403-box{
+    grid-column: 3;
+    grid-row: 6/8;
+}
+/* Fifth semester */
+.course0501-box{
+    grid-column: 1;
+    grid-row: 2/4;
+}
+.course0502-box{
+    grid-column: 1;
+    grid-row: 4/6;
+}
+.course0503-box{
+    grid-column: 1;
+    grid-row: 6/8;
+}
+/* Sixth semester */
+.course0601-box{
+    grid-column: 3;
+    grid-row: 2/6;
+}
+.course0602-box{
+    grid-column: 3;
+    grid-row: 6/8;
+}
+
+
+/* || Bachelor structure Small screen */
+@media only screen and (max-width: 800px){
+    .year-wrapper .studieaar1,
+    .year-wrapper .studieaar2,
+    .year-wrapper .studieaar3{
+        grid-column: 1/ -1;
+        width: 100%;
+    }
+    .studieaar1,
+    .studieaar2,
+    .studieaar3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-auto-flow: dense;
+    }
+    .semester-wrapper{
+        width: 100Vw;
+        grid-template-columns: 45vw 2vw 45vw;
+        /* grid-template-rows: 4vh 5vh 5vh 5vh 5vh 5vh 5vh 0.1vh 1vh 1vh 1vh; */
+        justify-content: center;
+        grid-gap: 1vw;
+
+    }
+    .valgfag-info{
+        grid-row: 8/10;
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+}
+
+
 .tag-cloud {
     display: inline-block;
     color: white;
@@ -306,6 +720,25 @@ td {
     padding: 0px;
 }
 
+.tag-cloud {
+    display: inline-block;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: Arial;
+    font-size: 1.3em;
+    border-radius: 25px;
+    background-color: black;
+    margin-top: 8px;
+}
+
+.icon {
+    width: 15px;
+    height: 15px;
+    padding: 0px;
+}
 /* || SITEWIDE */
 
 #burger-toggle{ display: none;}
@@ -586,4 +1019,8 @@ h1+p {
     video {
         margin-top: -25%;
     }
+}
+
+.jorndev{
+    background-color: rgb(159, 159, 255);
 }
