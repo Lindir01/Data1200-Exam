@@ -84,12 +84,13 @@ h1 {
     border: 5px solid black;
 }
 .field-of-study ul {
-    list-style-type: none;
+    display:inline-block;
 }
 
 .field-of-study li {
-    display: inline-block;
+    list-style: none;
     margin-right: 10px;
+
 }
 .field-of-study .item{
     border-right: .0625rem solid #222;
@@ -109,6 +110,12 @@ h1 {
     margin-right: 0;
     padding-right: 0
 }
+.field-of-study-icon{
+    width: 15px;
+    height: 15px;
+    padding: 0px;
+    float: right;
+}
 /* Tore slutter å leke seg */
 .section-yellow{
     background-color: var(--oslometgul);
@@ -117,6 +124,7 @@ h1 {
 .section-blue{
     background-color: var(--oslometblue);
     width: 100%;
+    
 }
 .card {
     float: left;
@@ -125,13 +133,25 @@ h1 {
     min-width: 300px;
     justify-content: space-evenly;
     background-color: rgb(246, 242, 242);
-    border: 5px solid red;/* just to visualize */
+    padding: 0.5em;
     margin: 3em;
     box-shadow: 10px 10px 5px #11111110;
 }
 .card ul{
     text-align: left;
-    
+}
+.card a{/* black links */
+    font-weight: bold;
+    color:#111;
+    text-decoration: none;
+    border-bottom: 2px solid rgb(160, 160, 70);
+}
+.card a:visited{
+    color: purple;
+}
+.card a:hover{
+text-decoration: none;
+border-bottom: 2px solid black;
 }
 .card-wrapper {
     display: flex;
@@ -731,6 +751,7 @@ course0203-box would be the box for the third class in the second semester*/
     height: 15px;
     padding: 0px;
 }
+
 
 .tag-cloud {
     display: inline-block;
