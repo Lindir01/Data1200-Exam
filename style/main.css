@@ -33,7 +33,7 @@ main {
     overflow: hidden;
 }
 
-header {
+header:not(.activity-header){
     background-color: var(--oslometgul);
     width: 100%;
     height: 4.5rem;
@@ -778,44 +778,18 @@ course0203-box would be the box for the third class in the second semester*/
 
 #burger-toggle{ display: none;}
 
-
-.hamburger-toggle-container span {
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  
-  background: black;
-  border-radius: 3px;
-
-}
-
-
-
-
-.hamburger-toggle-container span:first-child{transform-origin: 0% 0%;}
-.hamburger-toggle-container span:nth-last-child(2){transform-origin: 0% 100%;}
-
-
-.hamburger-toggle-container .burger-toggle:checked ~ span
-{
-    opacity: 1;
-    transform: rotate(45deg) translate(-2px, -1px);
-}
-
+.hamburger-toggle-container img{height: 2.5rem;}
 .hamburger-toggle-container{
     position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
+    top: 1rem;
+    right: 1rem;
 }
 
 
 @media (min-width:701px){
-
-    .hamburger-toggle-container span {
+    .hamburger-toggle-container img{
         display: none;
     }
-
     .menu {
         margin-top: 1.5rem;
         display: flex;
@@ -828,9 +802,6 @@ course0203-box would be the box for the third class in the second semester*/
 
 
 @media (max-width:700px){
-    .hamburger-toggle-container span {
-        display: block;
-    }
     .menu {
         position: absolute;
         top: 3.5rem;
@@ -857,11 +828,10 @@ course0203-box would be the box for the third class in the second semester*/
     #burger-toggle:checked ~ .menu li {
         position: relative;
         height: 3rem;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-        padding-bottom: 0.5rem;
+        padding-top: 0.7rem;
+        padding: 0.5rem;
         background-color: var(--oslometgul);
-        transition-duration: 1s;
+        transition-duration: 0.3s;
     }
     
     nav {
@@ -976,30 +946,6 @@ course0203-box would be the box for the third class in the second semester*/
 }
 
 
-/* Activity specific */
-.hero-activity {
-    position: relative;
-    width: 100%;
-    object-fit: cover;
-    text-align: center;
-    color: white;
-}
-
-.hero-activity-img {
-    filter: blur(4px) brightness(0.6);
-}
-
-.activity-h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.img-article-activity {
-    height: 15vmax;
-    width: 50vmax;
-}
 
 /*Main page styling*/
 .colorbox {
@@ -1064,9 +1010,99 @@ h1+p {
 
 
 
+/* Activity page specific START */
+
+
+/* Header Activity START */
+.navbar-activity{
+    width: 100%;
+    position: absolute;
+    z-index: 9;
+}
+
+/* menu logo */
+.activity-header .hamburger-toggle-container img{height: 40px;}
+.activity-header .hamburger-toggle-container{
+    z-index: 9;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Burger Droppdown */
+.activity-header .menu {
+    padding-left: 0;
+    border-radius: 25px;
+    background-color: #111;
+    z-index: 8;
+    position: absolute;
+    width: 20rem;
+    margin-top: -0rem;
+    top: 0;
+    right: 0rem;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.activity-header .hamburger-toggle-container img{
+    display: block;
+    height: 40px;
+    width: 40px;
+}
+
+.activity-header .hamburger-toggle-container {
+    cursor: pointer;
+}
+
+.activity-header .menu li {
+    height: 0px;
+    overflow: hidden;
+}
+
+.activity-header #burger-toggle:checked ~ .menu li {
+    border-radius: 25px;
+    position: relative;
+    height: 3rem;
+    padding: 3rem;
+    transition-duration: 0.3s;
+}
+
+.navbar-activity .navlist:hover:not(.active, .logo-a, .hamburger-toggle-container){
+    background-color: hsl(50, 100%, 40%);
+}
+/* Header Activity END */
 
 
 
+
+
+/* Hero Activity START */
+.hero-activity{
+    z-index: 1;
+
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/images/fellowship.webp");
+
+    /* Set a specific height */
+    width: 100%;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+
+.hero-activity h1, .hero-activity p{
+    top: 50%;
+    left: 50%;
+    color: white;
+    padding: 1rem;
+} 
+.hero-activity p{padding-bottom: 10rem;}
+.hero-activity h1{padding-top: 10rem;}
+/* Hero Activity END */
 
 
 
@@ -1098,3 +1134,10 @@ h1+p {
     overflow: hidden;
 } 
 /* Trip List from activity page END */
+
+
+
+
+
+
+/* Activity page specific END */
