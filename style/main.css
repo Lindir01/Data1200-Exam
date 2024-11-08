@@ -16,7 +16,7 @@ html {
 :root {
     --oslometgul: hsl(50, 100%, 50%);
     --courseboxes: hsl(0, 0%, 81%);
-    --valgfagboxes:  hsl(0, 0%, 60%); 
+    --valgfagboxes: hsl(0, 0%, 60%);
     --oslometblue: #56CEDE;
     --oslometorange: #FF8100;
 }
@@ -33,7 +33,7 @@ main {
     overflow: hidden;
 }
 
-header:not(.activity-header){
+header:not(.activity-header) {
     background-color: var(--oslometgul);
     width: 100%;
     height: 4.5rem;
@@ -65,14 +65,15 @@ h1 {
 }
 
 /* || Utilities */
-/* Tore leker seg */
 .text-decoration-none {
     text-decoration: none;
 }
-.border-black{
+
+.border-black {
     border: 5px solid black;
     padding: 2px;
 }
+
 .field-of-study-list {
     align-items: center;
     color: #222;
@@ -80,19 +81,20 @@ h1 {
     padding: 1.1875rem 1.875rem 1.1875rem 0;
     text-decoration: none;
 }
-.field-of-study > ul{
+
+.field-of-study>ul {
     border: 5px solid black;
-}
-.field-of-study ul {
-    display:inline-block;
+    display: grid;
 }
 
 .field-of-study li {
     list-style: none;
     margin-right: 10px;
+/*     border: 5px solid red;
+ */}
 
-}
-.field-of-study .item{
+
+.field-of-study .item {
     border-right: .0625rem solid #222;
     color: #222;
     display: inline;
@@ -101,31 +103,36 @@ h1 {
     margin-right: .625rem;
     padding-right: .625rem
 }
-.field-of-study .item:first-child{
+
+.field-of-study .item:first-child {
     margin-left: 0;
     padding-left: 0
 }
-.field-of-study .item:last-child{
-    border: none!important; /* !important rule overrides ALL previous styling rules for spesific property */
+
+.field-of-study .item:last-child {
+    border: none !important; /* !important rule overrides ALL previous styling rules for spesific property */
     margin-right: 0;
     padding-right: 0
 }
-.field-of-study-icon{
+
+.field-of-study-icon {
     width: 15px;
     height: 15px;
     padding: 0px;
     float: right;
 }
-/* Tore slutter å leke seg */
-.section-yellow{
+
+.section-yellow {
     background-color: var(--oslometgul);
     width: 100%;
 }
-.section-blue{
+
+.section-blue {
     background-color: var(--oslometblue);
     width: 100%;
-    
+
 }
+
 .card {
     overflow: hidden;
     float: left;
@@ -138,50 +145,63 @@ h1 {
     margin: 3em;
     box-shadow: 10px 10px 5px #11111110;
 }
-.card:hover{ /* https://nestedsoftware.com/2019/11/05/card-with-expand-on-hover-effect-2ccm.200941.html */
-        transform: translate3D(0,-1px,0) scale(1.03); /* move up slightly and zoom in */
-        box-shadow: 8px 28px 50px rgba(39,44,49,.07), 1px 6px 12px rgba(39,44,49,.04);
-        transition: all .4s ease; /* zoom in */
-        cursor: pointer;
-      
+
+.card:hover {
+    /* https://nestedsoftware.com/2019/11/05/card-with-expand-on-hover-effect-2ccm.200941.html */
+    transform: translate3D(0, -1px, 0) scale(1.03); /* move up slightly and zoom in */
+    box-shadow: 8px 28px 50px rgba(39, 44, 49, .07), 1px 6px 12px rgba(39, 44, 49, .04);
+    transition: all .4s ease;/* zoom in */
+    cursor: pointer;
+
 }
-.card ul{
+
+.card ul {
     text-align: left;
 }
-.card a{/* black links */
+
+.card a {
+    /* black links */
     font-weight: bold;
-    color:#111;
+    color: #111;
     text-decoration: none;
     border-bottom: 2px solid rgb(160, 160, 70);
 }
-.card a:visited{
+
+.card a:visited {
     color: purple;
 }
-.card a:hover{
-text-decoration: none;
-border-bottom: 2px solid black;
+
+.card a:hover {
+    text-decoration: none;
+    border-bottom: 2px solid black;
 }
+
 .card-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.profileCard{
+
+.profileCard {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     background-color: #f6f2f2;
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-  border: 5px solid black;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    border: 5px solid black;
 }
-.profileCard h5{
-font-size: 1.2em; ;
+
+.profileCard h5 {
+    font-size: 1.2em;
+    ;
 }
-.profileCard-position{
+
+.profileCard-position {
     color: grey;
-  font-size: 18px;
+    font-size: 18px;
 }
+
 /* fixes a bit of scaling(im tierd and dont remeber how it works) */
 main {
     display: flex;
@@ -200,7 +220,7 @@ main {
 .scrollable_section {
     overflow-x: auto;/* Enables horizontal scrolling */
     margin: 0;/* Reset margin */
-    padding: 0; /* Reset padding */
+    padding: 0;/* Reset padding */
 }
 
 
@@ -246,6 +266,7 @@ footer ol {
 footer li {
     padding-bottom: 0.4em;
 }
+
 footer section {
     display: grid;
     grid-template-columns: 30vw auto minmax(300px, 30vw) 1rem;
@@ -253,6 +274,7 @@ footer section {
     margin: auto;
     padding-left: 2rem;
 }
+
 .info {
     grid-column: 1 / 2;
 }
@@ -333,7 +355,7 @@ td {
 /* classes related to the preview of semesters through the bachelor degree */
 /* classes for the coruses are numerated by semester then class, 
 course0203-box would be the box for the third class in the second semester*/
-.emnegruppe{
+.emnegruppe {
     background-color: rgb(78, 78, 78);
     color: white;
     padding-top: 0.5vh;
@@ -342,12 +364,14 @@ course0203-box would be the box for the third class in the second semester*/
     margin-left: auto;
     margin-right: auto;
 }
- .year-wrapper{
+
+.year-wrapper {
     display: inline-grid;
     grid-template-columns: 25vw 0.5vh 25vw 0.5vh 25vw;
     justify-items: center;
- }
-.semester-wrapper{
+}
+
+.semester-wrapper {
     display: grid;
     grid-template-columns: 10vw 0.5vw 10vw;
     grid-template-rows: 4vh 8vh 8vh 8vh 8vh 8vh 8vh 4vh;
@@ -355,26 +379,32 @@ course0203-box would be the box for the third class in the second semester*/
     width: 100%;
     grid-gap: 0.5vw;
 }
-.semester-wrapper a{
+
+.semester-wrapper a {
     text-decoration: none;
 }
-.studieaar1{
+
+.studieaar1 {
     grid-column: 1;
 }
-.studieaar2{
+
+.studieaar2 {
     grid-column: 3;
 }
-.studieaar3{
+
+.studieaar3 {
     grid-column: 5;
 }
 
-.semester01{
+.semester01 {
     grid-column: 1;
 }
-.semester02{
+
+.semester02 {
     grid-column: 3;
 }
-.valgfag-info{
+
+.valgfag-info {
     grid-column: 1/4;
     grid-row: 9/13;
     background-color: var(--valgfagboxes);
@@ -382,7 +412,8 @@ course0203-box would be the box for the third class in the second semester*/
     margin-bottom: 0.5vh;
     box-shadow: 1px 1px 4px black;
 }
-.valgfag-seperator{
+
+.valgfag-seperator {
     grid-column: 1/-1;
     grid-row: 8;
     background-color: brown;
@@ -406,7 +437,7 @@ course0203-box would be the box for the third class in the second semester*/
 .course0502-box,
 .course0503-box,
 .course0601-box,
-.course0602-box{
+.course0602-box {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -418,106 +449,128 @@ course0203-box would be the box for the third class in the second semester*/
     border-radius: 15px;
     box-shadow: 1px 1px 4px black;
 }
-.valgfag-box{
-    background-color: var(--valgfagboxes); 
+
+.valgfag-box {
+    background-color: var(--valgfagboxes);
 }
+
 /* First semester */
-.course0101-box{
+.course0101-box {
     grid-column: 1;
     grid-row: 2/4;
 }
-.course0102-box{
+
+.course0102-box {
     grid-column: 1;
     grid-row: 4/6;
 }
-.course0103-box{
+
+.course0103-box {
     grid-column: 1;
     grid-row: 6/7;
 }
-.course0104-box{
+
+.course0104-box {
     grid-column: 1;
     grid-row: 7/8;
 }
+
 /* Second semester */
-.course0201-box{
+.course0201-box {
     grid-column: 3;
     grid-row: 2/4;
 }
-.course0202-box{
+
+.course0202-box {
     grid-column: 3;
     grid-row: 4/6;
 }
-.course0203-box{
+
+.course0203-box {
     grid-column: 3;
     grid-row: 6/8;
 }
+
 /* Third semester */
-.course0301-box{
+.course0301-box {
     grid-column: 1;
     grid-row: 2/4;
 }
-.course0302-box{
+
+.course0302-box {
     grid-column: 1;
     grid-row: 4/6;
 }
-.course0303-box{
+
+.course0303-box {
     grid-column: 1;
     grid-row: 6/8;
 }
+
 /* Fourth semester */
-.course0401-box{
+.course0401-box {
     grid-column: 3;
     grid-row: 2/4;
 }
-.course0402-box{
+
+.course0402-box {
     grid-column: 3;
     grid-row: 4/6;
 }
-.course0403-box{
+
+.course0403-box {
     grid-column: 3;
     grid-row: 6/8;
 }
+
 /* Fifth semester */
-.course0501-box{
+.course0501-box {
     grid-column: 1;
     grid-row: 2/4;
 }
-.course0502-box{
+
+.course0502-box {
     grid-column: 1;
     grid-row: 4/6;
 }
-.course0503-box{
+
+.course0503-box {
     grid-column: 1;
     grid-row: 6/8;
 }
+
 /* Sixth semester */
-.course0601-box{
+.course0601-box {
     grid-column: 3;
     grid-row: 2/6;
 }
-.course0602-box{
+
+.course0602-box {
     grid-column: 3;
     grid-row: 6/8;
 }
 
 
 /* || Bachelor structure Small screen */
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 800px) {
+
     .year-wrapper .studieaar1,
     .year-wrapper .studieaar2,
-    .year-wrapper .studieaar3{
+    .year-wrapper .studieaar3 {
         grid-column: 1/ -1;
         width: 100%;
     }
+
     .studieaar1,
     .studieaar2,
-    .studieaar3{
+    .studieaar3 {
         display: flex;
         justify-content: center;
         align-items: center;
         grid-auto-flow: dense;
     }
-    .semester-wrapper{
+
+    .semester-wrapper {
         width: 100Vw;
         grid-template-columns: 45vw 2vw 45vw;
         /* grid-template-rows: 4vh 5vh 5vh 5vh 5vh 5vh 5vh 0.1vh 1vh 1vh 1vh; */
@@ -525,7 +578,8 @@ course0203-box would be the box for the third class in the second semester*/
         grid-gap: 1vw;
 
     }
-    .valgfag-info{
+
+    .valgfag-info {
         grid-row: 8/10;
         content: "";
         clear: both;
@@ -539,7 +593,7 @@ course0203-box would be the box for the third class in the second semester*/
 /* classes related to the preview of semesters through the bachelor degree */
 /* classes for the coruses are numerated by semester then class, 
 course0203-box would be the box for the third class in the second semester*/
-.emnegruppe{
+.emnegruppe {
     background-color: rgb(78, 78, 78);
     color: white;
     padding-top: 0.5vh;
@@ -548,12 +602,14 @@ course0203-box would be the box for the third class in the second semester*/
     margin-left: auto;
     margin-right: auto;
 }
- .year-wrapper{
+
+.year-wrapper {
     display: inline-grid;
     grid-template-columns: 25vw 0.5vh 25vw 0.5vh 25vw;
     justify-items: center;
- }
-.semester-wrapper{
+}
+
+.semester-wrapper {
     display: grid;
     grid-template-columns: 10vw 0.5vw 10vw;
     grid-template-rows: 4vh 8vh 8vh 8vh 8vh 8vh 8vh 4vh;
@@ -561,26 +617,32 @@ course0203-box would be the box for the third class in the second semester*/
     width: 100%;
     grid-gap: 0.5vw;
 }
-.semester-wrapper a{
+
+.semester-wrapper a {
     text-decoration: none;
 }
-.studieaar1{
+
+.studieaar1 {
     grid-column: 1;
 }
-.studieaar2{
+
+.studieaar2 {
     grid-column: 3;
 }
-.studieaar3{
+
+.studieaar3 {
     grid-column: 5;
 }
 
-.semester01{
+.semester01 {
     grid-column: 1;
 }
-.semester02{
+
+.semester02 {
     grid-column: 3;
 }
-.valgfag-info{
+
+.valgfag-info {
     grid-column: 1/4;
     grid-row: 9/13;
     background-color: var(--valgfagboxes);
@@ -588,7 +650,8 @@ course0203-box would be the box for the third class in the second semester*/
     margin-bottom: 0.5vh;
     box-shadow: 1px 1px 4px black;
 }
-.valgfag-seperator{
+
+.valgfag-seperator {
     grid-column: 1/-1;
     grid-row: 8;
     background-color: brown;
@@ -612,7 +675,7 @@ course0203-box would be the box for the third class in the second semester*/
 .course0502-box,
 .course0503-box,
 .course0601-box,
-.course0602-box{
+.course0602-box {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -624,106 +687,128 @@ course0203-box would be the box for the third class in the second semester*/
     border-radius: 15px;
     box-shadow: 1px 1px 4px black;
 }
-.valgfag-box{
-    background-color: var(--valgfagboxes); 
+
+.valgfag-box {
+    background-color: var(--valgfagboxes);
 }
+
 /* First semester */
-.course0101-box{
+.course0101-box {
     grid-column: 1;
     grid-row: 2/4;
 }
-.course0102-box{
+
+.course0102-box {
     grid-column: 1;
     grid-row: 4/6;
 }
-.course0103-box{
+
+.course0103-box {
     grid-column: 1;
     grid-row: 6/7;
 }
-.course0104-box{
+
+.course0104-box {
     grid-column: 1;
     grid-row: 7/8;
 }
+
 /* Second semester */
-.course0201-box{
+.course0201-box {
     grid-column: 3;
     grid-row: 2/4;
 }
-.course0202-box{
+
+.course0202-box {
     grid-column: 3;
     grid-row: 4/6;
 }
-.course0203-box{
+
+.course0203-box {
     grid-column: 3;
     grid-row: 6/8;
 }
+
 /* Third semester */
-.course0301-box{
+.course0301-box {
     grid-column: 1;
     grid-row: 2/4;
 }
-.course0302-box{
+
+.course0302-box {
     grid-column: 1;
     grid-row: 4/6;
 }
-.course0303-box{
+
+.course0303-box {
     grid-column: 1;
     grid-row: 6/8;
 }
+
 /* Fourth semester */
-.course0401-box{
+.course0401-box {
     grid-column: 3;
     grid-row: 2/4;
 }
-.course0402-box{
+
+.course0402-box {
     grid-column: 3;
     grid-row: 4/6;
 }
-.course0403-box{
+
+.course0403-box {
     grid-column: 3;
     grid-row: 6/8;
 }
+
 /* Fifth semester */
-.course0501-box{
+.course0501-box {
     grid-column: 1;
     grid-row: 2/4;
 }
-.course0502-box{
+
+.course0502-box {
     grid-column: 1;
     grid-row: 4/6;
 }
-.course0503-box{
+
+.course0503-box {
     grid-column: 1;
     grid-row: 6/8;
 }
+
 /* Sixth semester */
-.course0601-box{
+.course0601-box {
     grid-column: 3;
     grid-row: 2/6;
 }
-.course0602-box{
+
+.course0602-box {
     grid-column: 3;
     grid-row: 6/8;
 }
 
 
 /* || Bachelor structure Small screen */
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 800px) {
+
     .year-wrapper .studieaar1,
     .year-wrapper .studieaar2,
-    .year-wrapper .studieaar3{
+    .year-wrapper .studieaar3 {
         grid-column: 1/ -1;
         width: 100%;
     }
+
     .studieaar1,
     .studieaar2,
-    .studieaar3{
+    .studieaar3 {
         display: flex;
         justify-content: center;
         align-items: center;
         grid-auto-flow: dense;
     }
-    .semester-wrapper{
+
+    .semester-wrapper {
         width: 100Vw;
         grid-template-columns: 45vw 2vw 45vw;
         /* grid-template-rows: 4vh 5vh 5vh 5vh 5vh 5vh 5vh 0.1vh 1vh 1vh 1vh; */
@@ -731,7 +816,8 @@ course0203-box would be the box for the third class in the second semester*/
         grid-gap: 1vw;
 
     }
-    .valgfag-info{
+
+    .valgfag-info {
         grid-row: 8/10;
         content: "";
         clear: both;
@@ -781,22 +867,29 @@ course0203-box would be the box for the third class in the second semester*/
     height: 15px;
     padding: 0px;
 }
+
 /* || SITEWIDE */
 
-#burger-toggle{ display: none;}
+#burger-toggle {
+    display: none;
+}
 
-.hamburger-toggle-container img{height: 2.5rem;}
-.hamburger-toggle-container{
+.hamburger-toggle-container img {
+    height: 2.5rem;
+}
+
+.hamburger-toggle-container {
     position: absolute;
     top: 1rem;
     right: 1rem;
 }
 
 
-@media (min-width:701px){
-    .hamburger-toggle-container img{
+@media (min-width:701px) {
+    .hamburger-toggle-container img {
         display: none;
     }
+
     .menu {
         margin-top: 1.5rem;
         display: flex;
@@ -808,7 +901,7 @@ course0203-box would be the box for the third class in the second semester*/
 }
 
 
-@media (max-width:700px){
+@media (max-width:700px) {
     .menu {
         position: absolute;
         top: 3.5rem;
@@ -832,7 +925,7 @@ course0203-box would be the box for the third class in the second semester*/
         overflow: hidden;
     }
 
-    #burger-toggle:checked ~ .menu li {
+    #burger-toggle:checked~.menu li {
         position: relative;
         height: 3rem;
         padding-top: 0.7rem;
@@ -840,7 +933,7 @@ course0203-box would be the box for the third class in the second semester*/
         background-color: var(--oslometgul);
         transition-duration: 0.3s;
     }
-    
+
     nav {
         display: flex;
         height: 40px;
@@ -868,7 +961,7 @@ course0203-box would be the box for the third class in the second semester*/
 
 /* Change the link color tohsl(50, 100%, 40%);(darker oslometgul) on hover accept the active one */
 
-.navbar a:hover:not(.active, .logo-a){
+.navbar a:hover:not(.active, .logo-a) {
     background-color: hsl(50, 100%, 40%);
 }
 
@@ -879,7 +972,8 @@ course0203-box would be the box for the third class in the second semester*/
 @media only screen and (max-width: 800px) {
 
     .scrollable_section {
-        overflow-x: auto; /* Enables horizontal scrolling */
+        overflow-x: auto;
+        /* Enables horizontal scrolling */
     }
 
     .center {
@@ -888,8 +982,10 @@ course0203-box would be the box for the third class in the second semester*/
     }
 
     article {
-        width: 100%;/* Allow full width for smaller screens */
-        min-width: auto;/* Remove min-width to avoid overflow */
+        width: 100%;
+        /* Allow full width for smaller screens */
+        min-width: auto;
+        /* Remove min-width to avoid overflow */
     }
 
     .smallermedia {
@@ -1009,7 +1105,7 @@ h1+p {
     }
 }
 
-.jorndev{
+.jorndev {
     background-color: rgb(159, 159, 255);
 }
 
@@ -1021,15 +1117,18 @@ h1+p {
 
 
 /* Header Activity START */
-.navbar-activity{
+.navbar-activity {
     width: 100%;
     position: absolute;
     z-index: 9;
 }
 
 /* menu logo */
-.activity-header .hamburger-toggle-container img{height: 40px;}
-.activity-header .hamburger-toggle-container{
+.activity-header .hamburger-toggle-container img {
+    height: 40px;
+}
+
+.activity-header .hamburger-toggle-container {
     z-index: 9;
     position: absolute;
     top: 10px;
@@ -1051,7 +1150,7 @@ h1+p {
     list-style-type: none;
 }
 
-.activity-header .hamburger-toggle-container img{
+.activity-header .hamburger-toggle-container img {
     display: block;
     height: 40px;
     width: 40px;
@@ -1066,7 +1165,7 @@ h1+p {
     overflow: hidden;
 }
 
-.activity-header #burger-toggle:checked ~ .menu li {
+.activity-header #burger-toggle:checked~.menu li {
     border-radius: 25px;
     position: relative;
     height: 3rem;
@@ -1074,9 +1173,10 @@ h1+p {
     transition-duration: 0.3s;
 }
 
-.navbar-activity .navlist:hover:not(.active, .logo-a, .hamburger-toggle-container){
+.navbar-activity .navlist:hover:not(.active, .logo-a, .hamburger-toggle-container) {
     background-color: hsl(50, 100%, 40%);
 }
+
 /* Header Activity END */
 
 
@@ -1084,7 +1184,7 @@ h1+p {
 
 
 /* Hero Activity START */
-.hero-activity{
+.hero-activity {
     z-index: 1;
 
 
@@ -1092,54 +1192,66 @@ h1+p {
 
     /* Set a specific height */
     width: 100%;
-  
+
     /* Position and center the image to scale nicely on all screens */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    
+
 }
 
-.hero-activity h1, .hero-activity p{
+.hero-activity h1,
+.hero-activity p {
     top: 50%;
     left: 50%;
     color: white;
     padding: 1rem;
-} 
-.hero-activity p{padding-bottom: 10rem;}
-.hero-activity h1{padding-top: 10rem;}
+}
+
+.hero-activity p {
+    padding-bottom: 10rem;
+}
+
+.hero-activity h1 {
+    padding-top: 10rem;
+}
+
 /* Hero Activity END */
 
 
 
 
 /* Trip List from activity page START */
-.trip-listitem{
-    padding: 0; 
+.trip-listitem {
+    padding: 0;
     border-radius: 25px;
     width: 25%;
 }
-.image-box-card{
+
+.image-box-card {
     margin-top: -1rem;
     max-height: 12.5rem;
     overflow: hidden;
-    
+
 }
-.trip-listitem img{
+
+.trip-listitem img {
     margin-top: -1.5rem;
     object-fit: cover;
     width: 100%;
     height: 15rem;
 }
+
 /* code partialy from https://stackoverflow.com/questions/33058004/applying-an-ellipsis-to-multiline-text */
-.trip-listitem p{
+.trip-listitem p {
     padding: 0em 1em 0em;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
-} 
+}
+
 /* Trip List from activity page END */
 
 
