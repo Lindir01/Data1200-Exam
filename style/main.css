@@ -73,6 +73,17 @@ h1 {
     border: 5px solid black;
     padding: 2px;
 }
+.wrap-nowrap{
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    border: 5px solid red;
+}
+.field-of-study-icon {
+    width: 15px;
+    height: 15px;
+    padding: 0px;
+    
+}
 
 .field-of-study-list {
     align-items: center;
@@ -90,8 +101,8 @@ h1 {
 .field-of-study li {
     list-style: none;
     margin-right: 10px;
-/*     border: 5px solid red;
- */}
+/*border: 5px solid red;*/
+}
 
 
 .field-of-study .item {
@@ -115,12 +126,7 @@ h1 {
     padding-right: 0
 }
 
-.field-of-study-icon {
-    width: 15px;
-    height: 15px;
-    padding: 0px;
-    float: right;
-}
+
 
 .section-yellow {
     background-color: var(--oslometgul);
