@@ -244,6 +244,10 @@ footer section {
     margin: auto;
     padding-left: 2rem;
 }
+.infoTitle {
+    font-weight: 600;
+    font-size: large;
+}
 .info {
     grid-column: 1 / 2;
 }
@@ -255,16 +259,11 @@ footer section {
 .sosiale {
     grid-column: 3 / 4;
 }
-
 footer img {
     width: 1.5rem;
     padding: 1%;
 }
 
-.infoTitle {
-    font-weight: 600;
-    font-size: large;
-}
 
 .firstmedia {
     margin-top: -12%;
@@ -1056,4 +1055,13 @@ h1+p {
 
 .jorndev{
     background-color: rgb(159, 159, 255);
+}
+
+/* Git-page spesefic*/ 
+.gitParagrafer section{
+    background-color: var(--oslometgul);
+    padding: 3px;
+}
+.gitParagrafer {
+    padding: 10px;
 }
