@@ -152,14 +152,15 @@ h1 {
     box-shadow: 10px 10px 5px #11111110;
 }
 
-.card:hover {
-    /* https://nestedsoftware.com/2019/11/05/card-with-expand-on-hover-effect-2ccm.200941.html */
-    transform: translate3D(0, -1px, 0) scale(1.03); /* move up slightly and zoom in */
+/*.card:hover {   Makes cards popp when hovered, but might make user believe it's a link.
+    https://nestedsoftware.com/2019/11/05/card-with-expand-on-hover-effect-2ccm.200941.html
+    transform: translate3D(0, -1px, 0) scale(1.03);     /* move up slightly and zoom in 
     box-shadow: 8px 28px 50px rgba(39, 44, 49, .07), 1px 6px 12px rgba(39, 44, 49, .04);
-    transition: all .4s ease;/* zoom in */
+    transition: all .4s ease;    /* zoom in 
     cursor: pointer;
 
-}
+}*/
+
 
 .card ul {
     text-align: left;
@@ -828,21 +829,6 @@ course0203-box would be the box for the third class in the second semester*/
         display: table;
     }
 
-}
-
-
-.tag-cloud {
-    display: inline-block;
-    color: white;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-family: Arial;
-    font-size: 1.3em;
-    border-radius: 25px;
-    background-color: black;
-    margin-top: 8px;
 }
 
 .icon {
