@@ -73,18 +73,13 @@ h1 {
     border: 5px solid black;
     padding: 2px;
 }
-.wrap-nowrap{
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    border: 5px solid red;
-}
 .field-of-study-icon {
     width: 15px;
     height: 15px;
     padding: 0px;
+    margin-left:auto;
     
 }
-
 .field-of-study-list {
     align-items: center;
     color: #222;
@@ -92,12 +87,9 @@ h1 {
     padding: 1.1875rem 1.875rem 1.1875rem 0;
     text-decoration: none;
 }
-
-.field-of-study>ul {
-    border: 5px solid black;
-    display: grid;
+.center-right{/* Tore tester */
+padding-left: 1px;
 }
-
 .field-of-study li {
     list-style: none;
     margin-right: 10px;
@@ -125,7 +117,6 @@ h1 {
     margin-right: 0;
     padding-right: 0
 }
-
 
 
 .section-yellow {
@@ -354,6 +345,7 @@ td {
     margin-left: auto;
     margin-right: auto;
 }
+
 
 
 /* || Bachelor Structure */
