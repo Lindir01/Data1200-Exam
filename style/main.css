@@ -297,7 +297,8 @@ footer section {
     grid-column: 3 / 4;
 }
 footer img {
-    width: 1.5rem;
+    width: 35px;
+    height: 35px;
     padding: 1%;
 }
 
@@ -1099,14 +1100,18 @@ h1+p {
     background-color: rgb(159, 159, 255);
 }
 
-/* Git-page spesefic*/ 
+/* Git-page spesefic START*/ 
 .gitParagrafer section{
     background-color: var(--oslometgul);
-    padding: 3px;
+    padding: 1rem;
 }
-.gitParagrafer {
-    padding: 10px;
+.gitParagrafer h1{
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
 }
+
+
+/*Git-page spesefic END*/
 
 
 
