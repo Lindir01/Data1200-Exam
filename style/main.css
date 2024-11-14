@@ -345,7 +345,7 @@ video {
 
 /* || Bachelor Structure */
 /* classes related to the preview of semesters through the bachelor degree */
-/* classes for the coruses are numerated by semester then class, 
+/* classes for the courses are numerated by semester then class, 
 course0203-box would be the box for the third class in the second semester*/
 .emnegruppe {
     background-color: rgb(78, 78, 78);
@@ -366,7 +366,7 @@ course0203-box would be the box for the third class in the second semester*/
 .semester-wrapper {
     display: grid;
     grid-template-columns: 10vw 0.5vw 10vw;
-    grid-template-rows: 4vh 8vh 8vh 8vh 8vh 8vh 8vh 4vh;
+    grid-template-rows: 4vh 10vh 10vh 10vh 10vh 12vh 12vh 3vh;
     height: 100%;
     width: 100%;
     grid-gap: 0.5vw;
@@ -400,7 +400,7 @@ course0203-box would be the box for the third class in the second semester*/
     grid-column: 1/4;
     grid-row: 9/13;
     background-color: var(--valgfagboxes);
-    border-radius: 15px;
+    border-radius: 5px;
     margin-bottom: 0.5vh;
     box-shadow: 1px 1px 4px black;
     width: 100%;
@@ -411,7 +411,6 @@ course0203-box would be the box for the third class in the second semester*/
     grid-row: 8;
     background-color: brown;
 }
-
 
 .course0101-box,
 .course0102-box,
@@ -438,9 +437,10 @@ course0203-box would be the box for the third class in the second semester*/
     height: 100%;
     width: 100%;
     background-color: var(--courseboxes);
-    width: 100%;
-    border-radius: 15px;
+    border-radius: 5px;
     box-shadow: 1px 1px 4px black;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .valgfag-box {
@@ -545,9 +545,6 @@ course0203-box would be the box for the third class in the second semester*/
 
 
 
-
-
-
 /* || Bachelor structure Small screen */
 @media only screen and (max-width: 800px) {
 
@@ -564,7 +561,7 @@ course0203-box would be the box for the third class in the second semester*/
         display: flex;
         justify-content: center;
         align-items: center;
-        grid-auto-flow: dense;
+        
     }
 
     .semester-wrapper {
