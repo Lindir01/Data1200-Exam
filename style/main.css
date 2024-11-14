@@ -41,7 +41,6 @@ header:not(.activity-header) {
 
 article {
 
-
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -68,15 +67,17 @@ h1 {
 }
 
 .border-black {
-    border: 5px solid black;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
     padding: 2px;
 }
+
 .field-of-study-icon {
     width: 15px;
     height: 15px;
     padding: 0px;
     margin-left:auto;
-    
 }
 .field-of-study-list {
     align-items: center;
@@ -291,7 +292,9 @@ footer img {
     height: 35px;
     padding: 1%;
 }
+/* Footer END */
 
+/* Media styling START */
 
 .firstmedia {
     margin-top: -12%;
@@ -302,7 +305,6 @@ footer img {
     max-height: 600px;
 }
 
-
 video {
     margin-top: -20%;
     padding: 10px;
@@ -311,14 +313,7 @@ video {
     max-width: 1300px;
 }
 
-table,
-th,
-td {
-    border-width: 1px;
-    border-style: solid;
-    border-color: black;
-}
-
+/* Media styling END */
 
 /* || UTILITIES */
 .top-border {
@@ -841,7 +836,7 @@ course0203-box would be the box for the third class in the second semester*/
     font-size: 1.3em;
     border-radius: 25px;
     background-color: black;
-    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 .icon {
@@ -924,10 +919,6 @@ course0203-box would be the box for the third class in the second semester*/
     }
 
 }
-
-
-
-
 
 .navbar .active {
     background-color: var(--oslometorange);
@@ -1104,24 +1095,28 @@ tbody tr:nth-child(even), thead {
 }
 table {
     border-collapse: collapse;
-    border: solid black 1px;    
+    border-style: solid;
+    border-color:  black;
+    border-width:  1px;    
     width: 80%;
     margin: auto;
 }
 tr {
-    border-bottom: solid black 1px;
+    border-bottom-style: solid;
+    border-bottom-color:black;
+    border-bottom-width: 1px;
 }
 th, td {
     padding-left: 1em;
     padding-right: 1em;
     padding-top: 0.5em;
     padding-bottom: 0.75em;
-    border: dashed black 1px;
+    border-style: dashed;
+    border-color: black;
+    border-width: 1px;
 }
 
 /*Git-page spesefic END*/
-
-
 
 
 
@@ -1244,21 +1239,17 @@ th, td {
 /* Trip List from activity page END */
 
 
-
-
-
-
 /* Activity page specific END */    
 
 
 /** Accessibility 
-    * Add a skip to main content
+    Adds a skip to main content
 **/
 
 a.skipnav{
     position: absolute;
     overflow: hidden;
-    z-index: -999;
+    z-index: -10;
     color: #fff;
     background-color: #111;
     padding-left: 5px;
@@ -1267,7 +1258,7 @@ a.skipnav{
     padding-bottom: 5px;
 }
 
-a.skipnav:focus, a.skip-main:active{
+a.skipnav:focus, a.skipnav:active{
     z-index: 10;
     overflow: auto;
 }
