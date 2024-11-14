@@ -2,7 +2,7 @@
 <html lang="no">
 
 <head>
-    <title>AccessibilityPage</title>
+    <title>Accessibility Page</title>
     <link rel="icon" type="image/x-icon" href="media/images/shared/favicon-32x32.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/main.css">
@@ -10,25 +10,19 @@
 </head>
 
 <body>
-    <header role="banner" aria-label="site header">
+    <header>
         <nav class="navbar">
-
             <a href="index.html" class="logo-a">
                 <img class="logo" src="media/images/shared/logo_uten_Storbysuniversitetet.svg" alt="Logo for OsloMet">
             </a>
-
-
-
-            
             <label class="hamburger-toggle-container" for="burger-toggle">
-                <span class="burgerline1"></span>
-                <span class="burgerline2"></span>
-                <span class="burgerline3"></span>
+                <img src="media/images/shared/menu-black.svg" alt="Open menu">
             </label>
             <input id="burger-toggle" type="checkbox">
 
-            </div>
-            
+            </ul>
+            <a class="skipnav" href="#main">Hopp til innhold</a>
+
             <ul class="menu">
                 <li class="navlist"><a href="index.html">Home</a></li>
                 <li class="navlist"><a href="git.html">Git</a></li>
@@ -39,48 +33,37 @@
     </header>
     
 
-    <main role="main" aria-label="main content">
+    <main id="main" tabindex=”-1″>
         <div class="colorbox"></div>
-        <img src="media/images/accessibility.webp" class="firstmedia smallermedia">
-        <h1>Accessibility</h1>
-        <p>Accessibility on this page</p>
-        <ul class="sideNavList">
+        <img src="media/images/accessibility.webp" class="center firstmedia smallermedia">
+        <h1>Tilgjenglighet</h1>
+        <p>Tilgjenglighet på dette webomerådet</p>
+        <!-- More of these to scroll properly if needed-->
+        <ul class="sideNavList center" role=navigation aria-label="page navigation">
             <li>
-                <a href="#top">
-                <p>
-                    <span class="navdot" href>
-                        <i class="pil"></i>
-                    </span>
-                    Start
-                </p>
+                <a href="#top" aria-label="Gå til toppen av siden">
+                    <span class="navdot">
+                        <i class="pil" aria-hidden="true"></i>
+                    </span>Top
                 </a>
             </li>
             <li>
-                <a href="#top">
-                <p>
-                    <span class="navdot" href>
-                        <i class="pil"></i>
-                    </span>
-                    Start
-                </p>
+                <a href="#bottom" aria-label="Gå til bunnen av siden">
+                    <span class="navdot">
+                        <i class="pil" aria-hidden="true"></i>
+                    </span>Bottom
                 </a>
             </li>
         </ul>
-        <nav role=navigation aria-label="page navigation" class="pointList">
-            <ul>
-                <p>Table of content:
-                <li><a href="#vision">Vision</a></li>
-            </ul>
-
-        </nav>
-        <h2 id="vision">Sight and dyslexia</h2>
-        
-
-</div>
-        <h3></h3>
+        <section>
+            
+            <h2>Testing</h2>
+            <p>This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. </p>
+            <p>This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. This is text. </p>
+        </section>
     </main>
     
-    <footer role="contentinfo" aria-label="site footer">
+    <footer id="bottom">
         <div class="footer-top">
             <p>Hold deg oppdatert om hva som skjer på OsloMet</p>
             <p>

@@ -21,3 +21,7 @@
 - Help users navigate and find content
 - Look into aria landmarks to identify regions of a page, might be sufficient with the correct use of
 - They request a way to know where you are on the page
+- Preferably add text next to burger to make it easier for elderly people
+
+Head to this link:
+https://www.a11yproject.com/checklist/
