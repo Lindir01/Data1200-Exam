@@ -39,18 +39,11 @@ header:not(.activity-header) {
     height: 4.5rem;
 }
 
-article {
 
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-
-}
 
 section {
     margin-left: auto;
     margin-right: auto;
-    padding: 0 5%;
 }
 
 h1 {
@@ -404,6 +397,10 @@ course0203-box would be the box for the third class in the second semester*/
     margin-bottom: 0.5vh;
     box-shadow: 1px 1px 4px black;
     width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .valgfag-seperator {
@@ -441,6 +438,8 @@ course0203-box would be the box for the third class in the second semester*/
     box-shadow: 1px 1px 4px black;
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .valgfag-box {
@@ -546,12 +545,12 @@ course0203-box would be the box for the third class in the second semester*/
 
 
 /* || Bachelor structure Small screen */
-@media only screen and (max-width: 800px) {
+@media (max-width: 1000px) {
 
     .year-wrapper .studieaar1,
     .year-wrapper .studieaar2,
     .year-wrapper .studieaar3 {
-        grid-column: 1/ -1;
+        grid-column: 3;
         width: 100%;
     }
 
@@ -708,6 +707,7 @@ course0203-box would be the box for the third class in the second semester*/
 
 /* || THINSCREEN */
 /* all elements inside of this will only display when max monitor size is 800 px wide */
+
 @media only screen and (max-width: 800px) {
 
     .scrollable_section {
@@ -720,7 +720,7 @@ course0203-box would be the box for the third class in the second semester*/
         /* Prevent wrapping */
     }
 
-    article {
+    article {*/
         width: 100%;
         /* Allow full width for smaller screens */
         min-width: auto;
