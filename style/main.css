@@ -1092,6 +1092,7 @@ h1+p {
 }
 
 /* Git-page spesefic START*/ 
+
 .gitParagrafer section{
     background-color: var(--oslometgul);
     padding: 1rem;
@@ -1100,6 +1101,29 @@ h1+p {
     padding-top: 2rem;
     padding-bottom: 0.5rem;
 }
+tbody tr:nth-child(odd) {
+    background-color: lightyellow;
+}
+tbody tr:nth-child(even), thead {
+    background-color: lightgoldenrodyellow;
+}
+table {
+    border-collapse: collapse;
+    border: solid black 1px;    
+    width: 80%;
+    margin: auto;
+}
+tr {
+    border-bottom: solid black 1px;
+}
+th, td {
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.75em;
+    border: dashed black 1px;
+}
+
 /*Git-page spesefic END*/
 
 
