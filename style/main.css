@@ -781,6 +781,24 @@ course0203-box would be the box for the third class in the second semester*/
 
 
 /* standard sections */
+.shadow-top{box-shadow: 0px -10px 5px #11111110;}
+.shadow-bottom{box-shadow: 0px 10px 5px #11111110;}
+
+.text-section{
+    padding: 1rem;
+    text-align: left;
+    width: 100%;
+}
+.text-section p{
+    text-align: left;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.text-section h2{
+    text-align: center;
+}
+
+
 .img-with-text-section {
     padding: 2%;
     align-self: center;
@@ -992,7 +1010,7 @@ th, td {
 .trip-listitem{
     padding: 0; 
     border-radius: 25px;
-    width: 25%;
+    width: 30%;
 }
 .image-box-card{
     margin-top: -1rem;
