@@ -66,52 +66,6 @@ h1 {
     padding: 2px;
 }
 
-.field-of-study-icon {
-    width: 15px;
-    height: 15px;
-    padding: 0px;
-    margin-left:auto;
-}
-.field-of-study-list {
-    align-items: center;
-    color: #222;
-    display: flex;
-    width: 40%;
-    padding: 1.1875rem 1.875rem 1.1875rem 0;
-    text-decoration: none;
-}
-.center-right{/* Tore tester */
-padding-left: 1px;
-}
-.field-of-study li {
-    list-style: none;
-    margin-right: 10px;
-/*border: 5px solid red;*/
-}
-
-
-.field-of-study .item {
-    border-right: .0625rem solid #222;
-    color: #222;
-    display: inline;
-    font-size: 1rem;
-    line-height: .875rem;
-    margin-right: .625rem;
-    padding-right: .625rem
-}
-
-.field-of-study .item:first-child {
-    margin-left: 0;
-    padding-left: 0
-}
-
-.field-of-study .item:last-child {
-    border: none !important; /* !important rule overrides ALL previous styling rules for spesific property */
-    margin-right: 0;
-    padding-right: 0
-}
-
-
 .section-yellow {
     background-color: var(--oslometgul);
     width: 100%;
@@ -191,6 +145,60 @@ padding-left: 1px;
 .profileCard-position {
     color: grey;
     font-size: 18px;
+}
+
+/* Important that field-of-study li is kept in this order */
+.field-of-study ul{
+    margin:auto;
+    
+}
+.field-of-study li {
+    list-style: none;
+    margin-right: 10px;
+/*border: 5px solid red;*/
+}
+
+
+.field-of-study .item li{
+    border-right: .0625rem solid #222;
+    color: #222;
+    display: inline;
+    font-size: 1rem;
+    line-height: .875rem;
+    margin-right: .625rem;
+    padding-right: .625rem
+}
+.field-of-study>li{
+    width: 50vw;
+    min-width:400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Field of study order end */
+
+.field-of-study .item:first-child {
+    margin-left: 0;
+    padding-left: 0
+}
+
+.field-of-study .item:last-child {
+    border: none !important; /* !important rule overrides ALL previous styling rules for spesific property */
+    margin-right: 0;
+    padding-right: 0
+}
+.field-of-study-icon {
+    width: 15px;
+    height: 15px;
+    padding: 0px;
+    margin-left:auto;
+}
+.field-of-study-list {
+    align-items: center;
+    color: #222;
+    display: flex;
+    padding: 1.1875rem 1.875rem 1.1875rem 0;
+    text-decoration: none;   
 }
 
 /* fixes a bit of scaling(im tierd and dont remeber how it works) */
@@ -333,6 +341,12 @@ video {
     margin-left: auto;
     margin-right: auto;
 }
+/* .center-super{
+    margin-left: auto !important;
+    margin-right: auto !important;
+} */
+
+
 
 
 
