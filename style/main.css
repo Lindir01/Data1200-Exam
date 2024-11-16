@@ -734,7 +734,7 @@ course0203-box would be the box for the third class in the second semester*/
         /* Prevent wrapping */
     }
 
-    article {*/
+    article {
         width: 100%;
         /* Allow full width for smaller screens */
         min-width: auto;
