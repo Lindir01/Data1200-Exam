@@ -17,8 +17,8 @@ html {
     --oslometgul: hsl(50, 100%, 50%);
     --courseboxes: hsl(0, 0%, 81%);
     --valgfagboxes: hsl(0, 0%, 60%);
-    --oslometblue: #56CEDE;
-    --oslometorange: #FF8100;
+    --oslometblue: hsl(187, 67%, 60%);
+    --oslometorange: hsl(30, 100%, 50%);
 }
 
 body {
@@ -601,7 +601,6 @@ course0203-box would be the box for the third class in the second semester*/
     padding: 0px;
 }
 
-
 .tag-cloud {
     display: inline-block;
     color: white;
@@ -921,7 +920,7 @@ th, td {
 /* Hero Activity START */
 .hero-activity{
     z-index: 1;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/images/fellowship.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/images/activity/fellowship.webp");
 
     /* Set a specific height */
     width: 100%;
