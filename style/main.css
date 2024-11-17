@@ -257,7 +257,7 @@ footer a:hover {
     text-decoration-line: underline;
 }
 
-footer ol {
+footer ul {
     list-style: none;
     font-weight: 700;
 }
@@ -734,7 +734,7 @@ course0203-box would be the box for the third class in the second semester*/
         /* Prevent wrapping */
     }
 
-    article {*/
+    article {
         width: 100%;
         /* Allow full width for smaller screens */
         min-width: auto;
@@ -856,7 +856,11 @@ h1+p {
 }
 
 /* Git-page spesefic START*/ 
-
+.gitParagrafer{
+    width: 60%;
+    margin: auto;
+    padding: 5px;
+}
 .gitParagrafer section{
     background-color: var(--oslometgul);
     padding: 1rem;
@@ -876,8 +880,11 @@ table {
     border-style: solid;
     border-color:  black;
     border-width:  1px;    
-    width: 80%;
+    width: 90%;
     margin: auto;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
 }
 tr {
     border-bottom-style: solid;
@@ -892,6 +899,9 @@ th, td {
     border-style: dashed;
     border-color: black;
     border-width: 1px;
+}
+td{
+    text-align: left;
 }
 
 /*Git-page spesefic END*/
