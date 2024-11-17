@@ -144,6 +144,7 @@ h1 {
     background-color: #f6f2f2;
     max-width: 300px;
     margin: auto;
+    margin-top: 20px;
     text-align: center;
     font-family: arial;
     border: 5px solid black;
@@ -163,11 +164,18 @@ h1 {
 /* Important that field-of-study li is kept in this order */
 .field-of-study ul{
     margin:auto;
-    
+}
+/*     https://nestedsoftware.com/2019/11/05/card-with-expand-on-hover-effect-2ccm.200941.html */
+.field-of-study li:hover img{/* Reused from line 98. translate3d scale is increased*/
+    transform: translate3D(0, -1px, 0) scale(1.7);     /* move up slightly and zoom in */
+    box-shadow: 8px 28px 50px rgba(39, 44, 49, .07), 1px 6px 12px rgba(39, 44, 49, .04);
+    transition: all .4s ease;    /* zoom in */
+    cursor: pointer;
 }
 .field-of-study li {
     list-style: none;
     margin-right: 10px;
+    background-color: #f6f2f2;
 /*border: 5px solid red;*/
 }
 
