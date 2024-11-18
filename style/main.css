@@ -565,27 +565,33 @@ course0203-box would be the box for the third class in the second semester*/
 /* || Bachelor structure Small screen */
 @media (max-width: 1000px) {
     .year-wrapper{
-        grid-template-columns: 40vw 5vw 40vw;
-        grid-template-rows: 100vh;
+        grid-template-rows: auto;
     }
     .semester-wrapper{
-        grid-template-columns: 40vw 5vw 40vw;
-        grid-template-rows: 8vh 12vh 12vh 12vh 12vh 16vh 16vh 3vh;
+        grid-template-columns: 45vw 5vw 45vw;
+        grid-template-rows: auto;
         width: 100%;
     }
     .semester01{
-        grid-column: 1/3;
+        grid-column: 1;
         grid-row: 1;
+        margin-top: 10px;
+        background-color: #f1f1f1;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .semester02{
-        grid-column: 3/4;
+        grid-column: 3;
         grid-row: 1;
+        margin-top: 10px;
+        background-color: #f1f1f1;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .year-wrapper .year1,
     .year-wrapper .year2,
     .year-wrapper .year3 {
-        grid-column: 1/4;
-        width: 100%;
+        grid-column: 1;
     }
     .year1,
     .year2,
