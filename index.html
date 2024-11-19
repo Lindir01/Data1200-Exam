@@ -12,15 +12,15 @@
 </head>
 
 <body>
-    <header id="top">
-        <a class="skipnav" href="#main">Hopp til innhold</a>
+    <header>
+        <a class="skiplinklist" href="#main">Hopp til innhold</a>
         <nav class="navbar">
             
             <a href="index.html" class="logo-a">
                 <img class="logo" src="media/images/shared/logo_uten_Storbysuniversitetet.svg" alt="Logo for OsloMet">
             </a>
             <label class="hamburger-toggle-container" for="burger-toggle">
-                <img src="media/images/shared/menu-black.svg" alt="">
+                <img src="media/images/shared/menu-black.svg" alt="Open menu">
             </label>
             <input id="burger-toggle" type="checkbox">
             
@@ -35,9 +35,6 @@
     </header>
 
     <main>
-
-
-
         <!--
         <article class="container-side-by-side">
             <section class="top-border">
@@ -103,66 +100,23 @@
     -->
         <div class="colorbox"></div>
         <section>
-            <video class="smallermedia" width=50% controls muted>
+            <video width=50% controls muted>
                 <source src="media/video/matematisk-modellering-og-video.mp4" type="video/mp4">
             </video>
             <h1 id="main" tabindex="-1">
                 Matematisk Modellering og datavitenskap
             </h1>
 
-            <article>
                 <p>
                     Bachelorprogram
                 </p>
                 <p> Få innsikt i matematiske modeller og datadrevne metoder som kan løse mange praktiske og
                     samfunnsnyttige oppgaver. </p>
-            </article>
         </section>
-        <section class="sideNavListSection">
-            <ul class="sideNavList">
-                <li>
-                    <h2><a href="#top">Start</a></h2>
-                </li>
-                <li>
-                    <h2><a href="#card1">Card 1</a></h2>
-                    <ul>
-                        <li><a href="#card1">Studiestart</a></li>
-                        <li><a href="#card1">Opptakskrav og poeng</a></li>
-                        <li><a href="#card1">Slik søker du</a></li>
-                        <li><a href="#card1">Hva lærer du?</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <h2><a href="#Emnegruppe-MF">Studiets Oppbygning</a></h2>
-                    <ul>
-                        <li><a href="#Emnegruppe-MF">Emnegruppe: Matematikk og fysikk</a></li>
-                        <li><a href="#Emnegruppe-SD">Emnegruppe: Statistiske og datadrevne metoder</a></li>
-                        <li><a href="#Emnegruppe-VB">Emnegruppe: Vitenskapelige beregninger</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <ul class="sideNavList">
-                <li>
-                    <h2><a href="#card2">Card 2</a></h2>
-                    <ul>
-                        <li><a href="#card2">Hvordan foregår undervisningen</a></li>
-                        <li><a href="#card2">Hva koster det?</a></li>
-                        <li><a href="#card2">Hva kan du jobbe som?</a></li>
-                        <li><a href="#card2">Utveksling</a></li>
-                    </ul>                
-                </li>
-                <li>
-                    <h2><a href="#studiested">Studiestedet</a></h2>
-                    <ul>
-                        <li><a href="#studiested">Faglig leder</a></li>
-                        <li><a href="#studiested">Er du kanskje også interesert i disse?</a></li>
-                        <li><a href="#studiested">Abonner på vårt nyhetsbrev</a></li>
-                        <li><a href="#studiested">Kontakt oss</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-        <section>
+        
+    
+        
+        <section class="tag-wrap">
             <span class="tag-cloud" title="Studiested"><img src="media/images/index/map_pin-icon2.svg" alt=""
                     class="icon">Oslo</span>
             <span class="tag-cloud" title="Studievarighet"><img src="media/images/index/hourglass-icon.svg" alt=""
@@ -177,10 +131,55 @@
                 engelsk</span>
             <span class="tag-cloud" title="Studieplasser"><img src="media/images/index/user-icon.svg" alt="" class="icon"> 40
                 studieplasser</span>
+            </section>
+            <a class="skiplinklist" href="#card1">Hopp over innholdsfortegnelse</a>
+            <p class="toc_title center">Innholdsfortegnelse</p>
+        <section class="sideNavListSection"  id="toc">
+            <ul class="sideNavList">
+        
+                <li>
+                    <a href="#card1">Generell informasjon</a>
+                    <ul>
+                        <li>Studiestart</a></li>
+                        <li>Opptakskrav og poeng</a></li>
+                        <li>Slik søker du</a></li>
+                        <li>Hva lærer du?</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#Emnegruppe-MF">Studiets Oppbygning</a>
+                    <ul>
+                        <li><a href="#Emnegruppe-MF">Emnegruppe: Matematikk og fysikk</a></li>
+                        <li><a href="#Emnegruppe-SD">Emnegruppe: Statistiske og datadrevne metoder</a></li>
+                        <li><a href="#Emnegruppe-VB">Emnegruppe: Vitenskapelige beregninger</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="sideNavList">
+                <li>
+                    <a href="#card2">Mer informasjon</a>
+                    <ul>
+                        <li><a href="#card2">Hvordan foregår undervisningen</a></li>
+                        <li><a href="#card2">Hva koster det?</a></li>
+                        <li><a href="#card2">Hva kan du jobbe som?</a></li>
+                        <li><a href="#card2">Utveksling</a></li>
+                    </ul>                
+                </li>
+                <li>
+                    <a href="#studiested">Studiestedet</a>
+                    <ul>
+                        <li><a href="#studiested">Faglig leder</a></li>
+                        <li><a href="#interest">Er du kanskje også interesert i disse?</a></li>
+                        <li><a href="#footer">Abonner på vårt nyhetsbrev</a></li>
+                        <li><a href="#footer">Kontakt oss</a></li>
+                    </ul>
+                </li>
+            </ul>
         </section>
+        <h2>Informasjon</h2>
         <section id="card1" class="section-yellow card-wrapper">
             <article class="card link-black info-box">
-                <h2>Studiestart</h2>
+                <h3>Studiestart</h3>
                 <p>
                     Informasjon om program, timeplaner, pensum, fadderuker og mye mer finner du på <a
                         href="https://student.oslomet.no/bachelor-matematisk-modellering-datavitenskap">studiestartsiden
@@ -198,7 +197,7 @@
                 </p>
             </article>
             <article class="card link-black info-box">
-                <h2>Opptakskrav og poeng</h2>
+                <h3>Opptakskrav og poeng</h3>
                 <p>For å søke på dette programmet må du ha</p>
                 <div>
                     <ul class="text-align-left">
@@ -217,7 +216,7 @@
                         ettårig forkurs for ingeniørutdanning.</a></p>
             </article>
             <article class="card link-black info-box">
-                <h2>Slik søker du</h2>
+                <h3>Slik søker du</h3>
                 <p>Du søker på Samordna opptak med studiekode 215 503.</p>
                 <div>
                     <ul>
@@ -229,7 +228,7 @@
                         søke på bachelor.</a></p>
             </article>
             <article class="card link-black info-box">
-                <h2>Hva lærer du?</h2>
+                <h3>Hva lærer du?</h3>
                 <p>Bachelor i matematisk modellering og datavitenskap kobler sammen matematikk, informatikk, fysikk
                     og statistikk.</p>
                 <p>Du får innsikt i matematiske modeller som brukes i praktisk problemløsning blant annet i
@@ -241,6 +240,8 @@
                 <p>Første året velger du hvilken av disse spesialiseringene du vil ta.</p>
             </article>
         </section>
+        <h2>Informasjon</h2>
+        <a class="skiplinklist" href="#card2">Hopp over emneoversikten</a>
         <section id="Emnegruppe-MF" class="scrollable_section section-blue">
             </article>
 
@@ -327,7 +328,7 @@
                                 href="https://student.oslomet.no/studier/-/studieinfo/emne/DAPE2000/2024/H%C3%98ST">
                                 <div>
                                     <p>Matematikk 2000 med statistikk</p>
-                                    <p>DAPE200</p>
+                                    <p>DAPE2000</p>
                                     <p>10 stp.</p>
                                 </div>
                             </a>
@@ -849,7 +850,7 @@
                 </article>
             </section>
 
-
+            <h2>Informasjon</h2>
             <section id="card2" class="section-yellow card-wrapper"><!-- card2? -->
                 
                 <article class="card link-black info-box">
@@ -872,7 +873,7 @@
                         </a></p>
                 </article>
                 <article class="card link-black">
-                    <h2>Hvordan foregår undervisningen</h2>
+                    <h3>Hvordan foregår undervisningen</h3>
                     <p>Undervisningen er en kombinasjon av</p>
                     <div>
                         <ul>
@@ -893,7 +894,20 @@
                     </p>
                 </article>
                 <article class="card link-black info-box">
-                    <h2>Hva kan du jobbe som?</h2>
+                    <h3>Hva kan du jobbe som?</h3>
+                <article class="card info-box">
+                    <h3>Hva koster det?</h3>
+                    <p><a href="https://student.oslomet.no/semesteravgift">Det er ikke studieavgift på dette studiet. Du
+                            betaler en semesteravgift hvert semester
+                            (student.oslomet.no).</a></p>
+                    <p><a href="https://student.oslomet.no/studieavgift-for-internasjonale-studenter-utenfor-eu-eos">Er
+                            du
+                            internasjonal student fra utenfor EU og EØS, må du betale studieavgift (student.oslomet.no).
+                            Det
+                            er mulig å søke om unntak for betaling av denne studieavgiften.</a></p>
+                </article>
+                <article class="trip-listitem card info-box">
+                   
                     <p>
                         Med dette studiet får du IT-kompetanse som er etterspurt i arbeidslivet, særlig om du velger
                         spesialiseringene vitenskapelige beregninger eller statistiske og datadrevne metoder.
@@ -910,13 +924,20 @@
                         Datadrevne metoder og maskinlæring er i dag svært mye brukt i arbeidslivet.
                     </p>
                 </article>
-                
-                <article class="card link-black info-box">
-                    <h2>Videre studiemuligheter ved OsloMet</h2>
+                <article class="card info-box">
+                    <h3>Utveksling</h3>
+                    <p>Du kan dra på utveksling i femte semester.</p>
+                    <p><a
+                            href="https://student.oslomet.no/utvekslingsavtaler/-/utvekslingsmuligheter/BACHELOR/HINGMAMO/bachelorstudium-i-ingeniorfag-matematisk-modellering-og-datavitenskap">
+                            Vi har 20 skoler du kan velge i mellom.
+                        </a></p>
+                </article>
+                <article class="card info-box">
+                    <h3>Videre studiemuligheter ved OsloMet</h3>
                     <p><a href="https://www.oslomet.no/studier/tkd/anvendt-data-informasjonsteknologi">Anvendt data- og informasjonsteknologi(ACIT) Master</p></a>
                 </article>
                 <article class="card link-black info-box">
-                    <h2>Studiested</h2>
+                    <h3>Studiested</h3>
                     <p>Kjempefint bilde av OsloMet i Oslo med en <a href="https://www.oslomet.no/om/studiested-pilestredet" class="link-black">link</a></p>
                 </article>
             </section>
@@ -932,13 +953,13 @@
                     </div>
                 </article>
             </section>
-            <section>
+            <section id="interest">
                 <article>
-                    <p class="header">Er du kanskje også interesert i disse?</p>
-                    <ul class="field-of-study ">
+                    <p class="heading">Er du kanskje også interesert i disse?</p>
+                    <ul class="field-of-study">
                         <li class="border-black">
                             <a href="https://www.oslomet.no/studier/tkd/anvendt-datateknologi"
-                                class="text-decoration-none field-of-study-list">
+                                class=" field-of-study-list">
                                 <p>Anvendt datateknologi</p>
                                 <ul class="item">
                                     <li>Bachelorprogram</li>
@@ -951,7 +972,7 @@
                             </a>
                         </li>
                         <li class="border-black">
-                            <a href="" class="text-decoration-none field-of-study-list">
+                            <a href="" class="field-of-study-list">
                                 <p>Dataingeniør</p>
                                 <ul class="item">
                                     <li>Bachelorprogram</li>
@@ -963,8 +984,8 @@
                             </a>
                         </li>
                         <li class="border-black">
-                            <a href="" class="text-decoration-none field-of-study-list">
-                                <p>Informasjonsteknologi</p>
+                            <a href="" class=" field-of-study-list">
+                                <p>Informasjons&shy;teknologi</p>
                                 <ul class="item">
                                     <li>Bachelorprogram</li>
                                     <li>3 år</li>
@@ -972,32 +993,33 @@
                                     <li>Heltid</li>
                                 </ul>
                                 <img src="media\images\index\next.svg" class="field-of-study-icon" alt="">
-
                             </a>
                         </li>
                     </ul>
                 </article>
             </section>
     </main>
-
-    <footer role="contentinfo" aria-label="site footer">
+    
+    <div class="scroll-top"> <!--right at the end of the body-->
+    <a class="scroll-top__link" href="#toc">Tilbake til innholdsfortegnelse</a> <!--href="#" navigates to the top of the page-->
+    <a class="scroll-top__link" href="#">Til toppen</a> 
+    </div>
+    <footer id="footer">
         <div class="footer-top">
             <p>Hold deg oppdatert om hva som skjer på OsloMet</p>
-            <p>
                 <a href="https://www.oslomet.no/nyhetsbrev">Abonner på vårt nyhetsbrev</a>
-            </p>
         </div>
         <hr>
         <section>
             <div class="info">
                 <div class="infoTitle">
-                    <p>OSLO METROPOLITAN UNIVERSITY</p>
+                    <p>OSLO&nbsp;METROPOLITAN UNIVERSITY</p>
                     <p>STORBYUNIVERSITETET</p>
                 </div>
-                <p>Postboks 4, St. Olavs plass</p>
-                <p>0130 Oslo</p>
-                <p>Tlf.: 67 23 50 00</p>
-                <p><a href="https://www.oslomet.no/om/kontakt">Kontakt oss</a></p>
+                <p>Postboks&nbsp;4, St.&nbsp;Olavs&nbsp;plass</p>
+                <p>0130&nbsp;Oslo</p>
+                <p>Tlf.:&nbsp;67&nbsp;23&nbsp;50&nbsp;00</p>
+                <a href="https://www.oslomet.no/om/kontakt">Kontakt&nbsp;oss</a>
             </div>
             <ul class="lenker">
                 <li><a href="https://www.oslomet.no/en">English</a></li>
@@ -1020,6 +1042,7 @@
             </ul>
         </section>
     </footer>
+
 </body>
 
 </html>
