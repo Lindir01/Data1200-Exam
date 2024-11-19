@@ -245,43 +245,36 @@ footer {
     background-color: var(--oslometgul);
     bottom: 0px;
 }
-
+/*footer-top klassen ble laget for å skille toppen av footeren fra resten av den, slik at jeg kunne kode linken og paragrafene spesefikt til toppen.*/
 .footer-top {
     text-align: center;
     padding: 1rem;
 }
-
 .footer-top p {
     font-size: larger;
     font-weight: 600;
     padding: 0.5rem;
 }
-
 .footer-top a {
     background-color: #111;
     padding: 1rem;
     color: white;
 }
-
 footer a {
     color: #111;
     text-decoration: none;
     font-weight: 700;
 }
-
 footer a:hover {
     text-decoration-line: underline;
 }
-
 footer ul {
     list-style: none;
     font-weight: 700;
 }
-
 footer li {
     padding-bottom: 0.4em;
 }
-
 footer section {
     display: grid;
     grid-template-columns: 30vw auto minmax(300px, 30vw) 1rem;
@@ -289,6 +282,7 @@ footer section {
     margin: auto;
     padding-left: 2rem;
 }
+/*For å unngå å bruke headers i footeren, så lagde jeg en spesefik div klasse for tittel paragrafene i info-klassen. På den måten kunne jeg skape titlene uten headers.*/
 .infoTitle {
     font-weight: 600;
     font-size: large;
@@ -312,6 +306,7 @@ footer img {
 /* Footer END */
 
 /*Activity footer START*/
+/*activityFooter klassen er laget spesefikt for Activity-pagen, slik at footeren skiller seg ut fra de andre sidene og bedre matcher temaet til siden.*/
 .activityFooter p{
     font-size: larger;
     font-weight: 600;
@@ -870,6 +865,7 @@ join it up with the other card classes? */
         width: 80%;
     }
 
+    /*Gjør slik at når skjermen blir mindre, så blir footeren top-down*/
     .footer-top {
         grid-row: 1;
         grid-column: 1;
@@ -889,11 +885,11 @@ join it up with the other card classes? */
         grid-row: 4;
         grid-column: 1;
     }
-
     footer img {
         width: 1.5rem;
         padding: 1%;
     }
+    /*Gjør slik at tabellen blir scrollbar når skjermen er mindre, og at scrollbar ikke vises på skjermen*/
     table {
         display: block;
         overflow-x: auto;
