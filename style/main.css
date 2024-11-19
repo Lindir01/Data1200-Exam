@@ -884,7 +884,12 @@ join it up with the other card classes? */
         width: 1.5rem;
         padding: 1%;
     }
-
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+        scrollbar-width: none;
+    }
 }
 
 
@@ -997,9 +1002,6 @@ table {
     border-width:  1px;    
     width: 90%;
     margin: auto;
-    display: block;
-    overflow-x: auto;
-    white-space: nowrap;
 }
 tr {
     border-bottom-style: solid;
