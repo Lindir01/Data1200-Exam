@@ -110,7 +110,7 @@ h2{
     border-color: black;
     padding: 2px;
 }
-.link-black, .card a{
+.link-black a, .card a{
     font-weight: bold;
     color: #111;
     text-decoration: none;
@@ -213,7 +213,6 @@ h2{
     list-style: none;
     margin-right: 10px;
     background-color: #f6f2f2;
-/*border: 5px solid red;*/
 }
 .field-of-study .item li{
     border-right: .0625rem solid #222;
@@ -224,8 +223,6 @@ h2{
     margin-right: .625rem;
     padding-right: .625rem
 }
-.testclass{}
-
 .field-of-study>li{
     width: 50vw;
     min-width:400px;
