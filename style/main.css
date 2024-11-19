@@ -163,16 +163,6 @@ h2{
 .card ul {
     text-align: left;
 }
-
-/* .card a:visited {
-    color: purple;
-} */
-
-.card a:hover {
-    text-decoration: none;
-    border-bottom: 2px solid black;
-}
-
 .card-wrapper {
     display: flex;
     flex-wrap: wrap;
