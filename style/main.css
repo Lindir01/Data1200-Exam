@@ -5,8 +5,8 @@
     General Styles 1-1
         Format 1-1
         Text 1-1
-    Utilities 1-1
     Site Wide 1-1
+        Utilities 1-1
         Header 1-1
         Footer 1-1
         Media 1-1
@@ -22,9 +22,7 @@
 
 /* || GENERAL STYLES */
 
-/*
-    This makes the width and height parameter contain margins and padding when in a container
-*/
+/* This makes the width and height parameter contain margins and padding when in a container */
 
 *,
 *::before,
@@ -42,7 +40,7 @@ html {
     --oslometsecondary: hsl(187, 67%, 60%);
     --oslometselected: hsl(30, 100%, 50%);
     --courseboxes: hsl(0, 0%, 81%);
-    --valgfagboxes: hsl(0, 0%, 60%);
+    --valgfagboxes: hsl(0, 0%, 76%);
 }
 
 body {
@@ -126,7 +124,6 @@ h2{
     background-color: var(--oslometprimary);
     width: 100%;
 }
-
 .section-blue {
     background-color: var(--oslometsecondary);
     width: 100%;
@@ -425,6 +422,7 @@ course0203-box would be the box for the third class in the second semester*/
     height: 100%;
     width: 100%;
     grid-gap: 0.5vw;
+    align-items: center;
 }
 
 .semester-wrapper a {
@@ -438,15 +436,13 @@ course0203-box would be the box for the third class in the second semester*/
 .semester01 {
     grid-row: 1;
     display: flex;
-    align-items: center;
-    background-color: var(--courseboxes);
+    border-bottom: 5px solid black;
 }
 
 .semester02 {
     grid-row: 3;
     display: flex;
-    align-items: center;
-    background-color: var(--courseboxes);
+    border-bottom: 5px solid black;
 }
 
 .valgfag-info {
@@ -476,7 +472,6 @@ join it up with the other card classes? */
     padding-left: 5px;
     padding-right: 5px;
 }
-
 
 .valgfag-box {
     background-color: var(--valgfagboxes);
@@ -585,8 +580,7 @@ join it up with the other card classes? */
     margin-bottom: 8px;
 }
 
-.tag-wrap {
-    flex-wrap: wrap;
+.tag-wrap { 
     text-align: center;
     max-width: 50%;
 }
@@ -1095,10 +1089,10 @@ a.skiplinklist:focus, a.skiplinklist:active{
 
     .sideNavListSection{
         flex-direction: column;
-        left: auto;
-        right: auto;
+        margin-left: 10vw;
         gap: 0!important;
         padding-top: 0!important;
+        padding-bottom: 0!important;
     }
 
     .scrollable_section {
@@ -1123,7 +1117,7 @@ a.skiplinklist:focus, a.skiplinklist:active{
     }
 
     .scroll-top {
-        justify-content: flex-end;
+        display: none;
       }
 
 
