@@ -114,7 +114,6 @@ h2{
     font-weight: bold;
     color: #111;
     text-decoration: none;
-    border-bottom: 2px solid rgb(160, 160, 70);
 }
 .link-black a:hover{
     text-decoration: none;
@@ -136,6 +135,9 @@ h2{
 .info-box{
     padding: 0.5em;
     margin: 3em;
+}
+.info-box a{
+    border-bottom: 2px solid rgb(160, 160, 70);
 }
 /* Index cards */
 .card {
@@ -213,6 +215,11 @@ h2{
     margin-right: .625rem;
     padding-right: .625rem
 }
+<<<<<<< Updated upstream
+=======
+
+
+>>>>>>> Stashed changes
 .field-of-study>li{
     width: 50vw;
     min-width:400px;
