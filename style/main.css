@@ -75,6 +75,13 @@ h1 {
     text-decoration: none;
     border-bottom: 2px solid rgb(160, 160, 70);
 }
+.link-black a:hover{
+    text-decoration: none;
+    border-bottom: 2px solid black;
+}
+.link-black a:visited{
+    color: purple;
+}
 .section-yellow {
     background-color: var(--oslometgul);
     width: 100%;
@@ -114,9 +121,9 @@ h1 {
     text-align: left;
 }
 
-.card a:visited {
+./* card a:visited {
     color: purple;
-}
+} */
 
 .card a:hover {
     text-decoration: none;
