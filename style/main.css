@@ -215,11 +215,6 @@ h2{
     margin-right: .625rem;
     padding-right: .625rem
 }
-<<<<<<< Updated upstream
-=======
-
-
->>>>>>> Stashed changes
 .field-of-study>li{
     width: 50vw;
     min-width:400px;
@@ -919,7 +914,7 @@ td{
 }
 
 
-/* Hero Activity START */
+/* Hero Activity START https://www.w3schools.com/howto/howto_css_hero_image.asp*/
 .hero-activity{
     z-index: 1;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/images/activity/fellowship.webp");
