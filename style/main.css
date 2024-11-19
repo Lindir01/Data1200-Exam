@@ -42,7 +42,7 @@ html {
     --oslometsecondary: hsl(187, 67%, 60%);
     --oslometselected: hsl(30, 100%, 50%);
     --courseboxes: hsl(0, 0%, 81%);
-    --valgfagboxes: hsl(0, 0%, 60%);
+    --valgfagboxes: hsl(0, 0%, 76%);
 }
 
 body {
@@ -430,6 +430,7 @@ course0203-box would be the box for the third class in the second semester*/
     height: 100%;
     width: 100%;
     grid-gap: 0.5vw;
+    align-items: center;
 }
 
 .semester-wrapper a {
@@ -443,15 +444,13 @@ course0203-box would be the box for the third class in the second semester*/
 .semester01 {
     grid-row: 1;
     display: flex;
-    align-items: center;
-    background-color: var(--courseboxes);
+    border-bottom: 5px solid black;
 }
 
 .semester02 {
     grid-row: 3;
     display: flex;
-    align-items: center;
-    background-color: var(--courseboxes);
+    border-bottom: 5px solid black;
 }
 
 .valgfag-info {
