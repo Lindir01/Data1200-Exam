@@ -307,6 +307,24 @@ footer img {
 }
 /* Footer END */
 
+/*Activity footer START*/
+.activityFooter p{
+    font-size: larger;
+    font-weight: 600;
+    padding: 0.5rem;
+}
+.activityFooter a{
+    background-color: #111;
+    padding: 1rem;
+    color: white;
+}
+.activityFooter {
+    text-align: center;
+    background-color: lightgrey;
+    padding: 7px;
+}
+/*Activity footer END*/
+
 /* Media styling START */
 
 .firstmedia {
