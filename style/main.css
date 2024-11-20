@@ -55,12 +55,12 @@ html {
     --valgfagboxes: hsl(0, 0%, 76%);
 }
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
 
+main {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
 body {
     margin: 0;
     padding: 0;
@@ -68,18 +68,17 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
 }
-
-main {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-}
-
 section {
     margin-left: auto;
     margin-right: auto;
     scroll-margin: 30vh;
 }
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 .center {
     margin-left: auto;
     margin-right: auto;
@@ -90,12 +89,9 @@ section {
 
 
 /*  -Text */
-a {text-decoration: none;}
 
-h1,
-h1+p,
-h1+p+p,
-h2 {text-align: center;}
+
+h1,h2 {text-align: center;}
 
 h1 {
     margin-top: 0;
@@ -109,6 +105,8 @@ h1 {
 
 h1+p,
 h2 {font-size: 2em;}
+
+a {text-decoration: none;}
 
 .link-black a,
 .card a {
@@ -243,21 +241,11 @@ Media 1-1
 }
 
 /* -Header */
-.logo {
-    position: absolute;
-    top: 0.6rem;
-    left: 0.6rem;
-    height: 3rem;
-}
 
-#burger-toggle {display: none;}
-
-.hamburger-toggle-container img {height: 2.5rem;}
-
-.hamburger-toggle-container {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
+header:not(.activity-header) {
+    height: 4.5rem;
+    width: 100%;
+    background-color: var(--oslometprimary);
 }
 .navbar .active {background-color: var(--oslometselected);}
 
@@ -269,16 +257,26 @@ Media 1-1
     text-align: center;
     text-decoration: none;
 }
-
 /* Change the link color tohsl(50, 100%, 40%);(darker oslometprimary) on hover accept the active one */
 
 .navbar a:hover:not(.active, .logo-a) {background-color: hsl(50, 100%, 40%);}
+#burger-toggle {display: none;}
 
-header:not(.activity-header) {
-    height: 4.5rem;
-    width: 100%;
-    background-color: var(--oslometprimary);
+.hamburger-toggle-container img {height: 2.5rem;}
+
+.hamburger-toggle-container {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
 }
+
+.logo {
+    position: absolute;
+    top: 0.6rem;
+    left: 0.6rem;
+    height: 3rem;
+}
+
 
 /* -Footer */
 footer {
@@ -849,7 +847,6 @@ td {text-align: left;}
 /* Hero Activity END */
 
 
-
 /* menu logo */
 .activity-header .hamburger-toggle-container img {height: 40px;}
 
@@ -949,20 +946,6 @@ Thin Screen 1-1
 Ultrawide 1-1                                                                                              
 */
 
-@media (min-width:701px) {
-    .hamburger-toggle-container img {
-        display: none;
-    }
-
-    .menu {
-        float: right;
-        display: flex;
-        flex-direction: row;
-        margin-top: 1.5rem;
-        list-style-type: none;
-    }
-}
-
 
 @media (max-width:700px) {
     .menu {
@@ -1003,9 +986,22 @@ Ultrawide 1-1
     }
 
 }
-/* all elements inside of this will only display when max monitor size is 800 px wide */
+@media (min-width:701px) {
+    .hamburger-toggle-container img {
+        display: none;
+    }
+
+    .menu {
+        float: right;
+        display: flex;
+        flex-direction: row;
+        margin-top: 1.5rem;
+        list-style-type: none;
+    }
+}
 
 
+/* || Bachelor structure Small screen */
 @media only screen and (max-width: 800px) {
     .colorbox {
         display: none;
@@ -1102,17 +1098,6 @@ Ultrawide 1-1
     }
 }
 
-/* || ULTRAWIDE */
-
-@media only screen and (min-width:2000px) {
-    video {
-        margin-top: -25%;
-    }
-}
-
-
-
-/* || Bachelor structure Small screen */
 @media (max-width: 1000px) {
     .year-wrapper {
         grid-template-rows: auto;
@@ -1261,12 +1246,11 @@ Ultrawide 1-1
 
 }
 
-/* -Thin Screen */
-
-/* -Ultrawide */
-
-
-
+@media only screen and (min-width:2000px) {
+    video {
+        margin-top: -25%;
+    }
+}
 
 
 /*.card:hover {   Makes cards popp when hovered, but might make user believe it's a link.
