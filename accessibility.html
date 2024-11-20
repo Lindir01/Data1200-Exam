@@ -2,7 +2,7 @@
 <html lang="no">
 
 <head>
-    <title>Accessibility Page</title>
+    <title>Accessibility - OsloMet</title>
     <link rel="icon" type="image/x-icon" href="media/images/shared/favicon-32x32.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/main.css">
@@ -30,44 +30,119 @@
             </ul>
         </nav>
     </header>
-    
+
 
     <main id="main" tabindex=”-1″>
         <div class="colorbox"></div>
-        <img src="media/images/accessibility/accessibility.webp" class="center firstmedia">
+        <img src="media/images/accessibility/accessibility.webp" width="250vw" class="firstmedia"
+            alt="En person med nedsatt funksjonsevne i hendene bruker en datamaskin">
         <h1>Tilgjenglighet</h1>
-        <p>Tilgjenglighet på dette webomerådet</p>
-        <!-- More of these to scroll properly if needed-->
-        <ol class="sideNavList center" role=navigation aria-label="page navigation">
-            <li>
-                <a href="#top" aria-label="Gå til toppen av siden">
-                    Top
-                </a>
-            </li>
-            <li>
-                <a href="#bottom" aria-label="Gå til bunnen av siden">Bottom
-                </a>
-            </li>
-        </ol>
         <section>
-            <h2>Testing</h2> 
-            <p> Vi har aktivt fokusert på tilgjenglighet på nettsiden ved å
-                <ul>
-                <li>Passet på kontraster i farger valgt for siden (Hvis vi skal endre, må vi sjekke icons om de er transparent)</li>
-                <li>Sørg for at skriftstørrelsen er med rem eller em så den kan skaleres etter brukerens innstillinger </li>
-                <li>Lagd en måte å hoppe over lange lister med lenker for keyboard- eller skjemleser-brukere</li> 
-                <li>Passet på at ting er lesbart, god nok plass til å trykke</li>
-                <li>Beskrivende navn på lenker, og gjenkjennbare farger</li>
-                <li>Lagt </li>
-            </ul>
+            <h2>Hvordan vi har jobbet med å gjøre nettsiden så tilgjenglig som mulig</h2>
+            <table>
+            <thead>
+                <tr>
+                    <!--Ved å sette bredden på table-header boksene, så bestemmes størrelsen på hver kolone av tabellen-->
+                    <th style="width: 20%;">Navnet på pushet</th>
+                    <th style="width: 50%;">Innholdet i pushet</th>
+                    <th style="width: 10%;">Hvem som pushet oppdateringen</th>
+                    <th style="width: 20%;">Datoen på pushet</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Magnus</td>
+                    <td>12.11.2024</td>
+                </tr>
+                <tr>
+                    <td>Added layout draft</td>
+                    <td>Lagde en plan for hvordan nettsiden skulle se ut, slik at den kan være mest mulig accessable</td>
+                    <td>Oda</td>
+                    <td>25.10.2024</td>
+                </tr>
+                <tr>
+                    <td>Fixind the fuckywucky</td>
+                    <td>Fikse en commit-error</td>
+                    <td>Birk</td>
+                    <td>12.11.2024</td>
+                </tr>
+                <tr>
+                    <td>Fixed img source</td>
+                    <td>Fikser koden for bildene på hovedsiden</td>
+                    <td>Tore</td>
+                    <td>09.11.2024</td>
+                </tr>
+                <tr>
+                    <td>Simplified structure and removed unused code</td>
+                    <td>Simplifiserer strukturen av koden på hovedsiden, og fjerner ubrukt kode fra siden</td>
+                    <td>Jørn</td>
+                    <td>05.11.2024</td>
+                </tr>
+                <tr>
+                    <td>Oppdatert footer med ikoner og bedre oppsett</td>
+                    <td>Endret footer slik at sosiale medie lenkene har ikoner ved siden av seg, og bedre struktur på footeren</td>
+                    <td>Magnus</td>
+                    <td>17.10.2024</td>
+                </tr>
+                <tr>¨
+                    <td>Updated logo</td>
+                    <td>Oppdatert utsendet til OsloMet logoen på nettsiden</td>
+                    <td>Oda</td>
+                    <td>14.10.2024</td>
+                </tr>
+            </tbody>
+        </table>
+        </section>
+        <section>
+            <article class="accessibilitycontent">
+                <p> Gjennom hele prosjektet har et spesielt fokus på tilgjenglighet, noe som vises gjennom kildekoden på
+                    siden vår. Vi har regelmessig kjørt både automatiserte tester med Ligthhouse og WAVE, sjekket selv
+                    med skjermleser (NVDA) samt lest oss opp på hva som kan være utfordrende med nettsider på generelt
+                    basis.</p>
+                <img width="50%" src="media/images/accessibility/accessibility.webp" alt="Lighthouse screenshot">
+                <p>All tekst på siden skal være skalerbar så brukeren kan definere skriftstørrelsen de trenger, da vi
+                    har brukt rem og em på all tekst. Det skal også være mulig å zoome inn og at siden skalerer seg
+                    etter dine preferanser.</p>
+                <p>Alle bilder har alt attributten, og vi har prøvd å skrive en kort og presis beskrivelse av hvert
+                    bildet. For ikoner som er rent visuelle har vi lagt ved en blank alt tekst fordi i vår bruk er de
+                    ved siden av en lenke med mer beskrivende navn. </p>
+                <img  width="50%" src="media/images/accessibility/accessibility.webp" alt="WAVE screenshot">
+                <p>Ved første “tab” på siden vil du møte en hopp til hovedinnhold knapp så skjermlesere slipper å gå
+                    gjennom alle linkene i navigasjonsmenyen. Den samme klassen har blitt brukt til å hoppe over andre
+                    store lister med linker, som innholdsfortegnelsen og hele studieoversikten. Hvis man har kommet seg
+                    nedover på siden og innser at det ikke er siden man vil se har vi lagt inn en knapp som visuelt er
+                    tilstede hele tiden for å komme seg opp igjen på siden, og lagt denne mellom
+                    <code>&lt;main&gt;</code> og <code>&lt;body&gt</code> i koden. </p>
+
             </p>
-            </section>
+        </section>
     </main>
-    
+
     <footer>
         <div class="footer-top">
             <p>Hold deg oppdatert om hva som skjer på OsloMet</p>
-                <a href="https://www.oslomet.no/nyhetsbrev">Abonner på vårt nyhetsbrev</a>
+            <a href="https://www.oslomet.no/nyhetsbrev">Abonner på vårt nyhetsbrev</a>
         </div>
         <hr>
         <section>
@@ -89,18 +164,24 @@
                 <li><a href="https://www.oslomet.no/om/for-ansatte">For ansatte</a></li>
                 <li><a href="https://www.oslomet.no/om/for-studenter">For studenter</a></li>
                 <li><a href="https://www.oslomet.no/om/ledige-stillinger">Ledige stillinger</a></li>
-                <li><a href="https://www.oslomet.no/om/personvernerklering-informasjonskapslar">Personvernerklæring og informasjonskapslar</a></li>
+                <li><a href="https://www.oslomet.no/om/personvernerklering-informasjonskapslar">Personvernerklæring og
+                        informasjonskapslar</a></li>
                 <li><a href="https://www.oslomet.no/om/pressekontakt">Pressekontakt</a></li>
-                <li><a href="https://www.oslomet.no/om/tilgjengelegheitserklering">Tilgjengelegheitserklæring</a></li>                    
+                <li><a href="https://www.oslomet.no/om/tilgjengelegheitserklering">Tilgjengelegheitserklæring</a></li>
                 <li><a href="https://www-admin.oslomet.no/admin/view/content/58148">Admin</a></li>
             </ul>
             <ul class="sosiale">
-                <li><a href="https://www.facebook.com/oslomet/"><img src="https://www.oslomet.no/build/images/icon-facebook.svg" alt="">Facebook</a></li>
-                <li><a href="https://twitter.com/oslomet"><img src="https://www.oslomet.no/build/images/icon-twitter.svg" alt="">Twitter</a></li>
-                <li><a href="https://no.linkedin.com/school/oslomet/"><img src="https://www.oslomet.no/build/images/icon-linkedin.svg" alt="">LinkedIn</a></li>
-                <li><a href="https://www.instagram.com/oslomet/?hl=nb"><img src="https://www.oslomet.no/build/images/icon-instagram.svg" alt="">Instagram</a></li>
+                <li><a href="https://www.facebook.com/oslomet/"><img
+                            src="https://www.oslomet.no/build/images/icon-facebook.svg" alt="">Facebook</a></li>
+                <li><a href="https://twitter.com/oslomet"><img
+                            src="https://www.oslomet.no/build/images/icon-twitter.svg" alt="">Twitter</a></li>
+                <li><a href="https://no.linkedin.com/school/oslomet/"><img
+                            src="https://www.oslomet.no/build/images/icon-linkedin.svg" alt="">LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/oslomet/?hl=nb"><img
+                            src="https://www.oslomet.no/build/images/icon-instagram.svg" alt="">Instagram</a></li>
             </ul>
         </section>
     </footer>
-   </body>
-</html>   
+</body>
+
+</html>
