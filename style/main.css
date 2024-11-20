@@ -8,11 +8,12 @@
     Site Wide 1-1
         Utilities 1-1
         Header 1-1
+        Body 1-1
         Footer 1-1
         Media 1-1
     Page Specific 1-1
         Index 1-1
-        Accessebility 1-1
+        Accessibility 1-1
         Git 1-1
         Activity 1-1
     Media Queries 1-1
@@ -20,9 +21,39 @@
         Ultrawide 1-1
 */
 
-/* || GENERAL STYLES */
+/* notater for sorterting 
+cards for sitewide
 
-/* This makes the width and height parameter contain margins and padding when in a container */
+/* Ascii art made big enough to read in the file navigator */
+
+
+
+*/
+
+/* || General Styles
+ _______  _______  _        _______  _______  _______  _          _______ _________          _        _______  _______ 
+(  ____ \(  ____ \( (    /|(  ____ \(  ____ )(  ___  )( \        (  ____ \\__   __/|\     /|( \      (  ____ \(  ____ \
+| (    \/| (    \/|  \  ( || (    \/| (    )|| (   ) || (        | (    \/   ) (   ( \   / )| (      | (    \/| (    \/
+| |      | (__    |   \ | || (__    | (____)|| (___) || |        | (_____    | |    \ (_) / | |      | (__    | (_____ 
+| | ____ |  __)   | (\ \) ||  __)   |     __)|  ___  || |        (_____  )   | |     \   /  | |      |  __)   (_____  )
+| | \_  )| (      | | \   || (      | (\ (   | (   ) || |              ) |   | |      ) (   | |      | (            ) |
+| (___) || (____/\| )  \  || (____/\| ) \ \__| )   ( || (____/\  /\____) |   | |      | |   | (____/\| (____/\/\____) |
+(_______)(_______/|/    )_)(_______/|/   \__/|/     \|(_______/  \_______)   )_(      \_/   (_______/(_______/\_______) 
+Format 1-1
+Text   1-1    */
+/*  -Format */
+html {
+    scroll-behavior: smooth;
+    background-color: var(--oslometprimary);
+}
+
+:root {
+    --oslometprimary: hsl(330, 85%, 62%);
+    --oslometsecondary: hsl(0, 0%, 67%);
+    --oslometselected: hsl(30, 100%, 50%);
+    --courseboxes: hsl(0, 0%, 81%);
+    --valgfagboxes: hsl(0, 0%, 76%);
+}
 
 *,
 *::before,
@@ -30,25 +61,10 @@
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-    background-color: var(--oslometprimary);
-}
-
-:root {
-    --oslometprimary: hsl(50, 100%, 50%);
-    --oslometsecondary: hsl(187, 67%, 60%);
-    --oslometselected: hsl(30, 100%, 50%);
-    --courseboxes: hsl(0, 0%, 81%);
-    --valgfagboxes: hsl(0, 0%, 76%);
-}
-
 body {
     background-color: aliceblue;
-
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
-
     margin: 0;
     padding: 0;
 }
@@ -65,22 +81,23 @@ section {
     margin-right: auto;
     scroll-margin: 30vh;
 }
-
-/* Font */
-
-a {
-    text-decoration: none;
+.center {
+    margin-left: auto;
+    margin-right: auto;
 }
+
+
+
+
+/*  -Text */
+a {text-decoration: none;}
 
 h1,
 h1+p,
 h1+p+p,
-h2{
-    text-align: center;
-}
+h2 {text-align: center;}
 
-h1
-{
+h1 {
     margin-right: auto;
     margin-left: auto;
     margin-top: 0;
@@ -91,52 +108,57 @@ h1
 }
 
 h1+p,
-h2{
+h2 {
     font-size: 2em;
 }
 
-/* || Utilities */
-.heading{
-    font: 1.5em;
-    font-weight: bold;
-    text-align: center;
-}
-
-.border-black {
-    border-style: solid;
-    border-width: 5px;
-    border-color: black;
-    padding: 2px;
-}
-.link-black a, .card a{
+.link-black a,
+.card a {
     font-weight: bold;
     color: #111;
     text-decoration: none;
 }
-.link-black a:hover{
+
+.link-black a:hover {
     text-decoration: none;
     border-bottom: 2px solid black;
 }
-.link-black a:visited{
+
+.link-black a:visited {
     color: purple;
 }
-.section-yellow {
-    background-color: var(--oslometprimary);
+.text-section {
+    padding: 1rem;
+    text-align: left;
     width: 100%;
 }
-.section-blue {
-    background-color: var(--oslometsecondary);
-    width: 100%;
 
+
+
+/* ────────────────────────────────────────────────────────────── */
+
+/* || Site Wide
+ _______ __________________ _______            _________ ______   _______ 
+(  ____ \\__   __/\__   __/(  ____ \  |\     /|\__   __/(  __  \ (  ____ \
+| (    \/   ) (      ) (   | (    \/  | )   ( |   ) (   | (  \  )| (    \/
+| (_____    | |      | |   | (__      | | _ | |   | |   | |   ) || (__    
+(_____  )   | |      | |   |  __)     | |( )| |   | |   | |   | ||  __)   
+      ) |   | |      | |   | (        | || || |   | |   | |   ) || (      
+/\____) |___) (___   | |   | (____/\  | () () |___) (___| (__/  )| (____/\
+\_______)\_______/   )_(   (_______/  (_______)\_______/(______/ (_______/
+Utilities 1-1
+Header 1-1
+Body 1-1
+Footer 1-1
+Media 1-1                                                                          
+*/
+
+/* -Utilities */
+.heading {
+    font: 1.5em;
+    font-weight: bold;
+    text-align: center;
 }
-.info-box{
-    padding: 0.5em;
-    margin: 3em;
-}
-.info-box a{
-    border-bottom: 2px solid rgb(160, 160, 70);
-}
-/* Index cards */
 .card {
     overflow: hidden;
     float: left;
@@ -148,109 +170,133 @@ h2{
     background-color: rgb(246, 242, 242);
     box-shadow: 10px 10px 5px #11111110;
 }
-
-/*.card:hover {   Makes cards popp when hovered, but might make user believe it's a link.
-    https://nestedsoftware.com/2019/11/05/card-with-expand-on-hover-effect-2ccm.200941.html
-    transform: translate3D(0, -1px, 0) scale(1.03);     /* move up slightly and zoom in 
-    box-shadow: 8px 28px 50px rgba(39, 44, 49, .07), 1px 6px 12px rgba(39, 44, 49, .04);
-    transition: all .4s ease;    /* zoom in 
-    cursor: pointer;
-
-}*/
-
-
 .card ul {
     text-align: left;
 }
+
 .card-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-
-/* Card end */
-/* Profile card */
-.profileCard {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    background-color: #f6f2f2;
-    max-width: 300px;
-    margin: auto;
-    margin-top: 20px;
-    text-align: center;
-    font-family: arial;
-    border: 5px solid black;
-}
-
-.profileCard-position {
-    color: grey;
-    font-size: 18px;
-}
-/* Profile card end */
-
-/* Important that field-of-study li is kept in this order */
-.field-of-study ul{
-    margin:auto;
-}
-/*     https://nestedsoftware.com/2019/11/05/card-with-expand-on-hover-effect-2ccm.200941.html */
-.field-of-study li:hover img{/* Reused from line 98. translate3d scale is increased*/
-    transform: translate3D(0, -1px, 0) scale(1.7);     /* move up slightly and zoom in */
-    box-shadow: 8px 28px 50px rgba(39, 44, 49, .07), 1px 6px 12px rgba(39, 44, 49, .04);
-    transition: all .4s ease;    /* zoom in */
-    cursor: pointer;
-}
-.field-of-study li {
-    list-style: none;
-    margin-right: 10px;
-    background-color: #f6f2f2;
-}
-.field-of-study .item li{
-    border-right: .0625rem solid #222;
-    color: #222;
-    display: inline;
-    font-size: 1rem;
-    line-height: .875rem;
-    margin-right: .625rem;
-    padding-right: .625rem
-}
-.field-of-study>li{
-    width: 50vw;
-    min-width:400px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Field of study order end */
-
-.field-of-study .item:first-child {
-    margin-left: 0;
-    padding-left: 0
-}
-
-.field-of-study .item:last-child {
-    border: none !important; /* !important rule overrides ALL previous styling rules for spesific property */
-    margin-right: 0;
-    padding-right: 0
-}
-.field-of-study-icon {
-    width: 15px;
-    height: 15px;
-    padding: 0px;
-    margin-left:auto;
-}
-.field-of-study-list {
-    align-items: center;
-    color: #222;
+.sideNavListSection {
+    padding-top: 1rem;
+    padding-bottom: 4rem;
     display: flex;
-    padding: 1.1875rem 1.875rem 1.1875rem 0;
-    text-decoration: none;   
+    gap: 3rem;
 }
-.field-of-study-list>p{
-    width: 33%;
+.sideNavList {
+    text-align: left;
+    list-style: none;
+    list-style-position: inside;
+    padding: 0;
+    border-left-width: 2px;
+    border-left-style: solid;
+    border-left-color: black;
 }
-/* Field of study list end */
 
+.sideNavList ul {
+    text-align: left;
+    list-style: none;
+    list-style-position: inside;
+    padding-left: 0;
+    border-left-width: 2px;
+    border-left-style: solid;
+    border-left-color: black;
+    padding-bottom: 10px;
+}
 
-/* -----Footer------ */
+.sideNavList>li>a {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    line-height: 2em;
+    text-decoration: none;
+}
+
+.sideNavList>li>ul>li {
+    padding-bottom: 5px;
+}
+
+.sideNavList>li>a::before,
+.sideNavList ul li::before {
+    content: "────";
+}
+/* Testing back to top button, read up here; https://dev.to/jackherizsmith/making-a-back-to-top-button-without-javascript-2ej6*/
+.scroll-top {
+    position: fixed;
+    display: flex;
+    right: 15%;
+    bottom: 0;
+    gap: 1em;
+    max-width: 100px;
+    z-index: 12;
+}
+
+.scroll-top__link {
+    top: 85vh;
+    text-decoration: none;
+    border-radius: .25rem;
+    background-color: hsl(240, 100%, 50%);
+    padding: 1rem;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    opacity: .3;
+
+}
+
+.scroll-top__link:hover {
+    opacity: initial;
+    color: hsl(0, 0%, 100%);
+}
+
+/* -Header */
+.logo {
+    position: absolute;
+    height: 3rem;
+    top: 0.6rem;
+    left: 0.6rem;
+}
+
+#burger-toggle {
+    display: none;
+}
+
+.hamburger-toggle-container img {
+    height: 2.5rem;
+}
+
+.hamburger-toggle-container {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+.navbar .active {
+    background-color: var(--oslometselected);
+}
+
+.navbar a {
+    font-size: 1.5rem;
+    color: black;
+    text-align: center;
+    padding: 0.5rem;
+    text-decoration: none;
+    border-radius: 0.4rem;
+}
+
+/* Change the link color tohsl(50, 100%, 40%);(darker oslometprimary) on hover accept the active one */
+
+.navbar a:hover:not(.active, .logo-a) {
+    background-color: hsl(50, 100%, 40%);
+}
+header:not(.activity-header) {
+    background-color: var(--oslometprimary);
+    width: 100%;
+    height: 4.5rem;
+}
+
+/* -Footer */
 footer {
     background-color: var(--oslometprimary);
     bottom: 0px;
@@ -266,33 +312,39 @@ footer {
     font-weight: 600;
     padding: 0.5rem;
 }
+
 .footer-top a {
     background-color: #111;
     padding: 1rem;
     color: white;
 }
+
 footer a {
     color: #111;
     text-decoration: none;
     font-weight: 700;
 }
+
 footer a:hover {
     text-decoration-line: underline;
 }
+
 footer ul {
     list-style: none;
     font-weight: 700;
 }
+
 footer li {
     padding-bottom: 0.4em;
 }
+
 footer section {
     display: grid;
     grid-template-columns: 30vw auto minmax(300px, 30vw) 1rem;
     grid-auto-rows: minmax(100px, auto);
     margin: auto;
     padding-left: 2rem;
-    
+
 }
 .infoTitle {
     font-weight: 600;
@@ -301,8 +353,8 @@ footer section {
 
 .info,
 .lenker,
-.sosiale{
- justify-self: center;
+.sosiale {
+    justify-self: center;
 }
 
 .info {
@@ -325,29 +377,15 @@ footer img {
     padding: 1%;
     position: relative;
 }
-/* Footer END */
-
-/*Activity footer START*/
-/*activityFooter klassen er laget spesefikt for Activity-pagen, slik at footeren skiller seg ut fra de andre sidene og bedre matcher temaet til siden.*/
-.activityFooter p{
-    font-size: larger;
-    font-weight: 600;
-    padding: 0.5rem;
+.shadow-top {
+    box-shadow: 0px -10px 5px #11111110;
 }
-.activityFooter a{
-    background-color: #111;
-    padding: 1rem;
-    color: white;
-}
-.activityFooter {
-    text-align: center;
-    background-color: lightgrey;
-    padding: 7px;
-}
-/*Activity footer END*/
 
-/* Media styling START */
+.shadow-bottom {
+    box-shadow: 0px 10px 5px #11111110;
+}
 
+/* -Media */
 .firstmedia {
     margin-top: -12%;
     width: 80%;
@@ -365,34 +403,190 @@ video {
     max-width: 1200px;
 }
 
-/* Media styling END */
 
-/* || UTILITIES */
-.top-border {
-    border-top-width: 1px;
-    border-top-style: solid;
-    border-top-color: black;
-    padding: 10px
+/* -Body */
+.section-yellow {
+    background-color: var(--oslometprimary);
+    width: 100%;
 }
 
-.logo {
+.section-blue {
+    background-color: var(--oslometsecondary);
+    width: 100%;
+}
+
+.colorbox {
+    background-color: var(--oslometsecondary);
+    height: 15vmax;
+    width: 100%;
+}
+
+/* ────────────────────────────────────────────────────────────── */
+
+/* || Page Specific
+ _______  _______  _______  _______    _______  _______  _______  _______ _________ _______ _________ _______ 
+(  ____ )(  ___  )(  ____ \(  ____ \  (  ____ \(  ____ )(  ____ \(  ____ \\__   __/(  ____ \\__   __/(  ____ \
+| (    )|| (   ) || (    \/| (    \/  | (    \/| (    )|| (    \/| (    \/   ) (   | (    \/   ) (   | (    \/
+| (____)|| (___) || |      | (__      | (_____ | (____)|| (__    | |         | |   | (__       | |   | |      
+|  _____)|  ___  || | ____ |  __)     (_____  )|  _____)|  __)   | |         | |   |  __)      | |   | |      
+| (      | (   ) || | \_  )| (              ) || (      | (      | |         | |   | (         | |   | |      
+| )      | )   ( || (___) || (____/\  /\____) || )      | (____/\| (____/\___) (___| )      ___) (___| (____/\
+|/       |/     \|(_______)(_______/  \_______)|/       (_______/(_______/\_______/|/       \_______/(_______/
+Index 1-1
+Accessibility 1-1
+Git 1-1
+Activity 1-1                                                                                                               
+*/
+
+/* -Index */
+a.skiplinklist {
     position: absolute;
-    height: 3rem;
-    top: 0.6rem;
-    left: 0.6rem;
+    overflow: hidden;
+    z-index: -10;
+    color: #fff;
+    font-size: 2em;
+    background-color: #111;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
-.container-side-by-side {
-    align-items: flex-start;
-    display: flex;
-    flex-wrap: wrap;
+a.skiplinklist:focus,
+a.skiplinklist:active {
+    z-index: 10;
+    overflow: auto;
 }
 
-.center {
+.tag-cloud {
+    display: inline-block;
+
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    color: white;
+    font-family: Arial;
+    font-size: 1.3em;
+
+    border-radius: 25px;
+    background-color: black;
+    margin-bottom: 8px;
+}
+.icon {
+    width: 15px;
+    height: 15px;
+    padding: 0px;
+}
+
+.tag-wrap {
+    text-align: center;
+    max-width: 50%;
+}
+
+.border-black {
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    padding: 2px;
+}
+.info-box {
+    padding: 2em;
+    margin: 3em;
+}
+.info-box a {
+    border-bottom: 2px solid rgb(160, 160, 70);
+}
+/* Maybe rename */
+.profileCard {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #f6f2f2;
+    max-width: 300px;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    font-family: arial;
+    border: 5px solid black;
+}
+
+.profileCard-position {
+    color: grey;
+    font-size: 18px;
+}
+
+/* Important that field-of-study li is kept in this order */
+.field-of-study ul {
+    margin: auto;
+}
+
+/*     https://nestedsoftware.com/2019/11/05/card-with-expand-on-hover-effect-2ccm.200941.html */
+.field-of-study li:hover img {
+    /* Reused from line 98. translate3d scale is increased*/
+    transform: translate3D(0, -1px, 0) scale(1.7);
+    /* move up slightly and zoom in */
+    box-shadow: 8px 28px 50px rgba(39, 44, 49, .07), 1px 6px 12px rgba(39, 44, 49, .04);
+    transition: all .4s ease;
+    /* zoom in */
+    cursor: pointer;
+}
+
+.field-of-study li {
+    list-style: none;
+    margin-right: 10px;
+    background-color: #f6f2f2;
+}
+
+.field-of-study .item li {
+    border-right: .0625rem solid #222;
+    color: #222;
+    display: inline;
+    font-size: 1rem;
+    line-height: .875rem;
+    margin-right: .625rem;
+    padding-right: .625rem
+}
+
+.field-of-study>li {
+    width: 50vw;
+    min-width: 400px;
     margin-left: auto;
     margin-right: auto;
 }
+/* Field of study specific order end */
 
+.field-of-study .item:first-child {
+    margin-left: 0;
+    padding-left: 0
+}
+
+.field-of-study .item:last-child {
+    border: none !important;
+    /* !important rule overrides ALL previous styling rules for spesific property */
+    margin-right: 0;
+    padding-right: 0
+}
+
+.field-of-study-icon {
+    width: 15px;
+    height: 15px;
+    padding: 0px;
+    margin-left: auto;
+}
+
+.field-of-study-list {
+    align-items: center;
+    color: #222;
+    display: flex;
+    padding: 1.1875rem 1.875rem 1.1875rem 0;
+    text-decoration: none;
+}
+
+.field-of-study-list>p {
+    width: 33%;
+}
+
+/* -|Bachelor structure */
 /* || Bachelor Structure */
 /* classes related to the preview of semesters through the bachelor degree */
 /* classes for the courses are numerated by semester then class, 
@@ -429,9 +623,17 @@ course0203-box would be the box for the third class in the second semester*/
     text-decoration: none;
 }
 
-.year1 {grid-row: 1;}
-.year2 {grid-row: 3;}
-.year3 {grid-row: 5;}
+.year1 {
+    grid-row: 1;
+}
+
+.year2 {
+    grid-row: 3;
+}
+
+.year3 {
+    grid-row: 5;
+}
 
 .semester01 {
     grid-row: 1;
@@ -460,7 +662,7 @@ course0203-box would be the box for the third class in the second semester*/
 
 /* maybe make this a new seperate class?
 join it up with the other card classes? */
-.subject{
+.subject {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -482,130 +684,336 @@ join it up with the other card classes? */
     grid-row: 1;
     grid-column: 2/4;
 }
+
 .course0102-box {
     grid-row: 1;
     grid-column: 4/6;
 }
+
 .course0103-box {
     grid-row: 1;
     grid-column: 6/7;
 }
+
 .course0104-box {
     grid-row: 1;
     grid-column: 7/8;
 }
+
 /* Second semester */
 .course0201-box {
     grid-row: 3;
     grid-column: 2/4;
 }
+
 .course0202-box {
     grid-row: 3;
     grid-column: 4/6;
 }
+
 .course0203-box {
     grid-row: 3;
     grid-column: 6/8;
 }
+
 /* Third semester */
 .course0301-box {
     grid-row: 1;
     grid-column: 2/4;
 }
+
 .course0302-box {
     grid-row: 1;
     grid-column: 4/6;
 }
+
 .course0303-box {
     grid-row: 1;
     grid-column: 6/8;
 }
+
 /* Fourth semester */
 .course0401-box {
     grid-row: 3;
     grid-column: 2/4;
 }
+
 .course0402-box {
     grid-row: 3;
     grid-column: 4/6;
 }
+
 .course0403-box {
     grid-row: 3;
     grid-column: 6/8;
 }
+
 /* Fifth semester */
 .course0501-box {
     grid-row: 1;
     grid-column: 2/4;
 }
+
 .course0502-box {
     grid-row: 1;
     grid-column: 4/6;
 }
+
 .course0503-box {
     grid-row: 1;
     grid-column: 6/8;
 }
+
 /* Sixth semester */
 .course0601-box {
     grid-row: 3;
     grid-column: 2/6;
 }
+
 .course0602-box {
     grid-row: 3;
     grid-column: 6/8;
 }
 
+/* -Accessibility */
 
-.icon {
-    width: 15px;
-    height: 15px;
-    padding: 0px;
+/* -Git */
+.gitParagrafer {
+    width: 60%;
+    margin: auto;
+    padding: 5px;
 }
 
-.tag-cloud {
-    display: inline-block;
-
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 20px;
-    padding-right: 20px;
-
-    color: white;
-    font-family: Arial;
-    font-size: 1.3em;
-
-    border-radius: 25px;
-    background-color: black;
-    margin-bottom: 8px;
+.gitParagrafer section {
+    background-color: var(--oslometprimary);
+    padding: 1rem;
 }
 
-.tag-wrap { 
-    text-align: center;
-    max-width: 50%;
+.gitParagrafer h1 {
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+}
+tbody tr:nth-child(odd) {
+    background-color: lightyellow;
 }
 
-.icon {
-    width: 15px;
-    height: 15px;
-    padding: 0px;
+tbody tr:nth-child(even),
+thead {
+    background-color: lightgoldenrodyellow;
 }
 
-/* || SITEWIDE */
-
-#burger-toggle {
-    display: none;
+table {
+    border-collapse: collapse;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    width: 90%;
+    margin: auto;
 }
 
-.hamburger-toggle-container img {
-    height: 2.5rem;
+tr {
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    border-bottom-width: 1px;
 }
 
-.hamburger-toggle-container {
+th,
+td {
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.75em;
+    border-style: dashed;
+    border-color: black;
+    border-width: 1px;
+}
+
+td {
+    text-align: left;
+}
+
+/* -Activity */
+/* Header Activity START */
+.navbar-activity {
+    width: 100%;
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    z-index: 9;
 }
+/*activityFooter klassen er laget spesefikt for Activity-pagen, slik at footeren skiller seg ut fra de andre sidene og bedre matcher temaet til siden.*/
+.activityFooter p {
+    font-size: larger;
+    font-weight: 600;
+    padding: 0.5rem;
+}
+
+.activityFooter a {
+    background-color: #111;
+    padding: 1rem;
+    color: white;
+}
+
+.activityFooter {
+    text-align: center;
+    background-color: lightgrey;
+    padding: 7px;
+}
+
+.text-section p {
+    text-align: left;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.text-section h2 {
+    text-align: center;
+}
+
+.img-with-text-section {
+    padding: 2%;
+    align-self: center;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10%;
+}
+/* Hero Activity START https://www.w3schools.com/howto/howto_css_hero_image.asp*/
+.hero-activity {
+    z-index: 1;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/images/activity/fellowship.webp");
+
+    /* Set a specific height */
+    width: 100%;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+.hero-activity h1,
+.hero-activity p {
+    top: 50%;
+    left: 50%;
+    color: white;
+    padding: 1rem;
+}
+
+.hero-activity p {
+    padding-bottom: 10rem;
+}
+
+.hero-activity h1 {
+    padding-top: 10rem;
+}
+
+/* Hero Activity END */
+
+
+
+/* menu logo */
+.activity-header .hamburger-toggle-container img {
+    height: 40px;
+}
+
+.activity-header .hamburger-toggle-container {
+    z-index: 9;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Burger Dropdown */
+.activity-header .menu {
+    padding-left: 0;
+    border-radius: 25px;
+    background-color: #111;
+    z-index: 8;
+    position: absolute;
+    width: 20rem;
+    margin-top: -0rem;
+    top: 0;
+    right: 0rem;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.activity-header .hamburger-toggle-container img {
+    display: block;
+    height: 40px;
+    width: 40px;
+}
+
+.activity-header .hamburger-toggle-container {
+    cursor: pointer;
+}
+
+.activity-header .menu li {
+    height: 0px;
+    overflow: hidden;
+}
+
+.activity-header #burger-toggle:checked~.menu li {
+    border-radius: 25px;
+    position: relative;
+    height: 3rem;
+    padding: 3rem;
+    transition-duration: 0.3s;
+}
+
+.navbar-activity .navlist:hover:not(.active, .logo-a, .hamburger-toggle-container) {
+    background-color: hsl(50, 100%, 40%);
+}
+
+/* Header Activity END */
+/* Trip List from activity page START */
+.trip-listitem {
+    padding: 0;
+    border-radius: 25px;
+    width: 30%;
+}
+
+.image-box-card {
+    margin-top: -1rem;
+    max-height: 12.5rem;
+    overflow: hidden;
+
+}
+
+.trip-listitem img {
+    margin-top: -1.5rem;
+    object-fit: cover;
+    width: 100%;
+    height: 15rem;
+}
+
+/* code partially from https://stackoverflow.com/questions/33058004/applying-an-ellipsis-to-multiline-text */
+.trip-listitem p {
+    padding: 0em 1em 0em;
+    display: -webkit-box;
+    line-clamp: 3;
+    /* Just tired of the warning, not sure what it does */
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
+/* ────────────────────────────────────────────────────────────── */
+
+/* || MEDIA QUERIES 
+ _______  _______ _________ ______   _______    _______           _______  _______ _________ _______  _______ 
+(       )(  ____ \\__   __/(  __  \ (  ___  )  (  ___  )|\     /|(  ____ \(  ____ )\__   __/(  ____ \(  ____ \
+| () () || (    \/   ) (   | (  \  )| (   ) |  | (   ) || )   ( || (    \/| (    )|   ) (   | (    \/| (    \/
+| || || || (__       | |   | |   ) || (___) |  | |   | || |   | || (__    | (____)|   | |   | (__    | (_____ 
+| |(_)| ||  __)      | |   | |   | ||  ___  |  | |   | || |   | ||  __)   |     __)   | |   |  __)   (_____  )
+| |   | || (         | |   | |   ) || (   ) |  | | /\| || |   | || (      | (\ (      | |   | (            ) |
+| )   ( || (____/\___) (___| (__/  )| )   ( |  | (_\ \ || (___) || (____/\| ) \ \_____) (___| (____/\/\____) |
+|/     \|(_______/\_______/(______/ |/     \|  (____\/_)(_______)(_______/|/   \__/\_______/(_______/\_______)
+Thin Screen 1-1
+Ultrawide 1-1                                                                                              
+*/
 
 @media (min-width:701px) {
     .hamburger-toggle-container img {
@@ -664,29 +1072,6 @@ join it up with the other card classes? */
     }
 
 }
-
-.navbar .active {
-    background-color: var(--oslometselected);
-}
-
-.navbar a {
-    font-size: 1.5rem;
-    color: black;
-    text-align: center;
-    padding: 0.5rem;
-    text-decoration: none;
-    border-radius: 0.4rem;
-}
-
-/* Change the link color tohsl(50, 100%, 40%);(darker oslometprimary) on hover accept the active one */
-
-.navbar a:hover:not(.active, .logo-a) {
-    background-color: hsl(50, 100%, 40%);
-}
-
-
-
-/* || THINSCREEN */
 /* all elements inside of this will only display when max monitor size is 800 px wide */
 
 @media only screen and (max-width: 800px) {
@@ -717,7 +1102,9 @@ join it up with the other card classes? */
         display: none;
         height: none;
     }
-    .card-wrapper>article { /* Påvirker ikke activity pga div isteden for article */
+
+    .card-wrapper>article {
+        /* Påvirker ikke activity pga div isteden for article */
         margin: 6px;
         width: 80%;
     }
@@ -746,6 +1133,7 @@ join it up with the other card classes? */
         width: 1.5rem;
         padding: 1%;
     }
+
     /*Gjør slik at tabellen blir scrollbar når skjermen er mindre, og at scrollbar ikke vises på skjermen*/
     table {
         display: block;
@@ -754,347 +1142,25 @@ join it up with the other card classes? */
         scrollbar-width: none;
     }
 }
-
-
-/* standard sections */
-.shadow-top{box-shadow: 0px -10px 5px #11111110;}
-.shadow-bottom{box-shadow: 0px 10px 5px #11111110;}
-
-.text-section{
-    padding: 1rem;
-    text-align: left;
-    width: 100%;
-}
-
-.text-section p{
-    text-align: left;
-    margin-left: 20%;
-    margin-right: 20%;
-}
-
-.text-section h2{
-    text-align: center;
-}
-
-.img-with-text-section {
-    padding: 2%;
-    align-self: center;
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 10%;
-}
-
-/*Main page styling*/
-.colorbox {
-    background-color: var(--oslometsecondary);
-    height: 15vmax;
-    width: 100%;
-}
-
-header:not(.activity-header) {
-    background-color: var(--oslometprimary);
-    width: 100%;
-    height: 4.5rem;
-}
-
-/*Table of Content*/
-
-
-.sideNavListSection{
-    padding-top: 1rem;
-    padding-bottom: 4rem;
-    display: flex;
-    gap: 3rem;
-}
-
-.toc_title{
-    font-size: 1.1em;
-    font-weight:bold;
-    margin-bottom: 0;
-}
-.sideNavList{
-    text-align: left;
-    list-style: none;
-    list-style-position: inside;
-    padding: 0;
-    border-left-width: 2px;
-    border-left-style: solid;
-    border-left-color: black;
-}
-
-.sideNavList ul{
-    text-align: left;
-    list-style: none;
-    list-style-position: inside;
-    padding-left: 0;
-    border-left-width: 2px;
-    border-left-style: solid;
-    border-left-color: black;
-    padding-bottom: 10px;
-}
-
-.sideNavList>li>a{
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-top: 0.67em;
-    margin-bottom: 0.67em;  
-    line-height: 2em;
-    text-decoration: none;
-}
-
-.sideNavList>li>ul>li{
-    padding-bottom: 5px;
-}
-
-.sideNavList>li>a::before,
-.sideNavList ul li::before{
-    content: "────";
-}
-
-/* Git-page spesefic START*/ 
-.gitParagrafer{
-    width: 60%;
-    margin: auto;
-    padding: 5px;
-}
-.gitParagrafer section{
-    background-color: var(--oslometprimary);
-    padding: 1rem;
-}
-.gitParagrafer h1{
-    padding-top: 2rem;
-    padding-bottom: 0.5rem;
-}
-tbody tr:nth-child(odd) {
-    background-color: lightyellow;
-}
-tbody tr:nth-child(even), thead {
-    background-color: lightgoldenrodyellow;
-}
-table {
-    border-collapse: collapse;
-    border-style: solid;
-    border-color:  black;
-    border-width:  1px;    
-    width: 90%;
-    margin: auto;
-}
-tr {
-    border-bottom-style: solid;
-    border-bottom-color:black;
-    border-bottom-width: 1px;
-}
-th, td {
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-top: 0.5em;
-    padding-bottom: 0.75em;
-    border-style: dashed;
-    border-color: black;
-    border-width: 1px;
-}
-td{
-    text-align: left;
-}
-/*Git-page spesefic END*/
-
-/* Activity page specific START */
-
-/* Header Activity START */
-.navbar-activity{
-    width: 100%;
-    position: absolute;
-    z-index: 9;
-}
-
-
-/* Hero Activity START https://www.w3schools.com/howto/howto_css_hero_image.asp*/
-.hero-activity{
-    z-index: 1;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/images/activity/fellowship.webp");
-
-    /* Set a specific height */
-    width: 100%;
-  
-    /* Position and center the image to scale nicely on all screens */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    
-}
-
-.hero-activity h1, .hero-activity p{
-    top: 50%;
-    left: 50%;
-    color: white;
-    padding: 1rem;
-} 
-.hero-activity p{padding-bottom: 10rem;}
-.hero-activity h1{padding-top: 10rem;}
-/* Hero Activity END */
-
-
-
-/* menu logo */
-.activity-header .hamburger-toggle-container img{height: 40px;}
-.activity-header .hamburger-toggle-container{
-    z-index: 9;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
-
-/* Burger Dropdown */
-.activity-header .menu {
-    padding-left: 0;
-    border-radius: 25px;
-    background-color: #111;
-    z-index: 8;
-    position: absolute;
-    width: 20rem;
-    margin-top: -0rem;
-    top: 0;
-    right: 0rem;
-    flex-direction: column;
-    list-style-type: none;
-}
-
-.activity-header .hamburger-toggle-container img{
-    display: block;
-    height: 40px;
-    width: 40px;
-}
-
-.activity-header .hamburger-toggle-container{
-    cursor: pointer;
-}
-
-.activity-header .menu li {
-    height: 0px;
-    overflow: hidden;
-}
-
-.activity-header #burger-toggle:checked ~ .menu li{
-    border-radius: 25px;
-    position: relative;
-    height: 3rem;
-    padding: 3rem;
-    transition-duration: 0.3s;
-}
-
-.navbar-activity .navlist:hover:not(.active, .logo-a, .hamburger-toggle-container){
-    background-color: hsl(50, 100%, 40%);
-}
-/* Header Activity END */
-/* Trip List from activity page START */
-.trip-listitem{
-    width: 30%;
-    margin: 1%;
-    padding: 0; 
-    border-radius: 25px; /* gjentagende? */
-    width: 30%;
-}
-.image-box-card{
-    margin-top: -1rem;
-    max-height: 12.5rem;
-    overflow: hidden;
-    
-}
-.trip-listitem img{
-    margin-top: -1.5rem;
-    object-fit: cover;
-    width: 100%;
-    height: 15rem;
-}
-/* code partially from https://stackoverflow.com/questions/33058004/applying-an-ellipsis-to-multiline-text */
-.trip-listitem p{
-    padding: 0em 1em 0em;
-    display: -webkit-box;
-    line-clamp: 3; /* Just tired of the warning, not sure what it does */
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-} 
-/* Trip List from activity page END */
-
-
-/* Activity page specific END */    
-
-
-/** Accessibility content, sitewide **/
-
-a.skiplinklist{
-    position: absolute;
-    overflow: hidden;
-    z-index: -10;
-    color: #fff;
-    font-size: 2em;
-    background-color: #111;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-a.skiplinklist:focus, a.skiplinklist:active{
-    z-index: 10;
-    overflow: auto;
-}
-
-/* Testing back to top button, read up here; https://dev.to/jackherizsmith/making-a-back-to-top-button-without-javascript-2ej6*/
-
-.scroll-top {
-    position: fixed;
-    display: flex;
-    right: 15%;
-    bottom: 0;
-    gap: 1em;
-    max-width: 100px;
-    z-index: 12;
-  }
-  
-  .scroll-top__link {
-    top: 85vh;
-    text-decoration:none;
-    border-radius: .25rem;
-    background-color: hsl(240, 100%, 50%);
-    padding:1rem;
-    color: hsl(0, 0%, 100%);
-    font-weight:700;
-    opacity:.3;
-    
-  }
-  
-  .scroll-top__link:hover {
-    opacity: initial;
-    color: hsl(0, 0%, 100%);
-  }
-
-  /* || THINSCREEN */
-/* all elements inside of this will only display when max monitor size is 800 px wide */
-
 @media only screen and (max-width: 800px) {
     .colorbox {
         display: none;
         height: none;
     }
-    
-    .field-of-study
-    {
+
+    .field-of-study {
         margin: 0;
         padding-left: 0;
         margin-bottom: 30px;
         overflow: hidden;
     }
 
-    .sideNavListSection{
+    .sideNavListSection {
         flex-direction: column;
         margin-left: 10vw;
-        gap: 0!important;
-        padding-top: 0!important;
-        padding-bottom: 0!important;
+        gap: 0 !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
     }
 
     .scrollable_section {
@@ -1107,7 +1173,7 @@ a.skiplinklist:focus, a.skiplinklist:active{
         /* Prevent wrapping */
     }
 
-    section{
+    section {
         scroll-margin: 10vh;
     }
 
@@ -1120,7 +1186,7 @@ a.skiplinklist:focus, a.skiplinklist:active{
 
     .scroll-top {
         display: none;
-      }
+    }
 
 
     .firstmedia,
@@ -1131,11 +1197,12 @@ a.skiplinklist:focus, a.skiplinklist:active{
         margin-top: 1vh;
         margin-left: 1vh;
         padding-right: 2vh;
-       
-    }
-    
 
-    .card-wrapper>article { /* Påvirker ikke activity pga div isteden for article */
+    }
+
+
+    .card-wrapper>article {
+        /* Påvirker ikke activity pga div isteden for article */
         margin: 6px;
         width: 80%;
     }
@@ -1147,7 +1214,7 @@ a.skiplinklist:focus, a.skiplinklist:active{
 
     .lenker,
     .sosiale,
-    .info{
+    .info {
         padding-left: 10%;
         justify-self: auto;
     }
@@ -1156,7 +1223,7 @@ a.skiplinklist:focus, a.skiplinklist:active{
         grid-row: 2;
         grid-column: 1;
     }
-    
+
     .info {
         grid-row: 1;
         grid-column: 1;
@@ -1171,6 +1238,7 @@ a.skiplinklist:focus, a.skiplinklist:active{
         width: 1.2rem;
         padding: 1%;
     }
+
     table {
         display: block;
         overflow-x: auto;
@@ -1247,15 +1315,17 @@ a.skiplinklist:focus, a.skiplinklist:active{
 
 /* || Bachelor structure Small screen */
 @media (max-width: 1000px) {
-    .year-wrapper{
+    .year-wrapper {
         grid-template-rows: auto;
     }
-    .semester-wrapper{
+
+    .semester-wrapper {
         grid-template-columns: 45vw 5vw 45vw;
         grid-template-rows: auto;
         width: 100%;
     }
-    .semester01{
+
+    .semester01 {
         grid-column: 1;
         grid-row: 1;
         margin-top: 10px;
@@ -1263,7 +1333,8 @@ a.skiplinklist:focus, a.skiplinklist:active{
         padding-left: 10px;
         padding-right: 10px;
     }
-    .semester02{
+
+    .semester02 {
         grid-column: 3;
         grid-row: 1;
         margin-top: 10px;
@@ -1271,11 +1342,13 @@ a.skiplinklist:focus, a.skiplinklist:active{
         padding-left: 10px;
         padding-right: 10px;
     }
+
     .year-wrapper .year1,
     .year-wrapper .year2,
     .year-wrapper .year3 {
         grid-column: 1;
     }
+
     .year1,
     .year2,
     .year3 {
@@ -1283,18 +1356,20 @@ a.skiplinklist:focus, a.skiplinklist:active{
         justify-content: center;
         align-items: center;
     }
+
     .year1 {
         grid-column: 1;
     }
-    
+
     .year2 {
         grid-column: 3;
     }
-    
+
     .year3 {
         grid-column: 5;
     }
-     /* Flips the grid to be vertical instead of horizontal */
+
+    /* Flips the grid to be vertical instead of horizontal */
     /* swapped row with column, and vice versa */
     /* First semester */
     .course0101-box {
@@ -1316,6 +1391,7 @@ a.skiplinklist:focus, a.skiplinklist:active{
         grid-column: 1;
         grid-row: 7/8;
     }
+
     /* Second semester */
     .course0201-box {
         grid-column: 3;
@@ -1331,6 +1407,7 @@ a.skiplinklist:focus, a.skiplinklist:active{
         grid-column: 3;
         grid-row: 6/8;
     }
+
     /* Third semester */
     .course0301-box {
         grid-column: 1;
@@ -1346,6 +1423,7 @@ a.skiplinklist:focus, a.skiplinklist:active{
         grid-column: 1;
         grid-row: 6/8;
     }
+
     /* Fourth semester */
     .course0401-box {
         grid-column: 3;
@@ -1361,6 +1439,7 @@ a.skiplinklist:focus, a.skiplinklist:active{
         grid-column: 3;
         grid-row: 6/8;
     }
+
     /* Fifth semester */
     .course0501-box {
         grid-column: 1;
@@ -1376,6 +1455,7 @@ a.skiplinklist:focus, a.skiplinklist:active{
         grid-column: 1;
         grid-row: 6/8;
     }
+
     /* Sixth semester */
     .course0601-box {
         grid-column: 3;
@@ -1389,3 +1469,23 @@ a.skiplinklist:focus, a.skiplinklist:active{
 
 
 }
+
+/* -Thin Screen */
+
+/* -Ultrawide */
+
+
+
+
+
+/*.card:hover {   Makes cards popp when hovered, but might make user believe it's a link.
+    https://nestedsoftware.com/2019/11/05/card-with-expand-on-hover-effect-2ccm.200941.html
+    transform: translate3D(0, -1px, 0) scale(1.03);     /* move up slightly and zoom in 
+    box-shadow: 8px 28px 50px rgba(39, 44, 49, .07), 1px 6px 12px rgba(39, 44, 49, .04);
+    transition: all .4s ease;    /* zoom in 
+    cursor: pointer;
+
+}*/
+
+
+
