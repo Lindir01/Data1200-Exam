@@ -990,6 +990,8 @@ td{
 /* Header Activity END */
 /* Trip List from activity page START */
 .trip-listitem{
+    width: 30%;
+    margin: 1%;
     padding: 0; 
     border-radius: 25px; /* gjentagende? */
     width: 30%;
