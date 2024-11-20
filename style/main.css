@@ -43,8 +43,8 @@ Format 1-1
 Text   1-1    */
 /*  -Format */
 html {
-    scroll-behavior: smooth;
     background-color: var(--oslometprimary);
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -62,11 +62,11 @@ html {
 }
 
 body {
-    background-color: aliceblue;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
     margin: 0;
     padding: 0;
+    background-color: var(--oslometsecondary);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
 }
 
 main {
@@ -74,7 +74,6 @@ main {
     flex-direction: column;
     overflow: hidden;
 }
-
 
 section {
     margin-left: auto;
@@ -84,6 +83,7 @@ section {
 .center {
     margin-left: auto;
     margin-right: auto;
+    white-space: nowrap;
 }
 
 
@@ -98,19 +98,17 @@ h1+p+p,
 h2 {text-align: center;}
 
 h1 {
+    margin-top: 0;
+    margin-bottom: 0;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 0;
     padding-top: 0;
-    margin-bottom: 0;
     padding-bottom: 0;
     font-size: 3em;
 }
 
 h1+p,
-h2 {
-    font-size: 2em;
-}
+h2 {font-size: 2em;}
 
 .link-black a,
 .card a {
@@ -124,13 +122,12 @@ h2 {
     border-bottom: 2px solid black;
 }
 
-.link-black a:visited {
-    color: purple;
-}
+.link-black a:visited {color: purple;}
+
 .text-section {
+    width: 100%;
     padding: 1rem;
     text-align: left;
-    width: 100%;
 }
 
 
@@ -160,19 +157,17 @@ Media 1-1
     text-align: center;
 }
 .card {
-    overflow: hidden;
     float: left;
+    overflow: hidden;
+    box-shadow: 10px 10px 5px #11111110;
     box-sizing: border-box;
     width: 30%;
     border-radius: 25px;
     min-width: 150px;
     justify-content: space-evenly;
     background-color: rgb(246, 242, 242);
-    box-shadow: 10px 10px 5px #11111110;
 }
-.card ul {
-    text-align: left;
-}
+.card ul {text-align: left;}
 
 .card-wrapper {
     display: flex;
@@ -180,143 +175,132 @@ Media 1-1
     justify-content: center;
 }
 .sideNavListSection {
-    padding-top: 1rem;
-    padding-bottom: 4rem;
     display: flex;
     gap: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 4rem;
 }
 .sideNavList {
-    text-align: left;
-    list-style: none;
-    list-style-position: inside;
-    padding: 0;
     border-left-width: 2px;
     border-left-style: solid;
     border-left-color: black;
+    padding: 0;
+    text-align: left;
+    list-style: none;
+    list-style-position: inside;
 }
 
 .sideNavList ul {
-    text-align: left;
-    list-style: none;
-    list-style-position: inside;
-    padding-left: 0;
     border-left-width: 2px;
     border-left-style: solid;
     border-left-color: black;
+    padding-left: 0;
     padding-bottom: 10px;
+    text-align: left;
+    list-style: none;
+    list-style-position: inside;
 }
 
 .sideNavList>li>a {
-    font-size: 1.5em;
-    font-weight: bold;
     margin-top: 0.67em;
     margin-bottom: 0.67em;
+    font-size: 1.5em;
+    font-weight: bold;
     line-height: 2em;
     text-decoration: none;
 }
 
-.sideNavList>li>ul>li {
-    padding-bottom: 5px;
-}
+.sideNavList>li>ul>li {padding-bottom: 5px;}
 
 .sideNavList>li>a::before,
-.sideNavList ul li::before {
-    content: "────";
+.sideNavList ul li::before {content: "────";
 }
 /* Testing back to top button, read up here; https://dev.to/jackherizsmith/making-a-back-to-top-button-without-javascript-2ej6*/
 .scroll-top {
     position: fixed;
-    display: flex;
+    z-index: 12;
     right: 15%;
     bottom: 0;
+    display: flex;
     gap: 1em;
     max-width: 100px;
-    z-index: 12;
 }
 
 .scroll-top__link {
     top: 85vh;
+    opacity: .7;
     text-decoration: none;
     border-radius: .25rem;
-    background-color: hsl(240, 100%, 50%);
     padding: 1rem;
     color: hsl(0, 0%, 100%);
     font-weight: 700;
-    opacity: .3;
-
+    background-color: hsl(240, 100%, 50%);
 }
 
 .scroll-top__link:hover {
-    opacity: initial;
+    opacity: 1;
     color: hsl(0, 0%, 100%);
 }
 
 /* -Header */
 .logo {
     position: absolute;
-    height: 3rem;
     top: 0.6rem;
     left: 0.6rem;
+    height: 3rem;
 }
 
-#burger-toggle {
-    display: none;
-}
+#burger-toggle {display: none;}
 
-.hamburger-toggle-container img {
-    height: 2.5rem;
-}
+.hamburger-toggle-container img {height: 2.5rem;}
 
 .hamburger-toggle-container {
     position: absolute;
     top: 1rem;
     right: 1rem;
 }
-.navbar .active {
-    background-color: var(--oslometselected);
-}
+.navbar .active {background-color: var(--oslometselected);}
 
 .navbar a {
+    border-radius: 0.4rem;
+    padding: 0.5rem;
     font-size: 1.5rem;
     color: black;
     text-align: center;
-    padding: 0.5rem;
     text-decoration: none;
-    border-radius: 0.4rem;
 }
 
 /* Change the link color tohsl(50, 100%, 40%);(darker oslometprimary) on hover accept the active one */
 
-.navbar a:hover:not(.active, .logo-a) {
-    background-color: hsl(50, 100%, 40%);
-}
+.navbar a:hover:not(.active, .logo-a) {background-color: hsl(50, 100%, 40%);}
+
 header:not(.activity-header) {
-    background-color: var(--oslometprimary);
-    width: 100%;
     height: 4.5rem;
+    width: 100%;
+    background-color: var(--oslometprimary);
 }
 
 /* -Footer */
 footer {
-    background-color: var(--oslometprimary);
     bottom: 0px;
+    background-color: var(--oslometprimary);
 }
 /*footer-top klassen ble laget for å skille toppen av footeren fra resten av den, slik at jeg kunne kode linken og paragrafene spesefikt til toppen.*/
 .footer-top {
-    text-align: center;
     padding: 1rem;
+    text-align: center;
 }
 
 .footer-top p {
+    padding: 0.5rem;
     font-size: larger;
     font-weight: 600;
-    padding: 0.5rem;
 }
 
 .footer-top a {
-    background-color: #111;
     padding: 1rem;
     color: white;
+    background-color: #111;
 }
 
 footer a {
@@ -325,18 +309,14 @@ footer a {
     font-weight: 700;
 }
 
-footer a:hover {
-    text-decoration-line: underline;
-}
+footer a:hover {text-decoration-line: underline;}
 
 footer ul {
     list-style: none;
     font-weight: 700;
 }
 
-footer li {
-    padding-bottom: 0.4em;
-}
+footer li {padding-bottom: 0.4em;}
 
 footer section {
     display: grid;
@@ -353,72 +333,62 @@ footer section {
 
 .info,
 .lenker,
-.sosiale {
-    justify-self: center;
-}
+.sosiale {justify-self: center;}
 
-.info {
-    grid-column: 1 / 2;
-}
+.info {grid-column: 1 / 2;}
 
-.lenker {
-    grid-column: 2 / 3;
-}
+.lenker {grid-column: 2 / 3;}
 
 .sosiale {
-    margin-top: 0;
     grid-column: 3 / 4;
+    margin-top: 0;
     max-width: fit-content;
 }
 
 footer img {
+    position: relative;
     width: 35px;
     height: 35px;
     padding: 1%;
-    position: relative;
 }
-.shadow-top {
-    box-shadow: 0px -10px 5px #11111110;
-}
+.shadow-top {box-shadow: 0px -10px 5px #11111110;}
 
-.shadow-bottom {
-    box-shadow: 0px 10px 5px #11111110;
-}
+.shadow-bottom {box-shadow: 0px 10px 5px #11111110;}
 
 /* -Media */
 .firstmedia {
     margin-top: -12%;
-    width: 80%;
-    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
     max-height: 600px;
+    width: 80%;
+    max-width: 1000px;
 }
 
 video {
     margin-top: -20%;
     margin-left: 10%;
-    padding-top: 50px;
     width: 80%;
+    padding-top: 50px;
     max-width: 1200px;
 }
 
 
 /* -Body */
 .section-yellow {
-    background-color: var(--oslometprimary);
     width: 100%;
+    background-color: var(--oslometprimary);
 }
 
 .section-blue {
-    background-color: var(--oslometsecondary);
     width: 100%;
+    background-color: var(--oslometsecondary);
 }
 
 .colorbox {
-    background-color: var(--oslometsecondary);
     height: 15vmax;
     width: 100%;
+    background-color: var(--oslometsecondary);
 }
 
 /* ────────────────────────────────────────────────────────────── */
@@ -441,15 +411,15 @@ Activity 1-1
 /* -Index */
 a.skiplinklist {
     position: absolute;
-    overflow: hidden;
     z-index: -10;
+    overflow: hidden;
     color: #fff;
-    font-size: 2em;
-    background-color: #111;
     padding-left: 5px;
     padding-right: 5px;
     padding-top: 5px;
     padding-bottom: 5px;
+    font-size: 2em;
+    background-color: #111;
 }
 
 a.skiplinklist:focus,
@@ -460,19 +430,16 @@ a.skiplinklist:active {
 
 .tag-cloud {
     display: inline-block;
-
     padding-top: 8px;
+    margin-bottom: 8px;
     padding-bottom: 8px;
     padding-left: 20px;
     padding-right: 20px;
-
+    border-radius: 25px;
     color: white;
     font-family: Arial;
     font-size: 1.3em;
-
-    border-radius: 25px;
     background-color: black;
-    margin-bottom: 8px;
 }
 .icon {
     width: 15px;
@@ -481,8 +448,8 @@ a.skiplinklist:active {
 }
 
 .tag-wrap {
-    text-align: center;
     max-width: 50%;
+    text-align: center;
 }
 
 .border-black {
@@ -492,22 +459,21 @@ a.skiplinklist:active {
     padding: 2px;
 }
 .info-box {
-    padding: 2em;
     margin: 3em;
+    padding: 2em;
 }
-.info-box a {
-    border-bottom: 2px solid rgb(160, 160, 70);
-}
+.info-box a {border-bottom: 2px solid rgb(160, 160, 70);}
+
 /* Maybe rename */
 .profileCard {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    background-color: #f6f2f2;
     max-width: 300px;
+    border: 5px solid black;
     margin: auto;
     margin-top: 20px;
     text-align: center;
     font-family: arial;
-    border: 5px solid black;
+    background-color: #f6f2f2;
 }
 
 .profileCard-position {
@@ -516,35 +482,33 @@ a.skiplinklist:active {
 }
 
 /* Important that field-of-study li is kept in this order */
-.field-of-study ul {
-    margin: auto;
-}
+.field-of-study ul {margin: auto;}
 
-/*     https://nestedsoftware.com/2019/11/05/card-with-expand-on-hover-effect-2ccm.200941.html */
+/*https://nestedsoftware.com/2019/11/05/card-with-expand-on-hover-effect-2ccm.200941.html */
 .field-of-study li:hover img {
-    /* Reused from line 98. translate3d scale is increased*/
+    /* translate3d scale is increased*/
     transform: translate3D(0, -1px, 0) scale(1.7);
     /* move up slightly and zoom in */
-    box-shadow: 8px 28px 50px rgba(39, 44, 49, .07), 1px 6px 12px rgba(39, 44, 49, .04);
     transition: all .4s ease;
+    box-shadow: 8px 28px 50px rgba(39, 44, 49, .07), 1px 6px 12px rgba(39, 44, 49, .04);
     /* zoom in */
     cursor: pointer;
 }
 
 .field-of-study li {
-    list-style: none;
     margin-right: 10px;
+    list-style: none;
     background-color: #f6f2f2;
 }
 
 .field-of-study .item li {
-    border-right: .0625rem solid #222;
-    color: #222;
     display: inline;
-    font-size: 1rem;
-    line-height: .875rem;
+    color: #222;
+    border-right: .0625rem solid #222;
     margin-right: .625rem;
-    padding-right: .625rem
+    padding-right: .625rem;
+    line-height: .875rem;
+    font-size: 1rem;
 }
 
 .field-of-study>li {
@@ -561,17 +525,17 @@ a.skiplinklist:active {
 }
 
 .field-of-study .item:last-child {
-    border: none !important;
     /* !important rule overrides ALL previous styling rules for spesific property */
+    border: none;
     margin-right: 0;
     padding-right: 0
 }
 
 .field-of-study-icon {
+    margin-left: auto;
     width: 15px;
     height: 15px;
     padding: 0px;
-    margin-left: auto;
 }
 
 .field-of-study-list {
@@ -582,24 +546,21 @@ a.skiplinklist:active {
     text-decoration: none;
 }
 
-.field-of-study-list>p {
-    width: 33%;
-}
+.field-of-study-list>p {width: 33%;}
 
 /* -|Bachelor structure */
-/* || Bachelor Structure */
 /* classes related to the preview of semesters through the bachelor degree */
 /* classes for the courses are numerated by semester then class, 
 course0203-box would be the box for the third class in the second semester*/
 .emnegruppe {
-    background-color: rgb(78, 78, 78);
-    color: white;
-    text-align: center;
-    padding-top: 0.5vh;
-    padding-bottom: 0.5vh;
     margin-top: 2.5vh;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    text-align: center;
+    color: white;
+    background-color: rgb(78, 78, 78);
 }
 
 .year-wrapper {
@@ -613,51 +574,43 @@ course0203-box would be the box for the third class in the second semester*/
     display: grid;
     grid-template-rows: 10vw 0.5vw 10vw;
     grid-template-columns: 8vh 13vh 13vh 13vh 13vh 15vh 15vh;
-    height: 100%;
-    width: 100%;
     grid-gap: 0.5vw;
     align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
-.semester-wrapper a {
-    text-decoration: none;
-}
+.semester-wrapper a {text-decoration: none;}
 
-.year1 {
-    grid-row: 1;
-}
+.year1 {grid-row: 1;}
 
-.year2 {
-    grid-row: 3;
-}
+.year2 {grid-row: 3;}
 
-.year3 {
-    grid-row: 5;
-}
+.year3 {grid-row: 5}
 
 .semester01 {
-    grid-row: 1;
     display: flex;
+    grid-row: 1;
     border-bottom: 5px solid black;
 }
 
 .semester02 {
-    grid-row: 3;
     display: flex;
+    grid-row: 3;
     border-bottom: 5px solid black;
 }
 
 .valgfag-info {
     grid-column: 9/13;
-    background-color: var(--valgfagboxes);
     border-radius: 5px;
-    margin-bottom: 0.5vh;
     box-shadow: 1px 1px 4px black;
     width: 100%;
+    margin-bottom: 0.5vh;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 5px;
     padding-right: 5px;
+    background-color: var(--valgfagboxes);
 }
 
 /* maybe make this a new seperate class?
@@ -666,18 +619,16 @@ join it up with the other card classes? */
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    height: 100%;
     width: 100%;
+    height: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 5px;
     padding-right: 5px;
+    text-align: center;
 }
 
-.valgfag-box {
-    background-color: var(--valgfagboxes);
-}
+.valgfag-box {background-color: var(--valgfagboxes);}
 
 /* First semester */
 .course0101-box {
@@ -785,22 +736,18 @@ join it up with the other card classes? */
 }
 
 .gitParagrafer section {
-    background-color: var(--oslometprimary);
     padding: 1rem;
+    background-color: var(--oslometprimary);
 }
 
 .gitParagrafer h1 {
     padding-top: 2rem;
     padding-bottom: 0.5rem;
 }
-tbody tr:nth-child(odd) {
-    background-color: lightyellow;
-}
+tbody tr:nth-child(odd) {background-color: lightyellow;}
 
 tbody tr:nth-child(even),
-thead {
-    background-color: lightgoldenrodyellow;
-}
+thead {background-color: lightgoldenrodyellow;}
 
 table {
     border-collapse: collapse;
@@ -819,43 +766,41 @@ tr {
 
 th,
 td {
+    border-style: dashed;
+    border-color: black;
+    border-width: 1px;
     padding-left: 1em;
     padding-right: 1em;
     padding-top: 0.5em;
     padding-bottom: 0.75em;
-    border-style: dashed;
-    border-color: black;
-    border-width: 1px;
 }
 
-td {
-    text-align: left;
-}
+td {text-align: left;}
 
 /* -Activity */
 /* Header Activity START */
 .navbar-activity {
-    width: 100%;
     position: absolute;
     z-index: 9;
+    width: 100%;
 }
 /*activityFooter klassen er laget spesefikt for Activity-pagen, slik at footeren skiller seg ut fra de andre sidene og bedre matcher temaet til siden.*/
 .activityFooter p {
+    padding: 0.5rem;
     font-size: larger;
     font-weight: 600;
-    padding: 0.5rem;
 }
 
 .activityFooter a {
-    background-color: #111;
     padding: 1rem;
     color: white;
+    background-color: #111;
 }
 
 .activityFooter {
+    padding: 7px;
     text-align: center;
     background-color: lightgrey;
-    padding: 7px;
 }
 
 .text-section p {
@@ -864,121 +809,109 @@ td {
     margin-right: 20%;
 }
 
-.text-section h2 {
-    text-align: center;
-}
+.text-section h2 {text-align: center;}
 
 .img-with-text-section {
-    padding: 2%;
-    align-self: center;
     display: grid;
-    align-items: center;
     grid-template-columns: 1fr 1fr;
+    align-self: center;
+    align-items: center;
     column-gap: 10%;
+    padding: 2%;
 }
 /* Hero Activity START https://www.w3schools.com/howto/howto_css_hero_image.asp*/
 .hero-activity {
     z-index: 1;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/images/activity/fellowship.webp");
-
+    
     /* Set a specific height */
     width: 100%;
-
+    
     /* Position and center the image to scale nicely on all screens */
+    position: relative;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-
 }
 
 .hero-activity h1,
 .hero-activity p {
     top: 50%;
     left: 50%;
-    color: white;
     padding: 1rem;
+    color: white;
 }
 
-.hero-activity p {
-    padding-bottom: 10rem;
-}
+.hero-activity p {padding-bottom: 10rem;}
 
-.hero-activity h1 {
-    padding-top: 10rem;
-}
+.hero-activity h1 {padding-top: 10rem;}
 
 /* Hero Activity END */
 
 
 
 /* menu logo */
-.activity-header .hamburger-toggle-container img {
-    height: 40px;
-}
+.activity-header .hamburger-toggle-container img {height: 40px;}
 
 .activity-header .hamburger-toggle-container {
-    z-index: 9;
     position: absolute;
+    z-index: 9;
     top: 10px;
     right: 10px;
 }
 
 /* Burger Dropdown */
 .activity-header .menu {
-    padding-left: 0;
-    border-radius: 25px;
-    background-color: #111;
-    z-index: 8;
     position: absolute;
-    width: 20rem;
-    margin-top: -0rem;
+    z-index: 8;
     top: 0;
     right: 0rem;
     flex-direction: column;
+    border-radius: 25px;
+    width: 20rem;
+    margin-top: -0rem;
+    padding-left: 0;
     list-style-type: none;
+    background-color: #111;
 }
 
 .activity-header .hamburger-toggle-container img {
     display: block;
-    height: 40px;
     width: 40px;
+    height: 40px;
 }
 
-.activity-header .hamburger-toggle-container {
-    cursor: pointer;
-}
+.activity-header .hamburger-toggle-container {cursor: pointer;}
 
 .activity-header .menu li {
-    height: 0px;
     overflow: hidden;
+    height: 0px;
 }
 
 .activity-header #burger-toggle:checked~.menu li {
-    border-radius: 25px;
     position: relative;
+    transition-duration: 0.3s;
+    border-radius: 25px;
     height: 3rem;
     padding: 3rem;
-    transition-duration: 0.3s;
 }
 
 .navbar-activity .navlist:hover:not(.active, .logo-a, .hamburger-toggle-container) {
-    background-color: hsl(50, 100%, 40%);
+    background-color: hsl(0, 84%, 50%);
 }
 
 /* Header Activity END */
 /* Trip List from activity page START */
 .trip-listitem {
-    padding: 0;
-    border-radius: 25px;
     width: 30%;
+    border-radius: 25px;
+    padding: 0;
 }
 
 .image-box-card {
-    margin-top: -1rem;
-    max-height: 12.5rem;
     overflow: hidden;
-
+    max-height: 12.5rem;
+    margin-top: -1rem;
 }
 
 .trip-listitem img {
@@ -1011,7 +944,7 @@ td {
 | |   | || (      | |   ) |   | |   | (   ) |  | | /\| || |   | || (      | (\ (      | |   | (            ) |
 | )   ( || (____/\| (__/  )___) (___| )   ( |  | (_\ \ || (___) || (____/\| ) \ \_____) (___| (____/\/\____) |
 |/     \|(_______/(______/ \_______/|/     \|  (____\/_)(_______)(_______/|/   \__/\_______/(_______/\_______)
-                                                                                                              
+
 Thin Screen 1-1
 Ultrawide 1-1                                                                                              
 */
@@ -1022,49 +955,46 @@ Ultrawide 1-1
     }
 
     .menu {
-        margin-top: 1.5rem;
+        float: right;
         display: flex;
         flex-direction: row;
+        margin-top: 1.5rem;
         list-style-type: none;
-        float: right;
     }
-
 }
 
 
 @media (max-width:700px) {
     .menu {
         position: absolute;
+        z-index: 10;
         top: 3.5rem;
         right: 1.5rem;
         flex-direction: column;
         list-style-type: none;
-        z-index: 10;
     }
 
     .menu-icon {
         display: block;
-        height: 40px;
         width: 40px;
+        height: 40px;
     }
 
-    .hamburger-toggle-container {
-        cursor: pointer;
-    }
+    .hamburger-toggle-container {cursor: pointer;}
 
     .menu li {
-        height: 0px;
-        overflow: hidden;
         z-index: 11;
+        overflow: hidden;
+        height: 0px;
     }
 
     #burger-toggle:checked~.menu li {
         position: relative;
+        transition-duration: 0.3s;
         height: 3rem;
         padding-top: 0.7rem;
         padding: 0.5rem;
         background-color: var(--oslometgul);
-        transition-duration: 0.3s;
     }
 
     nav {
@@ -1075,74 +1005,7 @@ Ultrawide 1-1
 }
 /* all elements inside of this will only display when max monitor size is 800 px wide */
 
-@media only screen and (max-width: 800px) {
 
-    .scrollable_section {
-        overflow-x: auto;
-        /* Enables horizontal scrolling */
-    }
-
-    .center {
-        white-space: nowrap;
-        /* Prevent wrapping */
-    }
-
-    article {
-        width: 100%;
-        /* Allow full width for smaller screens */
-        min-width: auto;
-        /* Remove min-width to avoid overflow */
-    }
-
-    .smallermedia {
-        width: 100%;
-        margin: 10px;
-    }
-
-    .colorbox {
-        display: none;
-        height: none;
-    }
-
-    .card-wrapper>article {
-        /* Påvirker ikke activity pga div isteden for article */
-        margin: 6px;
-        width: 80%;
-    }
-
-    .footer-top {
-        grid-row: 1;
-        grid-column: 1;
-    }
-
-    .lenker {
-        grid-row: 3;
-        grid-column: 1;
-    }
-
-    .info {
-        grid-row: 2;
-        grid-column: 1;
-    }
-
-    .sosiale {
-        grid-row: 4;
-        grid-column: 1;
-    }
-
-    footer img {
-        width: 1.5rem;
-        padding: 1%;
-    }
-
-    /*Gjør slik at tabellen blir scrollbar når skjermen er mindre, og at scrollbar ikke vises på skjermen*/
-    table {
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
-        scrollbar-width: none;
-    }
-}
 @media only screen and (max-width: 800px) {
     .colorbox {
         display: none;
@@ -1150,29 +1013,21 @@ Ultrawide 1-1
     }
 
     .field-of-study {
-        margin: 0;
-        padding-left: 0;
-        margin-bottom: 30px;
         overflow: hidden;
+        margin: 0;
+        margin-bottom: 30px;
+        padding-left: 0;
     }
 
     .sideNavListSection {
         flex-direction: column;
-        margin-left: 10vw;
         gap: 0 !important;
+        margin-left: 10vw;
         padding-top: 0 !important;
         padding-bottom: 0 !important;
     }
 
-    .scrollable_section {
-        overflow-x: auto;
-        /* Enables horizontal scrolling */
-    }
 
-    .center {
-        white-space: nowrap;
-        /* Prevent wrapping */
-    }
 
     section {
         scroll-margin: 10vh;
@@ -1194,18 +1049,17 @@ Ultrawide 1-1
     video {
         width: 100%;
         margin: 0;
-        padding: 0;
         margin-top: 1vh;
         margin-left: 1vh;
+        padding: 0;
         padding-right: 2vh;
-
     }
 
 
     .card-wrapper>article {
         /* Påvirker ikke activity pga div isteden for article */
-        margin: 6px;
         width: 80%;
+        margin: 6px;
     }
 
     .footer-top {
@@ -1216,8 +1070,8 @@ Ultrawide 1-1
     .lenker,
     .sosiale,
     .info {
-        padding-left: 10%;
         justify-self: auto;
+        padding-left: 10%;
     }
 
     .lenker {
@@ -1256,63 +1110,7 @@ Ultrawide 1-1
     }
 }
 
-@media (min-width:701px) {
-    .hamburger-toggle-container img {
-        display: none;
-    }
 
-    .menu {
-        margin-top: 1.5rem;
-        display: flex;
-        flex-direction: row;
-        list-style-type: none;
-        float: right;
-        border-radius: 0.4rem;
-    }
-
-}
-
-
-@media (max-width:700px) {
-    .menu {
-        position: absolute;
-        top: 3.5rem;
-        right: 5px;
-        flex-direction: column;
-        list-style-type: none;
-        z-index: 10;
-    }
-
-    .menu-icon {
-        display: block;
-        height: 40px;
-        width: 40px;
-    }
-
-    .hamburger-toggle-container {
-        cursor: pointer;
-    }
-
-    .menu li {
-        height: 0px;
-        overflow: hidden;
-    }
-
-    #burger-toggle:checked~.menu li {
-        position: relative;
-        height: 3rem;
-        padding-top: 0.7rem;
-        padding: 0.5rem;
-        background-color: var(--oslometprimary);
-        transition-duration: 0.3s;
-    }
-
-    nav {
-        display: flex;
-        height: 40px;
-    }
-
-}
 
 /* || Bachelor structure Small screen */
 @media (max-width: 1000px) {
@@ -1321,27 +1119,27 @@ Ultrawide 1-1
     }
 
     .semester-wrapper {
-        grid-template-columns: 45vw 5vw 45vw;
         grid-template-rows: auto;
+        grid-template-columns: 45vw 5vw 45vw;
         width: 100%;
     }
 
     .semester01 {
-        grid-column: 1;
         grid-row: 1;
+        grid-column: 1;
         margin-top: 10px;
-        background-color: #f1f1f1;
         padding-left: 10px;
         padding-right: 10px;
+        background-color: #f1f1f1;
     }
 
     .semester02 {
-        grid-column: 3;
         grid-row: 1;
+        grid-column: 3;
         margin-top: 10px;
-        background-color: #f1f1f1;
         padding-left: 10px;
         padding-right: 10px;
+        background-color: #f1f1f1;
     }
 
     .year-wrapper .year1,
@@ -1358,17 +1156,9 @@ Ultrawide 1-1
         align-items: center;
     }
 
-    .year1 {
-        grid-column: 1;
-    }
-
-    .year2 {
-        grid-column: 3;
-    }
-
-    .year3 {
-        grid-column: 5;
-    }
+    .year1 {grid-column: 1;}
+    .year2 {grid-column: 3;}
+    .year3 {grid-column: 5;}
 
     /* Flips the grid to be vertical instead of horizontal */
     /* swapped row with column, and vice versa */
