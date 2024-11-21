@@ -731,11 +731,22 @@ join it up with the other card classes? */
 .tablewrapper{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     width: 100vw;
 }
-
-.tablewrapper table{
-    padding: 10vh;
+.top-tables{
+    width: 40%;
+}
+.bottom-table{
+    width:50%;
+}
+.accessability-table{
+    margin: 10px;
+    overflow:unset !important /* kun test */
+}
+.accessability-table td:nth-child(2){
+    width:50%;
 }
 
 /* -Git */
@@ -764,21 +775,21 @@ table {
     border-style: solid;
     border-color: black;
     border-width: 1px;
-    width: 90%;
-    margin: auto;
-}
+    /* width: 90%; */
+/*     margin: auto;
+ */}
 
 
 tr {
     border-bottom-style: solid;
-    border-bottom-color: black;
+    border-bottom-color: var(--black);
     border-bottom-width: 1px;
 }
 
 th,
 td {
     border-style: dashed;
-    border-color: black;
+    border-color: var(--black);
     border-width: 1px;
     padding-left: 1em;
     padding-right: 1em;
@@ -1108,6 +1119,19 @@ Ultrawide 1-1
         display: block;
         overflow-x: auto;
         white-space: nowrap;
+    }
+    .tablewrapper{
+        display: flex; /* endre på table */
+        flex-direction: column;
+    }
+    .accessability-table{
+        width: 90%;
+    }
+    .accessability-table td:nth-child(1){
+        width: 5%;
+    }
+    .accessability-table td:nth-child(2){
+        width: 65%;
     }
 }
 
