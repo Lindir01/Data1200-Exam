@@ -18,6 +18,9 @@
         Activity 1-1
     Media Queries 1-1
         Thin Screen 1-1
+            Site Wide 1-1
+            Index 1-1
+
         Ultrawide 1-1
 */
 
@@ -25,10 +28,6 @@
 cards for sitewide
 
 /* Ascii art made big enough to read in the file navigator */
-
-
-
-*/
 
 /* || General Styles
  _______  _______  _        _______  _______  _______  _          _______ _________          _        _______  _______ 
@@ -54,6 +53,8 @@ html {
     --highlightcolor: hsl(30, 100%, 50%);
     --courseboxes: hsl(0, 0%, 81%);
     --valgfagboxes: hsl(0, 0%, 76%);
+    --black:hsl(0, 0%, 0%);
+    --blackshadow:hsla(0, 0%, 7%, 0.063);
 }
 
 
@@ -62,6 +63,7 @@ main {
     flex-direction: column;
     overflow: hidden;
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -69,11 +71,13 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
 }
+
 section {
     margin-left: auto;
     margin-right: auto;
     scroll-margin: 30vh;
 }
+
 *,
 *::before,
 *::after {
@@ -96,22 +100,27 @@ h1 {
 }
 
 h1+p,
-h2 {font-size: 2em;
-margin-bottom: 0.5em;}
-
-a {text-decoration: none;}
-
-/* .link-black a,
-.card a {
-    font-weight: bold;
-    color: #111;
+h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
 }
 
-.link-black a:hover {
+a {
+    text-decoration: none;
+}
+
+.link-underline a,
+.card a {
+    font-weight: bold;
+    border-bottom: 2px
+    
+}
+
+.link-underline a:hover {
     border-bottom: 2px solid black;
 }
 
-.link-black a:visited {color: purple;}
+/* .link-black a:visited {color: purple;}
  */
 .text-section {
     width: 100%;
@@ -143,10 +152,11 @@ Media 1-1
     text-align: center;
     margin-bottom: 0;
 }
+
 .card {
     float: left;
     overflow: hidden;
-    box-shadow: 10px 10px 5px #11111110;
+    box-shadow: 10px 10px 5px var(--blackshadow);
     box-sizing: border-box;
     width: 30%;
     border-radius: 25px;
@@ -160,12 +170,14 @@ Media 1-1
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .sideNavListSection {
     display: flex;
     gap: 3rem;
     padding-top: 1rem;
     padding-bottom: 4rem;
 }
+
 .sideNavList {
     border-left-width: 2px;
     border-left-style: solid;
@@ -186,7 +198,7 @@ also rename */
     padding-bottom: 10px;
     list-style: none;
     list-style-position: inside;
-}  
+}
 
 .sideNavList>li>a {
     margin-top: 0.67em;
@@ -201,6 +213,7 @@ also rename */
 .sideNavList>li>a::before,
 .sideNavList ul li::before {content: "────";
 }
+
 /* Testing back to top button, read up here; https://dev.to/jackherizsmith/making-a-back-to-top-button-without-javascript-2ej6*/
 .scroll-top {
     position: fixed;
@@ -241,6 +254,7 @@ header:not(.activity-header) {
     color: black;
     text-align: center;
 }
+
 /* Change the link color tohsl(50, 100%, 40%);(darker oslometprimary) on hover accept the active one */
 
 .navbar a:hover:not(.active, .logo-a) {background-color: hsl(50, 100%, 40%);}
@@ -273,6 +287,7 @@ footer {
     padding: 1rem;
     text-align: center;
 }
+
 .footer-top p {
     padding: 0.5rem;
     font-size: larger;
@@ -282,12 +297,12 @@ footer {
 .footer-top a {
     padding: 1rem;
     color: white;
-    background-color: #111;
+    background-color: var(--black);
 }
 
 
 footer a {
-    color: #111;
+    color: var(--black);
     font-weight: 700;
 }
 
@@ -309,10 +324,12 @@ footer section {
 
 
 }
+
 .infoTitle {
     font-weight: 600;
     font-size: large;
 }
+
 .info,
 .lenker,
 .sosiale {justify-self: center;}
@@ -326,15 +343,15 @@ footer section {
     margin-top: 0;
     max-width: fit-content;
 }
+
 footer img {
     position: relative;
     width: 35px;
     height: 35px;
     padding: 1%;
 }
-.shadow-top {box-shadow: 0px -10px 5px #11111110;}
 
-.shadow-bottom {box-shadow: 0px 10px 5px #11111110;}
+.shadow-bottom {box-shadow: 0px 10px 5px var(--blackshadow);}
 
 /* -Media */
 .firstmedia {
@@ -347,10 +364,8 @@ footer img {
 }
 
 video {
-    margin-top: -20%;
-    margin-left: 10%;
-    width: 80%;
-    padding-top: 50px;
+    margin-top: -15%;
+    margin-left: 10vw;
     max-width: 1200px;
 }
 
@@ -369,8 +384,8 @@ video {
 .colorbox {
     height: 15vmax;
     width: 100%;
-    background-image: linear-gradient( var(--primarycolor),var(--secondarycolor));
-    /* background-color: var(--secondarycolor); */ 
+    background-image: linear-gradient(var(--primarycolor), var(--secondarycolor));
+    /* background-color: var(--secondarycolor); */
 }
 
 /* ────────────────────────────────────────────────────────────── */
@@ -401,7 +416,7 @@ a.skiplinklist {
     padding-top: 5px;
     padding-bottom: 5px;
     font-size: 2em;
-    background-color: #111;
+    background-color: var(--black);
 }
 
 a.skiplinklist:focus,
@@ -423,6 +438,7 @@ a.skiplinklist:active {
     font-size: 1.3em;
     background-color: black;
 }
+
 .icon {
     width: 15px;
     height: 15px;
@@ -434,21 +450,13 @@ a.skiplinklist:active {
     text-align: center;
 } /* Burde denne være over tag.cloud? */
 
-.border-black {
-    border-style: solid;
-    border-width: 2px;
-    border-color: black;
-    margin-bottom: 0.7vh;
-    /* Er den bare brukt på ".field-of-study li"? evnt. legge inn der 
-}*/
-}
 .info-box {
     margin: 3em;
     padding: 2em;
 }
 
-/* Maybe rename */
-.profileCard {
+
+.profile-POC {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
     border: 5px solid black;
@@ -459,7 +467,7 @@ a.skiplinklist:active {
     background-color: #f6f2f2;
 }
 
-.profileCard-position {
+.profile-POC-position {
     color: grey;
 }
 
@@ -494,23 +502,29 @@ a.skiplinklist:active {
 }
 
 .field-of-study>li {
-    width: 50vw;
-    min-width: 400px;
+/*     margin-bottom: 0.7vh;*/
     margin-left: auto;
     margin-right: auto;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    width: 50vw;
+    min-width: 400px; 
 }
+
+
 /* Field of study specific order end */
 
 .field-of-study .item:first-child {
     margin-left: 0;
-    padding-left: 0
+    padding-left: 0;
 }
 
 .field-of-study .item:last-child {
     /* !important rule overrides ALL previous styling rules for spesific property */
     border: none;
     margin-right: 0;
-    padding-right: 0
+    padding-right: 0;
 }
 
 .field-of-study-icon {
@@ -527,8 +541,10 @@ a.skiplinklist:active {
     padding: 1.1875rem 1.875rem 1.1875rem 0;
 }
 
-.field-of-study-list>p {width: 33%;
-padding-left: 3vw;}
+.field-of-study-list>p {
+    width: 33%;
+    padding-left: 3vw;
+}
 
 /* -|Bachelor structure */
 /* classes related to the preview of semesters through the bachelor degree */
@@ -721,6 +737,16 @@ join it up with the other card classes? */
 
 /* -Accessibility */
 
+.accessibilitycontent {
+    max-width: 80%;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.tablewrapper table{
+    padding: 10vh;
+}
+
 /* -Git */
 .gitParagrafer {
     width: 60%;
@@ -747,8 +773,6 @@ table {
     border-style: solid;
     border-color: black;
     border-width: 1px;
-    border-color: black;
-    border-width: 1px;
     width: 90%;
     margin: auto;
 }
@@ -756,7 +780,6 @@ table {
 
 tr {
     border-bottom-style: solid;
-    border-bottom-color: black;
     border-bottom-color: black;
     border-bottom-width: 1px;
 }
@@ -780,6 +803,7 @@ td {
     z-index: 9;
     width: 100%;
 }
+
 /*activityFooter klassen er laget spesefikt for Activity-pagen, slik at footeren skiller seg ut fra de andre sidene og bedre matcher temaet til siden.*/
 .activityFooter p {
     padding: 0.5rem;
@@ -790,7 +814,7 @@ td {
 .activityFooter a {
     padding: 1rem;
     color: white;
-    background-color: #111;
+    background-color: var(--black);
 }
 
 .activityFooter {
@@ -812,14 +836,15 @@ td {
     column-gap: 10%;
     padding: 2%;
 }
+
 /* Hero Activity START https://www.w3schools.com/howto/howto_css_hero_image.asp*/
 .hero-activity {
     z-index: 1;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/images/activity/fellowship.webp");
-    
+
     /* Set a specific height */
     width: 100%;
-    
+
     /* Position and center the image to scale nicely on all screens */
     position: relative;
     background-position: center;
@@ -865,7 +890,7 @@ td {
     margin-top: -0rem;
     padding-left: 0;
     list-style-type: none;
-    background-color: #111;
+    background-color: var(--black);
 }
 
 .activity-header .hamburger-toggle-container img {
@@ -921,9 +946,6 @@ td {
     padding: 0em 1em 0em;
     display: -webkit-box;
     line-clamp: 3;
-    /* Just tired of the warning, not sure what it does */
-    line-clamp: 3;
-    /* Just tired of the warning, not sure what it does */
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
@@ -992,6 +1014,7 @@ Ultrawide 1-1
     }
 
 }
+
 @media (min-width:801px) {
     .hamburger-toggle-container img {
         display: none;
