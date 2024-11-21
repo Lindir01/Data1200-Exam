@@ -134,6 +134,10 @@ table{
     border-style: solid;
     border-color: var(--black);
     border-width: 1px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2vh;
 }
 
 tr {
@@ -775,26 +779,28 @@ join it up with the other card classes? */
 }
 
 /* -Git */
-.gitParagrafer {
+.gitparagraphs {
     width: 60%;
     margin: auto;
     padding: 5px;
 }
 
-.gitParagrafer section {
+.gitparagraphs section {
     padding: 1rem;
     background-color: var(--primarycolor);
 }
 
-.gitParagrafer h1 {
+.gitparagraphs h1 {
     padding-top: 2rem;
     padding-bottom: 0.5rem;
 }
 
-.git-table {
-    width: 90%;
-    margin: auto;
-}
+.git-table th,
+.git-table td{padding: 1vw;}
+
+.git-table th:nth-child(odd){width: 20%;}
+
+.git-table th:nth-child(2){width: 50%;}
 
 /* -Activity */
 /* Header Activity START */
