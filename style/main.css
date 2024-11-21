@@ -120,8 +120,7 @@ a {
     border-bottom: 2px solid black;
 }
 
-/* .link-black a:visited {color: purple;}
- */
+
 .text-section {
     width: 100%;
     padding: 1rem;
@@ -251,7 +250,7 @@ header:not(.activity-header) {
     border-radius: 0.4rem;
     padding: 0.5rem;
     font-size: 1.5rem;
-    color: black;
+    color: var(--black);
     text-align: center;
 }
 
@@ -364,7 +363,6 @@ footer img {
 
 video {
     margin-top: -15%;
-    margin-left: 10vw;
     max-width: 1200px;
 }
 
@@ -435,7 +433,7 @@ a.skiplinklist:active {
     color: white;
     font-family: Arial;
     font-size: 1.3em;
-    background-color: black;
+    background-color: var(--black);
 }
 
 .tag-cloud img {
@@ -730,6 +728,12 @@ join it up with the other card classes? */
     margin-right: 10vw;
 }
 
+.tablewrapper{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+
 .tablewrapper table{
     padding: 10vh;
 }
@@ -841,8 +845,6 @@ td {
 
 .hero-activity h1,
 .hero-activity p {
-    top: 50%;
-    left: 50%;
     padding: 1rem;
     color: white;
 }
@@ -850,8 +852,6 @@ td {
 .hero-activity p {padding-bottom: 10rem;}
 
 .hero-activity h1 {padding-top: 10rem;}
-
-/* Hero Activity END */
 
 /* Hero Activity END */
 
@@ -892,7 +892,7 @@ td {
     overflow: hidden;
     height: 0px;
 }
-
+/* Forklar eller endre */
 .activity-header #burger-toggle:checked~.menu li {
     position: relative;
     transition-duration: 0.3s;
@@ -900,7 +900,7 @@ td {
     height: 3rem;
     padding: 3rem;
 }
-
+/* Forklar eller endre */
 .navbar-activity .navlist:hover:not(.active, .logo-a, .hamburger-toggle-container) {
     background-color: hsl(0, 84%, 50%);
 }
@@ -1061,9 +1061,9 @@ Ultrawide 1-1
     video {
         width: 100%;
         margin-top: 1vh;
-        margin-left: 1vh;
+        margin-left: 1vw;
         padding: 0;
-        padding-right: 2vh;
+        padding-right: 2w;
     }
 
     .card-wrapper>article {
@@ -1108,7 +1108,6 @@ Ultrawide 1-1
         display: block;
         overflow-x: auto;
         white-space: nowrap;
-        scrollbar-width: none;
     }
 }
 
