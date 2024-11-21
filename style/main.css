@@ -435,21 +435,13 @@ a.skiplinklist:active {
     text-align: center;
 } /* Burde denne være over tag.cloud? */
 
-.border-black {
-    border-style: solid;
-    border-width: 2px;
-    border-color: black;
-    margin-bottom: 0.7vh;
-    /* Er den bare brukt på ".field-of-study li"? evnt. legge inn der 
-}*/
-}
 .info-box {
     margin: 3em;
     padding: 2em;
 }
 
-/* Maybe rename */
-.profileCard {
+
+.profile-POC {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
     border: 5px solid black;
@@ -460,7 +452,7 @@ a.skiplinklist:active {
     background-color: #f6f2f2;
 }
 
-.profileCard-position {
+.profile-POC-position {
     color: grey;
 }
 
@@ -495,10 +487,14 @@ a.skiplinklist:active {
 }
 
 .field-of-study>li {
-    width: 50vw;
-    min-width: 400px;
+/*     margin-bottom: 0.7vh;*/
     margin-left: auto;
     margin-right: auto;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    width: 50vw;
+    min-width: 400px; 
 }
 /* Field of study specific order end */
 
