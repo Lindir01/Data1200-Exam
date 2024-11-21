@@ -26,7 +26,7 @@
 */
 
 /* notater for sorterting 
-cards for sitewide
+cards for sitewide */
 
 /* Ascii art made big enough to read in the file navigator */
 
@@ -146,7 +146,7 @@ th, td {
     border-style: dashed;
     border-color: var(--black);
     border-width: 1px;
-    padding-left: 10px;
+    padding-left: 1px;
     padding-top: 0.5em;
     padding-bottom: 0.75em;
 }
@@ -969,7 +969,7 @@ Ultrawide 1-1
     .tag-wrap{max-width: fit-content;}
     .scroll-top {
         max-height: fit-content;
-        left: 33vw;
+        left: 1vw;
     }
 
     .menu {
@@ -1071,8 +1071,7 @@ Ultrawide 1-1
         width: 100%;
         margin-top: 1vh;
         margin-left: 1vw;
-        padding: 0;
-        padding-right: 2w;
+        padding-right: 2vw;
     }
 
     .card-wrapper>article {
