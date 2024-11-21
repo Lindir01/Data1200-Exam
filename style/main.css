@@ -87,7 +87,7 @@ section {
 /*  -Text */
 
 
-h1,h2, h1+p {text-align: center;}
+.intro, h1,h2, h1+p {text-align: center;}
 
 h1 {
     margin-top: 0;
@@ -465,7 +465,7 @@ a.skiplinklist:active {
 }
 
 .profile-POC-position {
-    color: grey;
+    color: rgb(87, 87, 87);
 }
 
 .field-of-study ul {margin: auto;}
