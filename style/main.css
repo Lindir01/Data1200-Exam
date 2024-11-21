@@ -5,6 +5,7 @@
     General Styles 1-1
         Format 1-1
         Text 1-1
+        Table 1-1
     Site Wide 1-1
         Utilities 1-1
         Header 1-1
@@ -54,7 +55,9 @@ html {
     --courseboxes: hsl(0, 0%, 81%);
     --valgfagboxes: hsl(0, 0%, 76%);
     --black:hsl(0, 0%, 0%);
-    --blackshadow:hsla(0, 0%, 7%, 0.063);
+    --blackshadow: hsla(0, 0%, 7%, 0.063);
+    --table-odd: hsl(60, 100%, 94%);
+    --table-even: hsl(60, 80%, 90%);
 }
 
 
@@ -125,6 +128,31 @@ a {
     width: 100%;
     padding: 1rem;
 }
+/* -Table */
+table{
+    border-collapse: collapse;
+    border-style: solid;
+    border-color: var(--black);
+    border-width: 1px;
+}
+
+tr {
+    border-bottom-style: solid;
+    border-bottom-color: var(--black);
+    border-bottom-width: 1px;
+}
+
+th, td {
+    border-style: dashed;
+    border-color: var(--black);
+    border-width: 1px;
+    padding-left: 10px;
+    padding-top: 0.5em;
+    padding-bottom: 0.75em;
+}
+
+tbody tr:nth-child(odd) {background-color: var(--table-odd)}
+tbody tr:nth-child(even),thead {background-color: var(--table-even)}
 
 /* ────────────────────────────────────────────────────────────── */
 
@@ -741,10 +769,7 @@ join it up with the other card classes? */
 .bottom-table{
     width:50%;
 }
-.accessability-table{
-    margin: 10px;
-    overflow:unset !important /* kun test */
-}
+
 .accessability-table td:nth-child(2){
     width:50%;
 }
@@ -765,38 +790,11 @@ join it up with the other card classes? */
     padding-top: 2rem;
     padding-bottom: 0.5rem;
 }
-tbody tr:nth-child(odd) {background-color: lightyellow;}
 
-tbody tr:nth-child(even),
-thead {background-color: lightgoldenrodyellow;}
-
-table {
-    border-collapse: collapse;
-    border-style: solid;
-    border-color: black;
-    border-width: 1px;
-    /* width: 90%; */
-/*     margin: auto;
- */}
-
-
-tr {
-    border-bottom-style: solid;
-    border-bottom-color: var(--black);
-    border-bottom-width: 1px;
+.git-table {
+    width: 90%;
+    margin: auto;
 }
-
-th,
-td {
-    border-style: dashed;
-    border-color: var(--black);
-    border-width: 1px;
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-top: 0.5em;
-    padding-bottom: 0.75em;
-}
-
 
 /* -Activity */
 /* Header Activity START */
@@ -1115,17 +1113,29 @@ Ultrawide 1-1
         vertical-align: middle;
     }
 
-    table {
+    .git-table{
         display: block;
-        overflow-x: auto;
-        white-space: nowrap;
+        overflow-x: auto; 
+        width: 98%;
+    }
+    .git-table td:nth-child(1){
+        width: 5%;
+    }
+    .git-table td:nth-child(2){/* Oda hjelp */
+        width: 30%;
+    }
+    .git-table td:nth-child(3){/* Oda hjelp meg her og :(( */
+        width: 3%;
+
     }
     .tablewrapper{
-        display: flex; /* endre på table */
+        display: flex; 
         flex-direction: column;
+        max-width: 98%;
+        margin: auto;
     }
     .accessability-table{
-        width: 90%;
+        width: 100%;
     }
     .accessability-table td:nth-child(1){
         width: 5%;
