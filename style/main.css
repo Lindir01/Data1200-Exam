@@ -54,6 +54,8 @@ html {
     --highlightcolor: hsl(30, 100%, 50%);
     --courseboxes: hsl(0, 0%, 81%);
     --valgfagboxes: hsl(0, 0%, 76%);
+    --black:hsl(0, 0%, 0%);
+    --blackshadow:hsla(0, 0%, 7%, 0.063);
 }
 
 
@@ -147,7 +149,7 @@ Media 1-1
 .card {
     float: left;
     overflow: hidden;
-    box-shadow: 10px 10px 5px #11111110;
+    box-shadow: 10px 10px 5px var(--blackshadow);
     box-sizing: border-box;
     width: 30%;
     border-radius: 25px;
@@ -283,12 +285,12 @@ footer {
 .footer-top a {
     padding: 1rem;
     color: white;
-    background-color: #111;
+    background-color: var(--black);
 }
 
 
 footer a {
-    color: #111;
+    color: var(--black);
     font-weight: 700;
 }
 
@@ -333,9 +335,9 @@ footer img {
     height: 35px;
     padding: 1%;
 }
-.shadow-top {box-shadow: 0px -10px 5px #11111110;}
+.shadow-top {box-shadow: 0px -10px 5px var(--blackshadow);}
 
-.shadow-bottom {box-shadow: 0px 10px 5px #11111110;}
+.shadow-bottom {box-shadow: 0px 10px 5px var(--blackshadow);}
 
 /* -Media */
 .firstmedia {
@@ -402,7 +404,7 @@ a.skiplinklist {
     padding-top: 5px;
     padding-bottom: 5px;
     font-size: 2em;
-    background-color: #111;
+    background-color: var(--black);
 }
 
 a.skiplinklist:focus,
@@ -787,7 +789,7 @@ td {
 .activityFooter a {
     padding: 1rem;
     color: white;
-    background-color: #111;
+    background-color: var(--black);
 }
 
 .activityFooter {
@@ -862,7 +864,7 @@ td {
     margin-top: -0rem;
     padding-left: 0;
     list-style-type: none;
-    background-color: #111;
+    background-color: var(--black);
 }
 
 .activity-header .hamburger-toggle-container img {
