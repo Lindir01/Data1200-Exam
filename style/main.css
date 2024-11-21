@@ -55,6 +55,7 @@ html {
     --courseboxes: hsl(0, 0%, 81%);
     --valgfagboxes: hsl(0, 0%, 76%);
     --black:hsl(0, 0%, 0%);
+    --white: hsl(0, 0%, 100%);
     --blackshadow: hsla(0, 0%, 7%, 0.063);
     --table-odd: hsl(60, 100%, 94%);
     --table-even: hsl(60, 80%, 90%);
@@ -285,10 +286,14 @@ header:not(.activity-header) {
     color: var(--black);
     text-align: center;
 }
+.menu{
+    background-color: var(--primarycolor);
+    padding-left: 0;
+}
 
 /* Change the link color tohsl(50, 100%, 40%);(darker oslometprimary) on hover accept the active one */
 
-.navbar a:hover:not(.active, .logo-a) {background-color: hsl(50, 100%, 40%);}
+.navbar a:hover:not(.active, .logo-a) {background-color: var(--secondarycolor);}
 #burger-toggle {display: none;}
 
 .hamburger-toggle-container img {height: 2.5rem;}
@@ -382,6 +387,7 @@ footer img {
 }
 
 .shadow-bottom {box-shadow: 0px 10px 5px var(--blackshadow);}
+.shadow-top {box-shadow: 0px -10px 5px var(--blackshadow);}
 
 /* -Media */
 .firstmedia {
@@ -849,6 +855,7 @@ join it up with the other card classes? */
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/images/activity/fellowship.webp");
 
     /* Set a specific height */
+    height: 550px;
     width: 100%;
 
     /* Position and center the image to scale nicely on all screens */
@@ -857,28 +864,32 @@ join it up with the other card classes? */
     background-repeat: no-repeat;
     background-size: cover;
 }
+/* styling of title and subtitle on hero*/
+.hero-activity h1 {margin-top: 12rem;}
+.hero-activity p {padding-top: 0.2rem;}
 
 .hero-activity h1,
 .hero-activity p {
-    padding: 1rem;
-    color: white;
+    color: var(--white);
 }
-
-.hero-activity p {padding-bottom: 10rem;}
-
-.hero-activity h1 {padding-top: 10rem;}
-
 /* Hero Activity END */
 
-/* menu logo */
-.activity-header .hamburger-toggle-container img {height: 40px;}
 
+/* burger menu icon*/
 .activity-header .hamburger-toggle-container {
     position: absolute;
     z-index: 9;
     top: 10px;
     right: 10px;
 }
+
+.activity-header .hamburger-toggle-container img {
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+
+.activity-header .hamburger-toggle-container {cursor: pointer;}
 
 /* Burger Dropdown */
 .activity-header .menu {
@@ -895,19 +906,19 @@ join it up with the other card classes? */
     background-color: var(--black);
 }
 
-.activity-header .hamburger-toggle-container img {
-    display: block;
-    width: 40px;
-    height: 40px;
-}
-
-.activity-header .hamburger-toggle-container {cursor: pointer;}
-
 .activity-header .menu li {
     overflow: hidden;
     height: 0px;
+    text-align: center;
+    color: var(--white);
 }
-/* Forklar eller endre */
+
+/* on hover burgermenu item in activity change color, but not logo ass it should not have hover effect */
+.navbar-activity .navlist:hover:not(.active, .logo-a, .hamburger-toggle-container) {
+    background-color: hsl(0, 0%, 11%);
+}
+
+/* when burger menu button clicked changes the menu element to show/expand*/
 .activity-header #burger-toggle:checked~.menu li {
     position: relative;
     transition-duration: 0.3s;
@@ -915,11 +926,6 @@ join it up with the other card classes? */
     height: 3rem;
     padding: 3rem;
 }
-/* Forklar eller endre */
-.navbar-activity .navlist:hover:not(.active, .logo-a, .hamburger-toggle-container) {
-    background-color: hsl(0, 84%, 50%);
-}
-
 
 /* Header Activity END */
 /* Trip List from activity page START */
@@ -933,7 +939,7 @@ join it up with the other card classes? */
 .image-box-card {
     overflow: hidden;
     max-height: 12.5rem;
-    margin-top: -1rem;
+    margin-top: -2rem;
 }
 
 .trip-listitem img {
@@ -943,14 +949,30 @@ join it up with the other card classes? */
     height: 15rem;
 }
 
+/*Makes cards popp when hovered, but might make user believe it's a link. 
+https://nestedsoftware.com/2019/11/05/card-with-expand-on-hover-effect-2ccm.200941.html*/
+.trip-listitem:hover {
+    transform: translate3D(0, -1px, 0) scale(1.03);     /* move up slightly and zoom in */
+    box-shadow: 8px 28px 50px rgba(39, 44, 49, .07), 1px 6px 12px rgba(39, 44, 49, .04);
+    transition: all .4s ease;    /* zoom in */
+    cursor: pointer;
+
+}
+
+.trip-listitem h3 {
+    text-align: center;
+    color: var(--black);
+}
+
 /* code partially from https://stackoverflow.com/questions/33058004/applying-an-ellipsis-to-multiline-text */
 .trip-listitem p {
-    padding: 0em 1em 0em;
     display: -webkit-box;
     line-clamp: 3;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    padding: 0em 1em 0em;
+    color: var(--black);
 }
 
 
