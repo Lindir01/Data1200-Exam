@@ -134,7 +134,6 @@ table{
     border-style: solid;
     border-color: var(--black);
     border-width: 1px;
-    width: 90%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2vh;
@@ -153,6 +152,7 @@ th, td {
     padding-left: 1px;
     padding-top: 0.5em;
     padding-bottom: 0.75em;
+    padding: 1vw;
 }
 
 tbody tr:nth-child(odd) {background-color: var(--table-odd)}
@@ -794,13 +794,9 @@ join it up with the other card classes? */
     padding-top: 2rem;
     padding-bottom: 0.5rem;
 }
-
-.git-table th,
-.git-table td{padding: 1vw;}
-
+.git-table{width: 90%;}
 .git-table th:nth-child(odd){width: 20%;}
-
-.git-table th:nth-child(2){width: 50%;}
+.git-table th:nth-child(2){width: 60%;}
 
 /* -Activity */
 /* Header Activity START */
@@ -1119,18 +1115,17 @@ Ultrawide 1-1
     }
 
     .git-table{
-        display: block;
         overflow-x: auto; 
         width: 98%;
     }
     .git-table td:nth-child(1){
-        width: 5%;
+        min-width: 10%;
     }
     .git-table td:nth-child(2){/* Oda hjelp */
-        width: 30%;
+        min-width: 30%;
     }
     .git-table td:nth-child(3){/* Oda hjelp meg her og :(( */
-        width: 3%;
+        max-width: 5%;
 
     }
     .tablewrapper{
