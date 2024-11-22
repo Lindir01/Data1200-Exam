@@ -44,7 +44,6 @@ Text   1-1    */
 /*  -Format */
 
 html {
-    background-color: var(--primarycolor);
     scroll-behavior: smooth;
 }
 
@@ -214,7 +213,7 @@ Media 1-1
     background-color: var(--card-background);
 }
 
-.wide-card{width: 80%;}
+.wide-card{width: 65%;}
 
 .img-card{
     margin: 3rem;
@@ -272,7 +271,6 @@ Media 1-1
 }
 
 .scroll-top a {
-    opacity: .7;
     border-radius: .25rem;
     padding: 1rem;
     color: hsl(0, 0%, 100%);
@@ -281,7 +279,6 @@ Media 1-1
 }
 
 .scroll-top a:hover {
-    opacity: 1;
     color: hsl(0, 0%, 100%);
 }
 

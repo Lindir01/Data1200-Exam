@@ -115,54 +115,45 @@
 
 
         <article class="card-wrapper">
-
             <section class="card info-box">
                 <p> 
-                    Gjennom hele prosjektet har et spesielt fokus på tilgjenglighet, noe som vises gjennom kildekoden på
-                    siden vår. Vi har regelmessig kjørt både automatiserte tester med Ligthhouse og WAVE, sjekket selv
-                    med skjermleser (NVDA) samt lest oss opp på hva som kan være utfordrende med nettsider på generelt
-                    basis.
+                    Gjennom hele prosjektet har vi hatt et spesielt fokus på tilgjengelighet. 
+                    Vi har brukt automatiserte tester med Lighthouse og WAVE og manuelt testet med skjermleser (NVDA) med jevne mellomrom.
+                    Vi har også prøvd å sette oss inn i vanlige tilgjengelighetsutfordringer for å sikre at nettsiden er så brukervennlig som mulig.
                 </p>
             </section>
 
-            <img width="50%" src="media/images/accessibility/accessibility.webp" alt="Lighthouse screenshot" class="card img-card">
+            <img width="50%" src="media/images/accessibility/perna.png" alt="Lighthouse screenshot" class="card img-card">
 
             <section class="card info-box wide-card">
                 <p> 
-                    All tekst på siden skal være skalerbar så brukeren kan definere skriftstørrelsen de trenger, da vi
-                    har brukt rem og em på all tekst. Det skal også være mulig å zoome inn og at siden skalerer seg
-                    etter dine preferanser.
+                    All tekst på nettsiden er skalerbar, slik at brukerne kan justere skriftstørrelsen etter behov. 
+                    Dette har vi oppnådd ved å bruke relative enheter som <code>rem</code> og <code>em</code> for tekststiling. 
+                    Alt unntatt enkle ord or overskrifter er left-aligned. 
+                    Lenker er riktig fargekode iforhold til WCGA, så de er blå i utgangspunket og lilla når de har blitt besøkt. 
+                    Hvis man beveger musepekeren over lenkene i teksen får de også den klassiske underlinjen. 
+                    Alle lenker har en beskrivende tekst, så det er oversiktlig hvor man kommer.
                 </p>
             </section>
  
-            <img width="50%" src="media/images/accessibility/accessibility.webp" alt="WAVE screenshot" class="card img-card">
+            <img width="50%" src="media/images/accessibility/TEMP.png" alt="WAVE screenshot" class="card img-card">
  
             <section class="card info-box">
                 <p> 
-                    Alle bilder har alt attributten, og vi har prøvd å skrive en kort og presis beskrivelse av hvert
-                    bildet. For ikoner som er rent visuelle har vi lagt ved en blank alt tekst fordi i vår bruk er de
-                    ved siden av en lenke med mer beskrivende navn.
-                </p>
+                    Alle bilder på nettsiden har en beskrivende <code>alt</code>-tekst, slik at de er tilgjengelige for skjermlesere og som en fail-safe om bildet ikke laster ordentlig. 
+                    For rene visuelle bilder, som ikoner, har vi satt alt-teksten til å være blank. All informasjon man eventuelt kunne satt dem til er bedre beskrevet av lenkene ved siden av. </p>
             </section>
 
             <section class="card info-box wide-card">
                 <p> 
-                    Ved første “tab” på siden vil du møte en hopp til hovedinnhold knapp så skjermlesere slipper å gå
-                    gjennom alle linkene i navigasjonsmenyen. Den samme klassen har blitt brukt til å hoppe over andre
-                    store lister med linker, som innholdsfortegnelsen og hele studieoversikten. Hvis man har kommet seg
-                    nedover på siden og innser at det ikke er siden man vil se har vi lagt inn en knapp som visuelt er
-                    tilstede hele tiden for å komme seg opp igjen på siden, og lagt denne mellom
-                    <code>&lt;main&gt;</code> og <code>&lt;body&gt</code> i koden.
+                    For å forbedre brukeropplevelsen på siden vår, har vi implementert en “hopp til hovedinnhold”-knapp, som er det første som fokuseres på når man trykker på “Tab”-tasten. 
+                    Med enkelte skjermlesere og ved bruk av tastatur er dette veldig nyttig for å slippe gjentagende informasjon som navigasjonsmenyen når man beveger seg rundty på nettstedet. 
+                    Denne funksjonen er også gjenbrukt for større lister med lenker, som innholdsfortegnelsen og studieoversikten. 
+                    Vi har også lagd en «knapp» som gjør det mulig for brukere å raskt komme tilbake til toppen av siden. Denne knappen er synlig hele tiden visuelt.
+                    Ellers er knappen plassert mellom <code>&lt;main&gt;</code> og <code>&lt;footer&gt;</code> i HTML-strukturen, så det skal være enklere å nå den for skjermlesere og tastaturbrukere. 
                 </p>
-            </section>
-
-                
-                
-
-                    
-               
+            </section>               
         </article>
-
     </main>
 
     <footer>
