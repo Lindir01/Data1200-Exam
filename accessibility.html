@@ -16,8 +16,6 @@
         <a class="skiplinklist" href="#main">Hopp til innhold</a>
         
         <nav class="navbar">
-
-
             <!--oslomet logo white is clickable to home page-->
             <a href="index.html" class="logo-a">
                 <img class="logo" src="media/images/shared/logo-uten-storbysuniversitetet.svg" alt="Logo for OsloMet" width="100px" height="100px">
@@ -92,9 +90,11 @@
                     Ellers er knappen plassert mellom <code>&lt;main&gt;</code> og <code>&lt;footer&gt;</code> i HTML-strukturen, så det skal være enklere å nå den for skjermlesere og tastaturbrukere.
                 </p> 
                 <p> 
-                    Ved alternative studier, markert med «Er du kanskje interessert i disse?», har vi lagt til en effekt på pilen for å prøve å markere at det er en lenke som fører videre. 
-                    Siden bakgrunnen kan være lys, har vi lagt til en mørk border på det første store mediaet på hver side for å tideliggjøre hvor mediaet starter og slutter.
-                    Studieoversikten har blitt lagd med CSS Grid, som ikke er et semantisk element for å gi oss en ekstra utfordring. Det har vi prøvd å løse med blah blah.
+                    Ved alternative studier, markert med «Er du kanskje interessert i disse?», har vi lagt til en effekt på pilen for å prøve å markere at det er en lenke som fører videre. </p>
+                  <p>  For å fikse tilrettelegging på studiets oppbygging la vi til aria roles på <code>&lt;div&gt;</code>  elementene, som står for hele cellen med informasjon om fag. Og arira-labels på <code>&lt;a&gt;</code> elementene. 
+                    Vi legger aria-labels på <code>&lt;a&gt;</code>  elementene for at skjermlesere skal lese opp vår spesifikke tekst, istedet for hele hyperlenken. 
+                    Videre la vi til aria-hidde="true" på elementene inne i <code>&lt;a&gt;</code>, slik at skjermlesere ikke leser opp identisk tekst flere ganger. 
+                    Inne i aria-labels la vi til teksten "10 studiepoeng", slik at skjermleserne leser hele studiepoeng, istedet for "10 stp."
                 </p>
             </section>               
         </article>
