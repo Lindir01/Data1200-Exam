@@ -780,15 +780,6 @@ course0203-box would be the box for the third class in the second semester*/
 
 
 
-.img-with-text-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-self: center;
-    align-items: center;
-    column-gap: 10%;
-    padding: 2%;
-}
-
 /* Hero Activity START https://www.w3schools.com/howto/howto_css_hero_image.asp*/
 .hero-activity {
     z-index: 1;
