@@ -195,6 +195,14 @@ Media 1-1
     text-align: center;
 }
 
+.card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
 .card {
     float: left;
     overflow: hidden;
@@ -205,15 +213,6 @@ Media 1-1
     min-width: 150px;
     background-color: var(--card-background);
 }
-
-.card-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-}
-
 
 .pagenavigationsection {
     display: flex;
@@ -409,7 +408,7 @@ video {
 
 
 /* -Body */
-.section-yellow { /*slurp*/
+.section-yellow { /*slurp bytte navn*/
     width: 100%;
     background-color: var(--primarycolor);
 }
