@@ -216,7 +216,10 @@ Media 1-1
 
 .wide-card{width: 80%;}
 
-.img-card{margin: 3rem;}
+.img-card{
+    margin: 3rem;
+    min-width: 400px;            
+}
 
 .card-wrapper {
     display: flex;
