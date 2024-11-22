@@ -59,7 +59,6 @@ html {
     --blackshadow: hsla(0, 0%, 7%, 0.063);
     --table-odd: hsl(60, 100%, 94%);
     --table-even: hsl(60, 80%, 90%);
-    
 }
 
 
@@ -135,8 +134,11 @@ a {
 .text-section h1,
 .text-section h2,
 .text-section h3,
-.text-section h4{
-    font-size: 2rem;
+.text-section h4{font-size: 2rem;}
+
+.center-text {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* -Table */
@@ -188,10 +190,11 @@ Media 1-1
 */
 
 /* -Utilities */
-.heading {/* slurp */
+.heading {
     font: 1.5em;
     font-weight: bold;
     text-align: center;
+    color: var(--black)
 }
 
 .card-wrapper {
@@ -213,20 +216,13 @@ Media 1-1
     background-color: var(--card-background);
 }
 
-.wide-card{width: 65%;}
+.card-wide{width: 65%;}
 
-.img-card{
+.card-img{
     margin: 3rem;
     min-width: 400px;            
 }
 
-.card-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-}
 
 
 .pagenavigationsection {
@@ -278,9 +274,6 @@ Media 1-1
     background-color: hsl(240, 100%, 50%);
 }
 
-.scroll-top a:hover {
-    color: hsl(0, 0%, 100%);
-}
 
 /* -Header */
 
@@ -301,8 +294,6 @@ header:not(.activity-header) {
     text-align: center;
 }
 
-
-/* Change the link color tohsl(50, 100%, 40%);(darker oslometprimary) on hover accept the active one */
 
 .navbar a:hover:not(.active, .logo-a) {background-color: var(--secondarycolor)}
 #burger-toggle {display: none;}
@@ -329,7 +320,8 @@ footer {
     background-color: var(--primarycolor);
 }
 
-/*footer-top klassen ble laget for å skille toppen av footeren fra resten av den, slik at jeg kunne kode linken og paragrafene spesefikt til toppen.*/
+/* footer-top class seperates the top of the footer from the rest.
+to get the footer to be built out of two seperate parts*/
 .footer-top {
     padding: 1rem;
     text-align: center;
@@ -362,27 +354,21 @@ footer ul {
 
 footer li {padding-bottom: 0.4em;}
 
-footer section {
+footer article {
     display: grid;
     grid-template-columns: 30vw auto minmax(300px, 30vw) 1rem;
     grid-auto-rows: minmax(100px, auto);
     margin: auto;
     padding-left: 2rem;
-
-
 }
 
-.infoTitle {/*slurp*/
-    font-weight: 600;
-    font-size: large;
-}
+
 
 .info,
 .lenker,
 .sosiale {justify-self: center;}
 
 .info {grid-column: 1 / 2;}
-
 .lenker {grid-column: 2 / 3;}
 
 .sosiale {
@@ -399,8 +385,6 @@ footer img {
 
 /* -Footer END*/
 
-.shadow-bottom {box-shadow: 0px 10px 5px var(--blackshadow);}
-.shadow-top {box-shadow: 0px -10px 5px var(--blackshadow);}
 
 /* -Media */
 .firstmedia {
@@ -421,12 +405,12 @@ video {
 
 
 /* -Body */
-.section-yellow { /*slurp bytte navn*/
+.section-primary-color {
     width: 100%;
     background-color: var(--primarycolor);
 }
 
-.section-blue {
+.section-secondary-color {
     width: 100%;
     background-color: var(--secondarycolor);
 }
@@ -435,7 +419,6 @@ video {
     height: 15vmax;
     width: 100%;
     background-image: linear-gradient(var(--primarycolor), var(--secondarycolor));
-    /* background-color: var(--secondarycolor); */
 }
 
 /* ────────────────────────────────────────────────────────────── */
@@ -494,16 +477,12 @@ a.skiplinklist:active {
     background-color: var(--black);
 }
 
-.tag-cloud img {
-    padding: 0px;
-}
-
+.tag-cloud img {padding: 0px;}
 
 .info-box {
     margin: 3em;
     padding: 2em;
 }
-
 
 .profile-POC {
     max-width: 300px;
@@ -518,19 +497,18 @@ a.skiplinklist:active {
     background-color: var(--card-background);
 }
 
-.profile-POC-position {
-    color: rgb(87, 87, 87);
-}
+.profile-POC-position {color: rgb(87, 87, 87);}
 
 .field-of-study ul {margin: auto;}
 
 .field-of-study li {
     margin-right: 10px;
     list-style: none;
-    background-color: #ffc1c1;
+    background-color: var(--card-background);
 }
 
 /*https://nestedsoftware.com/2019/11/05/card-with-expand-on-hover-effect-2ccm.200941.html */
+/* arrow animation on field of study element */
 .field-of-study li:hover img {
     transform: translate3D(0, -1px, 0) scale(2);
     transition: all .4s ease;
@@ -549,7 +527,6 @@ a.skiplinklist:active {
 }
 
 .field-of-study>li {
-/*     margin-bottom: 0.7vh;*/
     margin-left: auto;
     margin-right: auto;
     border-style: solid;
@@ -590,7 +567,7 @@ a.skiplinklist:active {
 /* classes related to the preview of semesters through the bachelor degree */
 /* classes for the courses are numerated by semester then class, 
 course0203-box would be the box for the third class in the second semester*/
-.emnegruppe {
+.subject-group {
     margin-top: 2.5vh;
     margin-left: auto;
     margin-right: auto;
@@ -620,39 +597,18 @@ course0203-box would be the box for the third class in the second semester*/
 }
 
 .year1 {grid-row: 1;}
-
 .year2 {grid-row: 3;}
-
 .year3 {grid-row: 5}
 
-.semester01 {
+.semester01,
+.semester02{
     display: flex;
-    grid-row: 1;
     border-bottom: 5px solid black;
 }
+.semester01 {grid-row: 1;}
+.semester02 {grid-row: 3;}
 
-.semester02 {
-    display: flex;
-    grid-row: 3;
-    border-bottom: 5px solid black;
-}
-
-.valgfag-info {
-    grid-column: 9/13;
-    border-radius: 5px;
-    box-shadow: 1px 1px 4px black;
-    width: 100%;
-    margin-bottom: 0.5vh;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 5px;
-    padding-right: 5px;
-    background-color: var(--valgfagboxes);
-} /* Finner ikke bruk i main ? Brukes det et annet sted? */
-
-/* maybe make this a new seperate class?
-join it up with the other card classes? */
-.subject {
+.card-subject {
     display: flex;
     align-items: center;
     width: 100%;
@@ -673,18 +629,15 @@ join it up with the other card classes? */
     grid-column: 2/4;
 }
 
-
 .course0102-box {
     grid-row: 1;
     grid-column: 4/6;
 }
 
-
 .course0103-box {
     grid-row: 1;
     grid-column: 6/7;
 }
-
 
 .course0104-box {
     grid-row: 1;
@@ -698,18 +651,15 @@ join it up with the other card classes? */
     grid-column: 2/4;
 }
 
-
 .course0202-box {
     grid-row: 3;
     grid-column: 4/6;
 }
 
-
 .course0203-box {
     grid-row: 3;
     grid-column: 6/8;
 }
-
 
 /* Third semester */
 .course0301-box {
@@ -717,25 +667,21 @@ join it up with the other card classes? */
     grid-column: 2/4;
 }
 
-
 .course0302-box {
     grid-row: 1;
     grid-column: 4/6;
 }
-
 
 .course0303-box {
     grid-row: 1;
     grid-column: 6/8;
 }
 
-
 /* Fourth semester */
 .course0401-box {
     grid-row: 3;
     grid-column: 2/4;
 }
-
 
 .course0402-box {
     grid-row: 3;
@@ -775,28 +721,23 @@ join it up with the other card classes? */
 }
 
 /* -Accessibility */
-
-.accessibilitycontent {
-    max-width: 80%;
-    margin-left: 10vw;
-    margin-right: 10vw;
-}
-
-.tablewrapper{
+.table-wrapper{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100vw;
 }
+
 .top-tables{
     width: 40%;
 }
+
 .bottom-table{
     width:50%;
 }
 
-.accessability-table td:nth-child(2){
+.accessibility-table td:nth-child(2){
     width:50%;
 }
 
@@ -833,10 +774,7 @@ join it up with the other card classes? */
     background-color: lightgrey;
 }
 
-.text-section p {
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 .img-with-text-section {
     display: grid;
@@ -926,6 +864,10 @@ join it up with the other card classes? */
 }
 
 /* Header Activity END */
+
+.shadow-bottom {box-shadow: 0px 10px 5px var(--blackshadow);}
+.shadow-top {box-shadow: 0px -10px 5px var(--blackshadow);}
+
 /* Trip List from activity page START */
 .trip-listitem {
     width: 30%;
@@ -955,7 +897,6 @@ https://nestedsoftware.com/2019/11/05/card-with-expand-on-hover-effect-2ccm.2009
     box-shadow: 8px 28px 50px rgba(39, 44, 49, .07), 1px 6px 12px rgba(39, 44, 49, .04);
     transition: all .4s ease;    /* zoom in */
     cursor: pointer;
-
 }
 
 .trip-listitem h3 {
@@ -992,8 +933,30 @@ Ultrawide 1-1
 */
 
 
-@media (max-width:800px) {
-    .tag-wrap{max-width: fit-content;}
+@media (min-width:801px) {
+    .menu {
+        float: right;
+        display: flex;
+        flex-direction: row;
+        margin-top: 1.5rem;
+        list-style-type: none;
+    }
+
+    .hamburger-toggle-container img {
+        display: none;
+    }
+}
+
+/* Small screen */
+@media (max-width: 800px) {
+    section {
+        scroll-margin: 10vh;
+    }
+
+    article {
+        width: 100%;
+        min-width: auto;
+    }
 
     .menu {
         background-color: var(--primarycolor);
@@ -1012,13 +975,13 @@ Ultrawide 1-1
         height: 40px;
     }
 
-    .hamburger-toggle-container {cursor: pointer;}
-
     .menu li {
         z-index: 11;
         overflow: hidden;
         height: 0px;
     }
+
+    .hamburger-toggle-container {cursor: pointer;}    
 
     #burger-toggle:checked~.menu li {
         position: relative;
@@ -1027,35 +990,19 @@ Ultrawide 1-1
         padding-top: 0.7rem;
         padding: 0.5rem;
     }
-}
 
-@media (min-width:801px) {
-    .hamburger-toggle-container img {
-        display: none;
-    }
-
-    .menu {
-        float: right;
-        display: flex;
-        flex-direction: row;
-        margin-top: 1.5rem;
-        list-style-type: none;
-    }
-}
-
-
-/* || Bachelor structure Small screen */
-@media only screen and (max-width: 800px) {
     .colorbox {
         display: none;
         height: none;
     }
 
-    .field-of-study {
-        overflow: hidden;
-        margin: 0;
-        margin-bottom: 30px;
-        padding-left: 0;
+    .firstmedia,
+    video {
+        border: none;
+        width: 100%;
+        margin-top: 1vh;
+        margin-left: 1vw;
+        padding-right: 2vw;
     }
 
     .pagenavigationsection{
@@ -1066,29 +1013,18 @@ Ultrawide 1-1
         padding-bottom: 0;
     }
 
+    .tag-wrap{max-width: fit-content;}
+
+    .field-of-study {
+        overflow: hidden;
+        margin: 0;
+        margin-bottom: 30px;
+        padding-left: 0;
+    }
+
     .skiplinklist{
         overflow: hidden;
         display: none;
-    }
-
-    section {
-        scroll-margin: 10vh;
-    }
-
-    article {
-        width: 100%;
-        /* Allow full width for smaller screens */
-        min-width: auto;
-        /* Remove min-width to avoid overflow */
-    }
-
-    .firstmedia,
-    video {
-        border: none;
-        width: 100%;
-        margin-top: 1vh;
-        margin-left: 1vw;
-        padding-right: 2vw;
     }
 
     .card-wrapper>section {
@@ -1135,10 +1071,10 @@ Ultrawide 1-1
     .git-table td:nth-child(1){
         min-width: 10%;
     }
-    .git-table td:nth-child(2){/* Oda hjelp */
+    .git-table td:nth-child(2){
         min-width: 30%;
     }
-    .git-table td:nth-child(3){/* Oda hjelp meg her og :(( */
+    .git-table td:nth-child(3){
         max-width: 5%;
 
     }
@@ -1158,11 +1094,7 @@ Ultrawide 1-1
         width: 65%;
     }
 }
-/*Snakk om dette på møte*/
-/*  or (max-height: 950px) 
-   .subject a{
-        margin-left: 10%;
-    } */
+
 @media (max-width: 1500px) {
     .year-wrapper {
         grid-template-rows: auto;
@@ -1194,13 +1126,11 @@ Ultrawide 1-1
         background-color: #f1f1f1;
     }
 
-
     .year-wrapper .year1,
     .year-wrapper .year2,
     .year-wrapper .year3 {
         grid-column: 1;
     }
-
 
     .year1,
     .year2,
@@ -1209,7 +1139,6 @@ Ultrawide 1-1
         justify-content: center;
         align-items: center;
     }
-
 
     .year1 {grid-column: 1;}
     .year2 {grid-column: 3;}
@@ -1239,7 +1168,6 @@ Ultrawide 1-1
         grid-row: 7/8;
     }
 
-
     /* Second semester */
     .course0201-box {
         grid-column: 3;
@@ -1255,7 +1183,6 @@ Ultrawide 1-1
         grid-column: 3;
         grid-row: 6/8;
     }
-
 
     /* Third semester */
     .course0301-box {
@@ -1273,7 +1200,6 @@ Ultrawide 1-1
         grid-row: 6/8;
     }
 
-
     /* Fourth semester */
     .course0401-box {
         grid-column: 3;
@@ -1289,7 +1215,6 @@ Ultrawide 1-1
         grid-column: 3;
         grid-row: 6/8;
     }
-
 
     /* Fifth semester */
     .course0501-box {
@@ -1307,7 +1232,6 @@ Ultrawide 1-1
         grid-row: 6/8;
     }
 
-
     /* Sixth semester */
     .course0601-box {
         grid-column: 3;
@@ -1318,8 +1242,6 @@ Ultrawide 1-1
         grid-column: 3;
         grid-row: 6/8;
     }
-
-
 }
 
 @media only screen and (min-width:2000px) {
