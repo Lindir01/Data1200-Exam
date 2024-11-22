@@ -66,7 +66,7 @@
                 </p>
             </section>
 
-            <img width="50%" src="media/images/accessibility/perna.png" alt="Lighthouse screenshot" class="card card-img">
+            <img width="50%" src="media/images/accessibility/wave.png" alt="Lighthouse screenshot" class="card card-img">
 
             <section class="card info-box">
                 <p> 
@@ -81,7 +81,7 @@
                     Med enkelte skjermlesere og ved bruk av tastatur er dette veldig nyttig for å slippe gjentagende informasjon som navigasjonsmenyen når man beveger seg rundt på nettstedet. 
                 </p>
             </section>
-            <img width="50%" src="media/images/accessibility/TEMP.png" alt="WAVE screenshot" class="card card-img">
+            <img width="50%" src="media/images/accessibility/lighthouse.png" alt="WAVE screenshot" class="card card-img">
             <section class="card info-box">
                 <p>
                     Denne funksjonen er også gjenbrukt for større lister med lenker, som innholdsfortegnelsen og studieoversikten. 
@@ -95,12 +95,27 @@
                     Vi legger aria-labels på <code>&lt;a&gt;</code>  elementene for at skjermlesere skal lese opp vår spesifikke tekst, istedet for hele hyperlenken. 
                     Videre la vi til aria-hidde="true" på elementene inne i <code>&lt;a&gt;</code>, slik at skjermlesere ikke leser opp identisk tekst flere ganger. 
                     Inne i aria-labels la vi til teksten "10 studiepoeng", slik at skjermleserne leser hele studiepoeng, istedet for "10 stp."
-                </p>
+                  </p>
             </section>               
+            <img width="50%" src="media/images/accessibility/wavedetails.png" alt="WAVE screenshot" class="card card-img">
+            <section class="card info-box">
+                <h3>Forklaring på Alerts og Error WAVE</h3>
+                <p>"Empty form label" referer til burgermenyen som er laget med en checkbox i en label.</p>
+                <p>Som skjermleserbruker har alltid tilgang til navigasjonslenkene, 
+                    så vi har vurdert at dette er noe vi kan leve med.</p>
+                    <p>
+                        "Possible Headings" blir markert hvor som helst som tekststørrelsen er større enn "standard" på siden.
+                        Vi har brukt en klasse "heading" for å utheve tekst som ikke nødvendigvis er en overskrift.
+                    </p>
+                    <p>
+                        "Redundant link" sikter til at vi har "Home" som lenke i <code>&lt;header&gt;</code>, og at vi har link til det samme ved siden av. 
+                        Dette er gjort fordi mennesker ofte er vandt til å bli sendt til forsiden når man trykker på logoen, men vi ville i tillegg vise tydelig hvilken side man er på.
+                    </p>
+            </section> 
         </article>
         <h2>Enkle tabeller for rask informasjon</h2>
         <!-- Tables -->
-        <section class="table-wrapper">
+        <article class="table-wrapper">
             <!-- Table 1 -->
             <table class="accessibility-table top-tables">
                 <caption>Justerbar tekststørrelse</caption>
@@ -173,7 +188,7 @@
                     </tr>
                 </tbody>
             </table>
-        </section>
+        </article>
 
     </main>
 
