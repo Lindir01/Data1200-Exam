@@ -787,14 +787,12 @@ join it up with the other card classes? */
 
 /* -Git */
 .gitparagraphs {/*slurp*/
-    width: 60%;
-    margin: auto;
+    width: 90%;
     padding: 5px;
 }
 
 .gitparagraphs section {
     padding: 1rem;
-    background-color: var(--primarycolor);
 }
 
 .gitparagraphs h1 {
