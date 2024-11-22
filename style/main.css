@@ -758,6 +758,7 @@ course0203-box would be the box for the third class in the second semester*/
 
 /* -Git */
 
+/* Sets the size of the entire git table, aswell as the size of the different columns*/
 .git-table{width: 90%;}
 .git-table th:nth-child(odd){width: 20%;}
 .git-table th:nth-child(2){width: 60%;}
@@ -771,18 +772,21 @@ course0203-box would be the box for the third class in the second semester*/
 }
 
 /*activityFooter klassen er laget spesefikt for Activity-pagen, slik at footeren skiller seg ut fra de andre sidene og bedre matcher temaet til siden.*/
+/* Makes paragraphs in footer bigger and more like a title */
 .activityFooter p {
     padding: 0.5rem;
     font-size: larger;
     font-weight: 600;
 }
 
+/* Makes the link appear as a button */
 .activityFooter a {
     padding: 1rem;
     color: white;
     background-color: var(--black);
 }
 
+/* Changes the apperance of the activityFooter, and makes the text aligned to the center*/
 .activityFooter {
     padding: 7px;
     text-align: center;
@@ -1081,31 +1085,21 @@ Ultrawide 1-1
         overflow-x: auto; 
         width: 98%;
     }
-    .git-table td:nth-child(1){
-        min-width: 10%;
-    }
-    .git-table td:nth-child(2){
-        min-width: 30%;
-    }
-    .git-table td:nth-child(3){
-        max-width: 5%;
 
-    }
-    .tablewrapper{
+    .git-table td:nth-child(1){min-width: 10%;}
+    .git-table td:nth-child(2){min-width: 30%;}
+    .git-table td:nth-child(3){max-width: 5%;}
+
+    .table-wrapper{
         display: flex; 
         flex-direction: column;
         max-width: 98%;
         margin: auto;
     }
-    .accessibility-table{
-        width: 100%;
-    }
-    .accessibility-table td:nth-child(1){
-        width: 5%;
-    }
-    .accessibility-table td:nth-child(2){
-        width: 65%;
-    }
+    
+    .accessibility-table{width: 100%;}
+    .accessibility-table td:nth-child(1){width: 5%;}
+    .accessibility-table td:nth-child(2){width: 65%;}
 }
 
 @media (max-width: 1500px) {
