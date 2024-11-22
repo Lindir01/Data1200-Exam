@@ -581,6 +581,7 @@ course0203-box would be the box for the third class in the second semester*/
     margin-right: auto;
     padding-top: 1.5vh;
     padding-bottom: 1.5vh;
+    text-align: center;
     color: white;
     background-color: rgb(78, 78, 78);
 }
