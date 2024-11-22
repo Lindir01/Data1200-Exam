@@ -191,7 +191,7 @@ Media 1-1
     font: 1.5em;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 0;
+
 }
 
 .card {
@@ -202,7 +202,6 @@ Media 1-1
     width: 30%;
     border-radius: 25px;
     min-width: 150px;
-    justify-content: space-evenly;
     background-color: rgb(246, 242, 242);
 }
 
@@ -210,38 +209,31 @@ Media 1-1
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
 }
 
-.sideNavListSection {
+
+.pagenavigationsection {
     display: flex;
     gap: 3rem;
     padding-top: 1rem;
     padding-bottom: 4rem;
 }
 
-.sideNavList {
+.pagenavigation,
+.pagenavigation ul  {
     border-left-width: 2px;
     border-left-style: solid;
     border-left-color: black;
     padding: 0;
+    padding-bottom: 3px;
     list-style: none;
     list-style-position: inside;
 }
 
-/* Make into one class that both have OR this, that{} , sidenavlist ul and sidenavlist
-also rename */
 
-.sideNavList ul {
-    border-left-width: 2px;
-    border-left-style: solid;
-    border-left-color: black;
-    padding-left: 0;
-    padding-bottom: 10px;
-    list-style: none;
-    list-style-position: inside;
-}
-
-.sideNavList>li>a {
+.pagenavigation>li>a {
     margin-top: 0.67em;
     margin-bottom: 0.67em;
     font-size: 1.5em;
@@ -249,13 +241,12 @@ also rename */
     line-height: 2em;
 }
 
-.sideNavList>li>ul>li {padding-bottom: 5px;}
+.pagenavigation>li>ul>li {padding-bottom: 5px;}
 
-.sideNavList>li>a::before,
-.sideNavList ul li::before {content: "────";
-}
+.pagenavigation>li>a::before,
+.pagenavigation ul li::before {content: "────";}
 
-/* Testing back to top button, read up here; https://dev.to/jackherizsmith/making-a-back-to-top-button-without-javascript-2ej6*/
+/* Class for scrolling */
 .scroll-top {
     position: fixed;
     z-index: 12;
@@ -287,7 +278,7 @@ header:not(.activity-header) {
     background-color: var(--primarycolor);
 }
 
-.navbar .active {background-color: var(--highlightcolor);}
+.navbar .active {background-color: var(--secondarycolor);}
 
 .navbar a {
     border-radius: 0.4rem;
@@ -300,7 +291,7 @@ header:not(.activity-header) {
 
 /* Change the link color tohsl(50, 100%, 40%);(darker oslometprimary) on hover accept the active one */
 
-.navbar a:hover:not(.active, .logo-a) {background-color: var(--secondarycolor);}
+.navbar a:hover:not(.active, .logo-a) {background-color: hsl(50, 100%, 40%);}
 #burger-toggle {display: none;}
 
 .hamburger-toggle-container img {height: 2.5rem;}
@@ -404,11 +395,13 @@ footer img {
     max-height: 600px;
     width: 80%;
     max-width: 1000px;
+    border-style: solid;
 }
 
 video {
     margin-top: -15%;
     max-width: 1200px;
+    border-style: solid;
 }
 
 
@@ -568,6 +561,7 @@ a.skiplinklist:active {
     align-items: center;
     color: #222;
     display: flex;
+    min-height: 110px;
     padding: 1.1875rem 1.875rem 1.1875rem 0;
 }
 
@@ -586,7 +580,6 @@ course0203-box would be the box for the third class in the second semester*/
     margin-right: auto;
     padding-top: 0.5vh;
     padding-bottom: 0.5vh;
-    text-align: center;
     color: white;
     background-color: rgb(78, 78, 78);
 }
@@ -606,6 +599,7 @@ course0203-box would be the box for the third class in the second semester*/
     align-items: center;
     width: 100%;
     height: 100%;
+    padding-bottom: 1vh;
 }
 
 .year1 {grid-row: 1;}
@@ -643,15 +637,13 @@ course0203-box would be the box for the third class in the second semester*/
 join it up with the other card classes? */
 .subject {
     display: flex;
-    justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-left: 5px;
+    padding-left: 20px;
     padding-right: 5px;
-    text-align: center;
 }
 
 .valgfag-box {background-color: var(--valgfagboxes);}
@@ -999,10 +991,6 @@ Ultrawide 1-1
 
 @media (max-width:800px) {
     .tag-wrap{max-width: fit-content;}
-    .scroll-top {
-        max-height: fit-content;
-        left: 1vw;
-    }
 
     .menu {
         background-color: var(--primarycolor);
@@ -1067,7 +1055,7 @@ Ultrawide 1-1
         padding-left: 0;
     }
 
-    .sideNavListSection {
+    .navlistsection {
         flex-direction: column;
         gap: 0;
         margin-left: 13vw;
@@ -1095,6 +1083,7 @@ Ultrawide 1-1
 
     .firstmedia,
     video {
+        border: none;
         width: 100%;
         margin-top: 1vh;
         margin-left: 1vw;
@@ -1102,7 +1091,6 @@ Ultrawide 1-1
     }
 
     .card-wrapper>article {
-        /* Påvirker ikke activity pga div isteden for article */
         width: 80%;
         margin: 6px;
     }
@@ -1169,7 +1157,11 @@ Ultrawide 1-1
         width: 65%;
     }
 }
-
+/*Snakk om dette på møte*/
+/*  or (max-height: 950px) 
+   .subject a{
+        margin-left: 10%;
+    } */
 @media (max-width: 1000px) {
     .year-wrapper {
         grid-template-rows: auto;
@@ -1221,6 +1213,7 @@ Ultrawide 1-1
     .year1 {grid-column: 1;}
     .year2 {grid-column: 3;}
     .year3 {grid-column: 5;}
+
 
     /* Flips the grid to be vertical instead of horizontal */
     /* swapped row with column, and vice versa */
@@ -1333,13 +1326,3 @@ Ultrawide 1-1
         margin-top: -30%;
     }
 }
-
-
-/*.card:hover {   Makes cards popp when hovered, but might make user believe it's a link.
-    https://nestedsoftware.com/2019/11/05/card-with-expand-on-hover-effect-2ccm.200941.html
-    transform: translate3D(0, -1px, 0) scale(1.03);     /* move up slightly and zoom in 
-    box-shadow: 8px 28px 50px rgba(39, 44, 49, .07), 1px 6px 12px rgba(39, 44, 49, .04);
-    transition: all .4s ease;    /* zoom in 
-    cursor: pointer;
-
-}*/
