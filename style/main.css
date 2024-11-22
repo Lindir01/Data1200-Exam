@@ -91,7 +91,7 @@ article {
 /*  -Text */
 
 
-.intro, h1,h2, h1+p, h4 {text-align: center;}
+.intro, h1,h2,h3,h4 {text-align: center;}
 
 h1 {
     margin-top: 0;
@@ -810,10 +810,12 @@ course0203-box would be the box for the third class in the second semester*/
 .hero-activity p {
     color: var(--white);
 }
+
 /* Hero Activity END */
 
 
 /* burger menu icon*/
+/*placement of burger icon*/
 .activity-header .hamburger-toggle-container {
     position: absolute;
     z-index: 9;
@@ -821,12 +823,14 @@ course0203-box would be the box for the third class in the second semester*/
     right: 10px;
 }
 
+/*size and display of burger icon*/
 .activity-header .hamburger-toggle-container img {
     display: block;
     width: 40px;
     height: 40px;
 }
 
+/*add mouse pointer*/
 .activity-header .hamburger-toggle-container {cursor: pointer;}
 
 /* Burger Dropdown */
@@ -844,6 +848,7 @@ course0203-box would be the box for the third class in the second semester*/
     background-color: var(--black);
 }
 
+/*styling and hide the items of the menu*/
 .activity-header .menu li {
     overflow: hidden;
     height: 0px;
@@ -856,7 +861,7 @@ course0203-box would be the box for the third class in the second semester*/
     background-color: hsl(0, 1%, 32%);
 }
 
-/* when burger menu button clicked changes the menu element to show/expand*/
+/* when burger menu button clicked changes the menu element to show/expand */
 .activity-header #burger-toggle:checked~.menu li {
     position: relative;
     transition-duration: 0.3s;
@@ -867,10 +872,13 @@ course0203-box would be the box for the third class in the second semester*/
 
 /* Header Activity END */
 
+/*shadow to make depth on the activity page*/
 .shadow-bottom {box-shadow: 0px 10px 5px var(--blackshadow);}
 .shadow-top {box-shadow: 0px -10px 5px var(--blackshadow);}
 
 /* Trip List from activity page START */
+
+/*size list item*/
 .trip-listitem {
     width: 30%;
     min-width: 300px;
@@ -879,12 +887,14 @@ course0203-box would be the box for the third class in the second semester*/
     margin: 1vw;
 }
 
+/*make image be on top ad right placement, seperating text and image*/
 .image-box-card {
     overflow: hidden;
     max-height: 12.5rem;
     margin-top: -2rem;
 }
 
+/*image styling*/
 .trip-listitem img {
     margin-top: -1.5rem;
     object-fit: cover;
@@ -901,10 +911,6 @@ https://nestedsoftware.com/2019/11/05/card-with-expand-on-hover-effect-2ccm.2009
     cursor: pointer;
 }
 
-.trip-listitem h3 {
-    text-align: center;
-    color: var(--black);
-}
 
 /* code partially from https://stackoverflow.com/questions/33058004/applying-an-ellipsis-to-multiline-text */
 .trip-listitem p {
@@ -915,6 +921,7 @@ https://nestedsoftware.com/2019/11/05/card-with-expand-on-hover-effect-2ccm.2009
     overflow: hidden;
     padding: 0em 1em 0em;
     color: var(--black);
+    font-weight: none;
 }
 
 
