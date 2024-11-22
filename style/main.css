@@ -252,7 +252,7 @@ Media 1-1
     line-height: 2em;
 }
 
-.pagenavigation>li>ul>li {padding-bottom: 5px;}
+.pagenavigation>li>ul>li {padding-bottom: 7px;}
 
 .pagenavigation>li>a::before,
 .pagenavigation ul li::before {content: "────";}
