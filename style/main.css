@@ -92,7 +92,6 @@ section {
 
 /*  -Text */
 
-
 .intro, h1,h2, h1+p, h4 {text-align: center;}
 
 h1 {
@@ -169,6 +168,11 @@ th, td {
 
 tbody tr:nth-child(odd) {background-color: var(--table-odd)}
 tbody tr:nth-child(even),thead {background-color: var(--table-even)}
+
+/* -Misc */
+
+ul{padding: 0;}
+
 
 /* ────────────────────────────────────────────────────────────── */
 
@@ -257,17 +261,11 @@ Media 1-1
 }
 
 .scroll-top a {
-    opacity: .7;
     border-radius: .25rem;
     padding: 1rem;
     color: hsl(0, 0%, 100%);
     font-weight: 700;
     background-color: hsl(240, 100%, 50%);
-}
-
-.scroll-top a:hover {
-    opacity: 1;
-    color: hsl(0, 0%, 100%);
 }
 
 /* -Header */
@@ -1148,11 +1146,7 @@ Ultrawide 1-1
         width: 65%;
     }
 }
-/*Snakk om dette på møte*/
-/*  or (max-height: 950px) 
-   .subject a{
-        margin-left: 10%;
-    } */
+
 @media (max-width: 1500px) {
     .year-wrapper {
         grid-template-rows: auto;
@@ -1184,13 +1178,11 @@ Ultrawide 1-1
         background-color: #f1f1f1;
     }
 
-
     .year-wrapper .year1,
     .year-wrapper .year2,
     .year-wrapper .year3 {
         grid-column: 1;
     }
-
 
     .year1,
     .year2,
@@ -1200,11 +1192,9 @@ Ultrawide 1-1
         align-items: center;
     }
 
-
     .year1 {grid-column: 1;}
     .year2 {grid-column: 3;}
     .year3 {grid-column: 5;}
-
 
     /* Flips the grid to be vertical instead of horizontal */
     /* swapped row with column, and vice versa */
@@ -1229,7 +1219,6 @@ Ultrawide 1-1
         grid-row: 7/8;
     }
 
-
     /* Second semester */
     .course0201-box {
         grid-column: 3;
@@ -1245,7 +1234,6 @@ Ultrawide 1-1
         grid-column: 3;
         grid-row: 6/8;
     }
-
 
     /* Third semester */
     .course0301-box {
@@ -1263,7 +1251,6 @@ Ultrawide 1-1
         grid-row: 6/8;
     }
 
-
     /* Fourth semester */
     .course0401-box {
         grid-column: 3;
@@ -1279,7 +1266,6 @@ Ultrawide 1-1
         grid-column: 3;
         grid-row: 6/8;
     }
-
 
     /* Fifth semester */
     .course0501-box {
@@ -1297,7 +1283,6 @@ Ultrawide 1-1
         grid-row: 6/8;
     }
 
-
     /* Sixth semester */
     .course0601-box {
         grid-column: 3;
@@ -1308,8 +1293,6 @@ Ultrawide 1-1
         grid-column: 3;
         grid-row: 6/8;
     }
-
-
 }
 
 @media only screen and (min-width:2000px) {
