@@ -1161,7 +1161,7 @@ Ultrawide 1-1
    .subject a{
         margin-left: 10%;
     } */
-@media (max-width: 1000px) {
+@media (max-width: 1500px) {
     .year-wrapper {
         grid-template-rows: auto;
     }
