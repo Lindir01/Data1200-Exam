@@ -360,7 +360,7 @@ footer section {
 
 }
 
-.infoTitle {
+.infoTitle {/*slurp*/
     font-weight: 600;
     font-size: large;
 }
@@ -409,7 +409,7 @@ video {
 
 
 /* -Body */
-.section-yellow {
+.section-yellow { /*slurp*/
     width: 100%;
     background-color: var(--primarycolor);
 }
@@ -789,21 +789,7 @@ join it up with the other card classes? */
 }
 
 /* -Git */
-.gitparagraphs {
-    width: 60%;
-    margin: auto;
-    padding: 5px;
-}
 
-.gitparagraphs section {
-    padding: 1rem;
-    background-color: var(--primarycolor);
-}
-
-.gitparagraphs h1 {
-    padding-top: 2rem;
-    padding-bottom: 0.5rem;
-}
 .git-table{width: 90%;}
 .git-table th:nth-child(odd){width: 20%;}
 .git-table th:nth-child(2){width: 60%;}
@@ -915,7 +901,7 @@ join it up with the other card classes? */
 
 /* on hover burgermenu item in activity change color, but not logo ass it should not have hover effect */
 .navbar-activity .navlist:hover:not(.active, .logo-a, .hamburger-toggle-container) {
-    background-color: hsl(0, 0%, 11%);
+    background-color: hsl(0, 1%, 32%);
 }
 
 /* when burger menu button clicked changes the menu element to show/expand*/
