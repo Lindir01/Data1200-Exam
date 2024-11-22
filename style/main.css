@@ -1077,31 +1077,21 @@ Ultrawide 1-1
         overflow-x: auto; 
         width: 98%;
     }
-    .git-table td:nth-child(1){
-        min-width: 10%;
-    }
-    .git-table td:nth-child(2){
-        min-width: 30%;
-    }
-    .git-table td:nth-child(3){
-        max-width: 5%;
 
-    }
-    .tablewrapper{
+    .git-table td:nth-child(1){min-width: 10%;}
+    .git-table td:nth-child(2){min-width: 30%;}
+    .git-table td:nth-child(3){max-width: 5%;}
+
+    .table-wrapper{
         display: flex; 
         flex-direction: column;
         max-width: 98%;
         margin: auto;
     }
-    .accessibility-table{
-        width: 100%;
-    }
-    .accessibility-table td:nth-child(1){
-        width: 5%;
-    }
-    .accessibility-table td:nth-child(2){
-        width: 65%;
-    }
+    
+    .accessibility-table{width: 100%;}
+    .accessibility-table td:nth-child(1){width: 5%;}
+    .accessibility-table td:nth-child(2){width: 65%;}
 }
 
 @media (max-width: 1500px) {
