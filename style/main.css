@@ -1093,13 +1093,13 @@ Ultrawide 1-1
         max-width: 98%;
         margin: auto;
     }
-    .accessability-table{
+    .accessibility-table{
         width: 100%;
     }
-    .accessability-table td:nth-child(1){
+    .accessibility-table td:nth-child(1){
         width: 5%;
     }
-    .accessability-table td:nth-child(2){
+    .accessibility-table td:nth-child(2){
         width: 65%;
     }
 }
