@@ -460,7 +460,10 @@ a.skiplinklist:active {
     z-index: 10;
     overflow: auto;
 }
-
+.tag-wrap {
+    max-width: 70%;
+    text-align: center;
+}
 .tag-cloud {
     display: inline-block;
     padding-top: 8px;
@@ -479,10 +482,7 @@ a.skiplinklist:active {
     padding: 0px;
 }
 
-.tag-wrap {
-    max-width: 70%;
-    text-align: center;
-} /* Burde denne være over tag.cloud? */
+
 
 .info-box {
     margin: 3em;
