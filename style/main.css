@@ -54,11 +54,13 @@ html {
     --highlightcolor: hsl(30, 100%, 50%);
     --courseboxes: hsl(0, 0%, 81%);
     --valgfagboxes: hsl(0, 0%, 76%);
+    --card-background:hsl(0, 18%, 96%);
     --black:hsl(0, 0%, 0%);
     --white: hsl(0, 0%, 100%);
     --blackshadow: hsla(0, 0%, 7%, 0.063);
     --table-odd: hsl(60, 100%, 94%);
     --table-even: hsl(60, 80%, 90%);
+    
 }
 
 
@@ -196,12 +198,12 @@ Media 1-1
 .card {
     float: left;
     overflow: hidden;
-    box-shadow: 10px 10px 5px var(--blackshadow);
+    box-shadow: 10px 10px 5px var(--blackshadow); /* https://www.w3schools.com/css/css3_shadows_box.asp */
     box-sizing: border-box;
     width: 30%;
     border-radius: 25px;
     min-width: 150px;
-    background-color: rgb(246, 242, 242);
+    background-color: var(--card-background);
 }
 
 .card-wrapper {
@@ -460,10 +462,12 @@ a.skiplinklist:active {
     z-index: 10;
     overflow: auto;
 }
+/* Black tag-cloud code from https://www.w3schools.com/howto/howto_css_tag_cloud.asp */
 .tag-wrap {
     max-width: 70%;
     text-align: center;
 }
+
 .tag-cloud {
     display: inline-block;
     padding-top: 8px;
@@ -483,7 +487,6 @@ a.skiplinklist:active {
 }
 
 
-
 .info-box {
     margin: 3em;
     padding: 2em;
@@ -491,7 +494,6 @@ a.skiplinklist:active {
 
 
 .profile-POC {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
     border: 1px solid black;
     border-radius: 25px;
@@ -500,7 +502,8 @@ a.skiplinklist:active {
     padding-bottom: 5px;
     text-align: center;
     font-family: arial;
-    background-color: #f6f2f2;
+    box-shadow: 10px 10px 8px 4px var(--blackshadow);
+    background-color: var(--card-background);
 }
 
 .profile-POC-position {
