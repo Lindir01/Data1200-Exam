@@ -226,7 +226,7 @@ Media 1-1
     display: flex;
     gap: 3rem;
     padding-top: 1rem;
-    padding-bottom: 4rem;
+    padding-bottom: 1rem;
 }
 
 .pagenavigation,
