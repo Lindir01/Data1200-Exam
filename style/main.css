@@ -28,7 +28,7 @@
 /* notater for sorterting 
 cards for sitewide */
 
-/* Ascii art made big enough to read in the file navigator */
+/* Ascii art made big enough to read in the editor minimap */
 
 /* || General Styles
  _______  _______  _        _______  _______  _______  _          _______ _________          _        _______  _______ 
@@ -53,8 +53,8 @@ html {
     --highlightcolor: hsl(30, 100%, 50%);
     --courseboxes: hsl(0, 0%, 81%);
     --valgfagboxes: hsl(0, 0%, 76%);
-    --card-background:hsl(0, 18%, 96%);
-    --black:hsl(0, 0%, 0%);
+    --card-background: hsl(0, 18%, 96%);
+    --black: hsl(0, 0%, 0%);
     --white: hsl(0, 0%, 100%);
     --blackshadow: hsla(0, 0%, 7%, 0.063);
     --table-odd: hsl(60, 100%, 94%);
@@ -131,10 +131,7 @@ a {
     padding: 1rem 4rem 1rem 4rem;
 }
 
-.text-section h1,
-.text-section h2,
-.text-section h3,
-.text-section h4{font-size: 2rem;}
+.text-section .heading{font-size: 2rem;}
 
 .center-text {
     margin-left: auto;
@@ -191,7 +188,7 @@ Media 1-1
 
 /* -Utilities */
 .heading {
-    font: 1.5em;
+    font-size: 1.5em;
     font-weight: bold;
     text-align: center;
     color: var(--black)
