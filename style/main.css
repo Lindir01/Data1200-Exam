@@ -53,8 +53,8 @@ html {
     --highlightcolor: hsl(30, 100%, 50%);
     --courseboxes: hsl(0, 0%, 81%);
     --valgfagboxes: hsl(0, 0%, 76%);
-    --card-background:hsl(0, 18%, 96%);
-    --black:hsl(0, 0%, 0%);
+    --card-background: hsl(0, 18%, 96%);
+    --black: hsl(0, 0%, 0%);
     --white: hsl(0, 0%, 100%);
     --blackshadow: hsla(0, 0%, 7%, 0.063);
     --table-odd: hsl(60, 100%, 94%);
