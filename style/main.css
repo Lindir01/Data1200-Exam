@@ -617,7 +617,12 @@ course0203-box would be the box for the third class in the second semester*/
     padding-left: 20px;
     padding-right: 5px;
 }
-
+.heading-electives {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    color: var(--black)
+}
 .valgfag-box {background-color: var(--valgfagboxes);}
 
 .valgfag-box div p{margin:0.3em;}

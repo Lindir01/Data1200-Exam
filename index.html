@@ -194,7 +194,16 @@
         <!--
         IKKE RØR
         -->
-        <article id="Emnegruppe-MF" class="section-primary-color" role="region" aria-labelledby="Emnegruppe-MF-heading">
+        <!--
+        The bachelor structure is built using grid. One grid pr subject group. Then inside those grids, there is a grid pr school year.
+        default layout:
+        fall semester is in row 1
+        spring semester is in row 3
+        a small row is between to give more control than a grid-gap property
+        the subject card columns are setup to be equal to 5 credits per column
+        therefore a subject like DAPE1300, giving 10 credits takes up 2 columns
+        -->
+        <article id="Emnegruppe-MF" class="section-primary-color" role="region">
             <section id="Emnegruppe-MF" class="subject-goup">
                 <h3>Emnegruppe: Matematikk og fysikk</h3>
             </section>
@@ -331,7 +340,7 @@
                             </div>
                             <div class="card-subject course0503-box valgfag-box card" role="cell">
                                 <div>
-                                    <p class="heading" aria-label="Valgfag femte semester, 10 studiepoeng">Valgfag femte semester 10 stp.</p>
+                                    <p class="heading-electives" aria-label="Valgfag femte semester, 10 studiepoeng">Valgfag femte semester 10 stp.</p>
                                     <a
                                         href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA3730/2024/H%C3%98ST">
                                         <p>Introduksjon til IT-forskning | DATA3730</p>
@@ -362,7 +371,7 @@
                             </div>
                             <div class="card-subject course0602-box valgfag-box card" role="cell">
                                 <div>
-                                    <p class="heading" aria-label="Valgfag sjette semester, 10 studiepoeng">Valgfag sjette semester 10 stp.</p>
+                                    <p class="heading-electives" aria-label="Valgfag sjette semester, 10 studiepoeng">Valgfag sjette semester 10 stp.</p>
                                     <a
                                         href="https://student.oslomet.no/studier/-/studieinfo/emne/ADTS2310/2024/H%C3%98ST">
                                         <p>Testing av programvare | ADTS2310</p>
@@ -492,7 +501,7 @@
                             </div>
                             <div class="card-subject course0403-box valgfag-box card" role="cell">
                                 <div>
-                                    <p class="heading" aria-label="Valgfag fjerde semester, 10 studiepoeng">Valgfag fjerde semester 10 stp.</p>
+                                    <p class="heading-electives" aria-label="Valgfag fjerde semester, 10 studiepoeng">Valgfag fjerde semester 10 stp.</p>
                                     <a
                                         href="https://student.oslomet.no/studier/-/studieinfo/emne/ADSE3200/2024/H%C3%98ST">
                                         <p>Visualisering | ADSE3200</p>
@@ -527,7 +536,7 @@
                             </div>
                             <div class="card-subject course0503-box valgfag-box card" role="cell">
                                 <div>
-                                    <p class="heading" aria-label="Valgfag femte semester, 10 studiepoeng">Valgfag femte semester 10 stp.</p>
+                                    <p class="heading-electives" aria-label="Valgfag femte semester, 10 studiepoeng">Valgfag femte semester 10 stp.</p>
                                     <a
                                         href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA3730/2024/H%C3%98ST">
                                         <div>
@@ -566,7 +575,7 @@
                             </div>
                             <div class="card-subject course0602-box valgfag-box card" role="cell">
                                 <div>
-                                    <p class="heading" aria-label="Valgfag sjette semester, 10 studiepoeng">Valgfag sjette semester 10 stp.</p>
+                                    <p class="heading-electives" aria-label="Valgfag sjette semester, 10 studiepoeng">Valgfag sjette semester 10 stp.</p>
                                     <a
                                         href="https://student.oslomet.no/studier/-/studieinfo/emne/ADTS2310/2024/H%C3%98ST">
                                         <p>Testing av programvare | ADTS2310</p>
@@ -720,7 +729,7 @@
                             </div>
                             <div class="card-subject course0503-box valgfag-box card" role="cell">
                                 <div>
-                                    <p class="heading"  aria-label="Valgfag femte semester, 10 studiepoeng">Valgfag femte semester 10 stp.</p>
+                                    <p class="heading-electives"  aria-label="Valgfag femte semester, 10 studiepoeng">Valgfag femte semester 10 stp.</p>
                                     <a
                                         href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA3730/2024/H%C3%98ST">
                                         <p>Introduksjon til IT-forskning | DATA3730</p>
@@ -751,7 +760,7 @@
                             </div>
                             <div class="card-subject course0602-box valgfag-box card" role="cell">
                                 <div>
-                                    <p class="heading"  aria-label="Valgfag sjette semester, 10 studiepoeng">Valgfag sjette semester 10 stp.</p>
+                                    <p class="heading-electives"  aria-label="Valgfag sjette semester, 10 studiepoeng">Valgfag sjette semester 10 stp.</p>
                                     <a
                                         href="https://student.oslomet.no/studier/-/studieinfo/emne/ADSE3200/2024/H%C3%98ST">
                                         <p>Visualisering | ADSE3200</p>
