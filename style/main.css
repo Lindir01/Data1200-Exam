@@ -45,6 +45,7 @@ Text   1-1    */
 
 html {
     scroll-behavior: smooth;
+    background-color: var(--secondarycolor);
 }
 
 :root {
@@ -71,7 +72,6 @@ main {
 body {
     margin: 0;
     padding: 0;
-    background-color: var(--secondarycolor);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
 }
@@ -221,17 +221,15 @@ Media 1-1
     min-width: 350px;            
 }
 
-
-
-.pagenavigationsection {
+.page-navigation-section {
     display: flex;
     gap: 3rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
 
-.pagenavigation,
-.pagenavigation ul  {
+.page-navigation,
+.page-navigation ul  {
     border-left-width: 2px;
     border-left-style: solid;
     border-left-color: black;
@@ -242,7 +240,7 @@ Media 1-1
 }
 
 
-.pagenavigation>li>a {
+.page-navigation>li>a {
     margin-top: 0.67em;
     margin-bottom: 0.67em;
     font-size: 1.5em;
@@ -250,10 +248,10 @@ Media 1-1
     line-height: 2em;
 }
 
-.pagenavigation>li>ul>li {padding-bottom: 7px;}
+.page-navigation>li>ul>li {padding-bottom: 7px;}
 
-.pagenavigation>li>a::before,
-.pagenavigation ul li::before {content: "────";}
+.page-navigation>li>a::before,
+.page-navigation ul li::before {content: "────";}
 
 /* Class for containing the "Scroll up" button, setting the position to fixed in the corner */
 .scroll-top {
@@ -398,7 +396,7 @@ footer img {
 
 
 /* -Media */
-.firstmedia {
+.first-media {
     margin-top: -12%;
     margin-left: auto;
     margin-right: auto;
@@ -426,7 +424,7 @@ video {
     background-color: var(--secondarycolor);
 }
 
-.colorbox {
+.color-box {
     height: 15vmax;
     width: 100%;
     background-image: linear-gradient(var(--primarycolor), var(--secondarycolor));
@@ -450,7 +448,7 @@ Activity 1-1
 */
 
 /* -Index */
-a.skiplinklist {
+a.skip-link-list {
     position: absolute;
     z-index: -10;
     overflow: hidden;
@@ -463,8 +461,8 @@ a.skiplinklist {
     background-color: var(--black);
 }
 
-a.skiplinklist:focus,
-a.skiplinklist:active {
+a.skip-link-list:focus,
+a.skip-link-list:active {
     z-index: 10;
     overflow: auto;
 }
@@ -776,21 +774,21 @@ course0203-box would be the box for the third class in the second semester*/
 
 /*activityFooter klassen er laget spesefikt for Activity-pagen, slik at footeren skiller seg ut fra de andre sidene og bedre matcher temaet til siden.*/
 /* Makes paragraphs in footer bigger and more like a title */
-.activityFooter p {
+.activity-footer p {
     padding: 0.5rem;
     font-size: larger;
     font-weight: 600;
 }
 
 /* Makes the link appear as a button */
-.activityFooter a {
+.activity-footer a {
     padding: 1rem;
     color: white;
     background-color: var(--black);
 }
 
 /* Changes the apperance of the activityFooter, and makes the text aligned to the center*/
-.activityFooter {
+.activity-footer {
     padding: 7px;
     text-align: center;
     background-color: lightgrey;
@@ -1040,7 +1038,7 @@ Ultrawide 1-1
         padding-left: 0;
     }
 
-    .skiplinklist{
+    .skip-link-list{
         overflow: hidden;
         display: none;
     }
