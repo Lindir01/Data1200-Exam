@@ -1070,8 +1070,6 @@ Ultrawide 1-1
         /* Remove min-width to avoid overflow */
     }
 
-
-
     .firstmedia,
     video {
         border: none;
@@ -1081,7 +1079,7 @@ Ultrawide 1-1
         padding-right: 2vw;
     }
 
-    .card-wrapper>article {
+    .card-wrapper>section {
         width: 80%;
         margin: 6px;
     }
