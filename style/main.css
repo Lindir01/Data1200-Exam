@@ -273,7 +273,7 @@ Media 1-1
 
 
 /* -Header */
-
+/*color on header, but not on activity since activity should be see throu*/
 header:not(.activity-header) {
     z-index: 20;
     height: 4.5rem;
@@ -281,8 +281,10 @@ header:not(.activity-header) {
     background-color: var(--primarycolor);
 }
 
+/*highlight the active page ur on*/
 .navbar .active {background-color: var(--highlightcolor);}
 
+/*style the menu items text*/
 .navbar a {
     border-radius: 0.4rem;
     padding: 0.5rem;
@@ -291,18 +293,20 @@ header:not(.activity-header) {
     text-align: center;
 }
 
-
+/*hover effecct*/
 .navbar a:hover:not(.active, .logo-a) {background-color: var(--secondarycolor)}
 #burger-toggle {display: none;}
 
 .hamburger-toggle-container img {height: 2.5rem;}
 
+/*size of toggle button for hamburger menu*/
 .hamburger-toggle-container {
     position: absolute;
     top: 1rem;
     right: 1rem;
 }
 
+/*size of logo for burger menu*/
 .logo {
     position: absolute;
     top: 0.6rem;
@@ -947,6 +951,7 @@ Ultrawide 1-1
 
 
 @media (min-width:801px) {
+    /*changes menu items to be in row and make allways visible*/
     .menu {
         float: right;
         display: flex;
@@ -955,6 +960,7 @@ Ultrawide 1-1
         list-style-type: none;
     }
 
+    /*hide image when big screen*/
     .hamburger-toggle-container img {
         display: none;
     }
@@ -971,6 +977,7 @@ Ultrawide 1-1
         min-width: auto;
     }
 
+    /*changes menu to downwords list and gives backround color*/
     .menu {
         background-color: var(--primarycolor);
         padding-left: 0;
@@ -982,11 +989,6 @@ Ultrawide 1-1
         list-style-type: none;
     }
 
-    .menu-icon {
-        display: block;
-        width: 40px;
-        height: 40px;
-    }
 
     .menu li {
         z-index: 11;
@@ -996,6 +998,7 @@ Ultrawide 1-1
 
     .hamburger-toggle-container {cursor: pointer;}    
 
+    /*change size of menu items and placement when burger menu toggled*/
     #burger-toggle:checked~.menu li {
         position: relative;
         transition-duration: 0.3s;
@@ -1018,6 +1021,7 @@ Ultrawide 1-1
         padding-right: 2vw;
     }
 
+    /*make the 2 pagenav be under eachother when too small screen*/
     .pagenavigationsection{
         flex-direction: column;
         gap: 0;
