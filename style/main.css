@@ -187,7 +187,7 @@ Media 1-1
 */
 
 /* -Utilities */
-.heading {
+.heading {/* slurp */
     font: 1.5em;
     font-weight: bold;
     text-align: center;
