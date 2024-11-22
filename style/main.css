@@ -904,10 +904,6 @@ https://nestedsoftware.com/2019/11/05/card-with-expand-on-hover-effect-2ccm.2009
     cursor: pointer;
 }
 
-.trip-listitem h3 {
-    text-align: center;
-    color: var(--black);
-}
 
 /* code partially from https://stackoverflow.com/questions/33058004/applying-an-ellipsis-to-multiline-text */
 .trip-listitem p {
