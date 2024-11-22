@@ -618,7 +618,7 @@ course0203-box would be the box for the third class in the second semester*/
     padding-right: 5px;
 }
 .heading-electives {
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: bold;
     text-align: center;
     color: var(--black)
