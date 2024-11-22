@@ -1049,6 +1049,7 @@ Ultrawide 1-1
         width: 80%;
         margin: 6px;
     }
+    .card-img{margin: 6px;}
 
     .footer-top {
         grid-row: 1;
