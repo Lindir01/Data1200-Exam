@@ -131,10 +131,7 @@ a {
     padding: 1rem 4rem 1rem 4rem;
 }
 
-.text-section h1,
-.text-section h2,
-.text-section h3,
-.text-section h4{font-size: 2rem;}
+.text-section .heading{font-size: 2rem;}
 
 .center-text {
     margin-left: auto;
@@ -191,7 +188,7 @@ Media 1-1
 
 /* -Utilities */
 .heading {
-    font: 1.5em;
+    font-size: 1.5em;
     font-weight: bold;
     text-align: center;
     color: var(--black)
