@@ -255,7 +255,7 @@ Media 1-1
 .pagenavigation>li>a::before,
 .pagenavigation ul li::before {content: "────";}
 
-/* Class for scrolling */
+/* Class for containing the "Scroll up" button, setting the position to fixed in the corner */
 .scroll-top {
     position: fixed;
     z-index: 12;
@@ -263,6 +263,8 @@ Media 1-1
     bottom: 1vw;
     right: 1vw;
 }
+
+/* Sets the visual elements on the "button" */
 
 .scroll-top a {
     border-radius: .25rem;
@@ -793,8 +795,6 @@ course0203-box would be the box for the third class in the second semester*/
     text-align: center;
     background-color: lightgrey;
 }
-
-
 
 /* Hero Activity START https://www.w3schools.com/howto/howto_css_hero_image.asp*/
 .hero-activity {
