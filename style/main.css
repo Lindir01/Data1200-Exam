@@ -206,6 +206,8 @@ Media 1-1
     background-color: var(--card-background);
 }
 
+.wide-card{width: 80%;}
+
 .card-wrapper {
     display: flex;
     flex-wrap: wrap;
