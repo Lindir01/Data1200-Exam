@@ -786,21 +786,7 @@ join it up with the other card classes? */
 }
 
 /* -Git */
-.gitparagraphs {/*slurp*/
-    width: 60%;
-    margin: auto;
-    padding: 5px;
-}
 
-.gitparagraphs section {
-    padding: 1rem;
-    background-color: var(--primarycolor);
-}
-
-.gitparagraphs h1 {
-    padding-top: 2rem;
-    padding-bottom: 0.5rem;
-}
 .git-table{width: 90%;}
 .git-table th:nth-child(odd){width: 20%;}
 .git-table th:nth-child(2){width: 60%;}
