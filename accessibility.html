@@ -108,28 +108,57 @@
                 </tbody>
             </table>
         </section>
-        <section class="card-wrapper">
-            <article class="accessibilitycontent">
-                <p class="card info-box"> Gjennom hele prosjektet har et spesielt fokus på tilgjenglighet, noe som vises gjennom kildekoden på
+
+
+        <article class="card-wrapper">
+
+            <section class="card info-box">
+                <p> 
+                    Gjennom hele prosjektet har et spesielt fokus på tilgjenglighet, noe som vises gjennom kildekoden på
                     siden vår. Vi har regelmessig kjørt både automatiserte tester med Ligthhouse og WAVE, sjekket selv
                     med skjermleser (NVDA) samt lest oss opp på hva som kan være utfordrende med nettsider på generelt
-                    basis.</p>
-                <img width="50%" src="" alt="Lighthouse screenshot">
-                <p class="card info-box">All tekst på siden skal være skalerbar så brukeren kan definere skriftstørrelsen de trenger, da vi
+                    basis.
+                </p>
+            </section>
+
+            <img width="50%" src="media/images/accessibility/accessibility.webp" alt="Lighthouse screenshot" class="card">
+
+            <section class="card info-box wide-card">
+                <p> 
+                    All tekst på siden skal være skalerbar så brukeren kan definere skriftstørrelsen de trenger, da vi
                     har brukt rem og em på all tekst. Det skal også være mulig å zoome inn og at siden skalerer seg
-                    etter dine preferanser.</p>
-                <p class="card info-box">Alle bilder har alt attributten, og vi har prøvd å skrive en kort og presis beskrivelse av hvert
+                    etter dine preferanser.
+                </p>
+            </section>
+ 
+            <img width="50%" src="media/images/accessibility/accessibility.webp" alt="WAVE screenshot" class="card">
+ 
+            <section class="card info-box">
+                <p> 
+                    Alle bilder har alt attributten, og vi har prøvd å skrive en kort og presis beskrivelse av hvert
                     bildet. For ikoner som er rent visuelle har vi lagt ved en blank alt tekst fordi i vår bruk er de
-                    ved siden av en lenke med mer beskrivende navn. </p>
-                    <p class="card info-box">Ved første “tab” på siden vil du møte en hopp til hovedinnhold knapp så skjermlesere slipper å gå
+                    ved siden av en lenke med mer beskrivende navn.
+                </p>
+            </section>
+
+            <section class="card info-box wide-card">
+                <p> 
+                    Ved første “tab” på siden vil du møte en hopp til hovedinnhold knapp så skjermlesere slipper å gå
                     gjennom alle linkene i navigasjonsmenyen. Den samme klassen har blitt brukt til å hoppe over andre
                     store lister med linker, som innholdsfortegnelsen og hele studieoversikten. Hvis man har kommet seg
                     nedover på siden og innser at det ikke er siden man vil se har vi lagt inn en knapp som visuelt er
                     tilstede hele tiden for å komme seg opp igjen på siden, og lagt denne mellom
                     <code>&lt;main&gt;</code> og <code>&lt;body&gt</code> i koden.
                 </p>
-                    <img width="50%" src="" alt="WAVE screenshot">
-        </section>
+            </section>
+
+                
+                
+
+                    
+               
+        </article>
+
     </main>
 
     <footer>
