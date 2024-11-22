@@ -593,14 +593,14 @@ course0203-box would be the box for the third class in the second semester*/
 
 .year-wrapper {
     display: grid;
-    grid-template-rows: 20vw 2vw 20vw 2vw;
+    grid-template-rows: 22vw 5vw 22vw 4vw;
     justify-items: center;
     margin-top: 10px;
 }
 
 .semester-wrapper {
     display: grid;
-    grid-template-rows: 9vw 0.5vw 9vw;
+    grid-template-rows: 11vw 0.5vw 11vw 1vw;
     grid-template-columns: 8vh 18vh 18vh 18vh 18vh 20vh 20vh;
     grid-gap: 0.5vw;
     align-items: center;
