@@ -313,6 +313,7 @@ header:not(.activity-header) {
 
 /* -Footer START*/
 footer {
+    /* Makes it so that the footer reaches all the way to the bottom of the screen */
     bottom: 0px;
     background-color: var(--primarycolor);
 }
@@ -324,33 +325,37 @@ to get the footer to be built out of two seperate parts*/
     text-align: center;
 }
 
+/* Makes the paragraphs on the top part of the footer bigger, making it more like a title*/
 .footer-top p {
     padding: 0.5rem;
     font-size: larger;
     font-weight: 600;
 }
 
+/* Creates a noticable button for the news signup link */
 .footer-top a {
     padding: 1rem;
     color: white;
     background-color: var(--black);
 }
 
-
+/* Gives all the bottom-footer links a constant dark colour with a heavier font */
 footer a {
     color: var(--black);
     font-weight: 700;
 }
 
+/* Makes it so that when you hover your mouse over a link, it creates a clear line beneath it */
 footer a:hover {text-decoration-line: underline;}
 
 footer ul {
     list-style: none;
-    font-weight: 700;
 }
 
+/* Creates space between the links in the footer */
 footer li {padding-bottom: 0.4em;}
 
+/* Creates a grid for the bottom layer of the footer */
 footer article {
     display: grid;
     grid-template-columns: 30vw auto minmax(300px, 30vw) 1rem;
@@ -359,21 +364,23 @@ footer article {
     padding-left: 2rem;
 }
 
-
-
+/* Places the content in each class in the center of each column */
 .info,
 .lenker,
 .sosiale {justify-self: center;}
 
+/* Decides the placement of each class in the grid */
 .info {grid-column: 1 / 2;}
 .lenker {grid-column: 2 / 3;}
 
+/* Creates grid location and adjusts position of social media icons */
 .sosiale {
     grid-column: 3 / 4;
     margin-top: 0;
     max-width: fit-content;
 }
 
+/* Makes the social media icons line up with the text on their right */
 footer img {
     position: relative;
     padding: 2%;
