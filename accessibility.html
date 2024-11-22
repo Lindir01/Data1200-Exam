@@ -46,11 +46,63 @@
         <img src="media/images/accessibility/accessibility.webp" width="250vw" class="firstmedia"
             alt="En person med nedsatt funksjonsevne i hendene bruker en datamaskin">
         <h1>Tilgjenglighet</h1>
+        <h2>Tekst</h2>
+        <article class="card-wrapper">
+            <section class="card info-box">
+                <p>
+                Gjennom hele prosjektet har vi hatt et spesielt fokus på tilgjengelighet.
+                Vi har brukt automatiserte tester  med Lighthouse og WAVE og manuelt testet med skjermleser (NVDA) med jevne mellomrom.
+                Vi har også prøvd å sette oss inn i vanlige tilgjengelighetsutfordringer for å sikre at nettsiden er så brukervennlig som mulig. 
+                </p>
+                <p>
+                All tekst på nettsiden er skalerbar, slik at brukerne kan justere skriftstørrelsen etter behov. 
+                Dette har vi oppnådd ved å bruke relative enheter som <code>rem</code> og <code>em</code> for tekststiling. 
+                </p>
+                <p>
+                Alt unntatt enkle ord or overskrifter er lagt til venstre, så teksten skal være enkel å lese. 
+                Det er også derfor vi har delt opp denne teksten i kortere avsnitt.
+                </p>
+                <p>Lenker er riktig fargekode iforhold til WCGA, så de er blå i utgangspunket og lilla når de har blitt besøkt. 
+               Hvis man beveger musepekeren over lenkene i teksen får de også den klassiske underlinjen.
+                Alle lenker har en beskrivende tekst, så det er oversiktlig hvor man kommer hvis man følger.
+                </p>
+            </section>
+
+            <img width="50%" src="media/images/accessibility/perna.png" alt="Lighthouse screenshot" class="card card-img">
+
+            <section class="card info-box">
+                <p> 
+                     Alle bilder på nettsiden har en beskrivende <code>alt</code>-tekst, slik at de er tilgjengelige for skjermlesere og som en fail-safe om bildet ikke laster ordentlig. 
+                    For rene visuelle bilder, som ikoner, har vi brukt tom <code>alt</code>-tekst. 
+                    All informasjon man kunne satt dem til er bedre beskrevet av lenkene som er der fra før. 
+                </p>
+            </section>
+            <section class="card info-box">
+                <p> 
+                    For å forbedre opplevelsen av siden vår, har vi implementert en “hopp til hovedinnhold”-knapp, som er det første som fokuseres på når man trykker på “Tab”-tasten. 
+                    Med enkelte skjermlesere og ved bruk av tastatur er dette veldig nyttig for å slippe gjentagende informasjon som navigasjonsmenyen når man beveger seg rundt på nettstedet. 
+                </p>
+            </section>
+            <img width="50%" src="media/images/accessibility/TEMP.png" alt="WAVE screenshot" class="card card-img">
+            <section class="card info-box">
+                <p>
+                    Denne funksjonen er også gjenbrukt for større lister med lenker, som innholdsfortegnelsen og studieoversikten. 
+                    Vi har også lagd en «knapp» som gjør det mulig for brukere å raskt komme tilbake til toppen av siden. 
+                    Denne knappen er synlig hele tiden visuelt.
+                    Ellers er knappen plassert mellom <code>&lt;main&gt;</code> og <code>&lt;footer&gt;</code> i HTML-strukturen, så det skal være enklere å nå den for skjermlesere og tastaturbrukere.
+                </p> 
+                <p> 
+                    Ved alternative studier, markert med «Er du kanskje interessert i disse?», har vi lagt til en effekt på pilen for å prøve å markere at det er en lenke som fører videre. 
+                    Siden bakgrunnen kan være lys, har vi lagt til en mørk border på det første store mediaet på hver side for å tideliggjøre hvor mediaet starter og slutter.
+                    Studieoversikten har blitt lagd med CSS Grid, som ikke er et semantisk element for å gi oss en ekstra utfordring. Det har vi prøvd å løse med blah blah.
+                </p>
+            </section>               
+        </article>
         <h2>Enkle tabeller for rask informasjon</h2>
         <!-- Tables -->
         <section class="table-wrapper">
             <!-- Table 1 -->
-            <table class="accessability-table top-tables">
+            <table class="accessibility-table top-tables">
                 <caption>Justerbar tekststørrelse</caption>
                 <thead>
                     <tr>
@@ -60,21 +112,21 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Link farge</td><!-- Utfordring -->
-                        <td>Em og rem på all tekst</td><!-- Tiltak -->
+                        <td>Link farge</td>
+                        <td>Em og rem på all tekst</td>
                     </tr>
                     <tr>
-                        <td>Tekstretning</td><!-- Utfordring -->
-                        <td>All tekst unntatt overskrifer er text-align left for lesbarhet</td><!-- Tiltak -->
+                        <td>Tekstretning</td>
+                        <td>All tekst unntatt overskrifer er text-align left for lesbarhet</td>
                     </tr>
                     <tr>
-                        <td>Gjennkjennbare elementer</td><!-- Utfordring -->
-                        <td>Blå og lilla lenker</td><!-- Tiltak -->
+                        <td>Gjennkjennbare elementer</td>
+                        <td>Blå og lilla lenker</td>
                     </tr>
                 </tbody>
             </table>
             <!-- Table 2 -->
-            <table class="accessability-table top-tables">
+            <table class="accessibility-table top-tables">
                 <caption>Typografi</caption>
                 <thead>
                     <tr>
@@ -84,21 +136,21 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Justerbar tekststørrelse</td><!-- Utfordning -->
-                        <td>Em og rem på all tekst</td><!-- Tiltak -->
+                        <td>Justerbar tekststørrelse</td>
+                        <td>Em og rem på all tekst</td>
                     </tr>
                     <tr>
-                        <td>Tekstretning</td><!-- Utfordning -->
-                        <td>All tekst unntatt overskrifer er text-align left for lesbarhet</td><!-- Tiltak -->
+                        <td>Tekstretning</td>
+                        <td>All tekst unntatt overskrifer er text-align left for lesbarhet</td>
                     </tr>
                     <tr>
-                        <td>Gjennkjennbare elementer</td><!-- Utfordning -->
-                        <td>Blå og lilla lenker</td><!-- Tiltak -->
+                        <td>Gjennkjennbare elementer</td>
+                        <td>Blå og lilla lenker</td>
                     </tr>
                 </tbody>
             </table>
             <!-- Table 3 -->
-            <table class="accessability-table bottom-table">
+            <table class="accessibility-table bottom-table">
                 <caption>Typografi</caption>
                 <thead>
                     <tr>
@@ -108,62 +160,21 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Justerbar tekststørrelse</td><!-- Utfordning -->
-                        <td>Em og rem på all tekst</td><!-- Tiltak -->
+                        <td>Justerbar tekststørrelse</td>
+                        <td>Em og rem på all tekst</td>
                     </tr>
                     <tr>
-                        <td>Tekstretning</td><!-- Utfordning -->
-                        <td>All tekst unntatt overskrifer er text-align left for lesbarhet</td><!-- Tiltak -->
+                        <td>Tekstretning</td>
+                        <td>All tekst unntatt overskrifer er text-align left for lesbarhet</td>
                     </tr>
                     <tr>
-                        <td>Gjennkjennbare elementer</td><!-- Utfordning -->
-                        <td>Blå og lilla lenker</td><!-- Tiltak -->
+                        <td>Gjennkjennbare elementer</td>
+                        <td>Blå og lilla lenker</td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
-
-        <article class="card-wrapper">
-            <section class="card info-box">
-                <p> 
-                    Gjennom hele prosjektet har vi hatt et spesielt fokus på tilgjengelighet. 
-                    Vi har brukt automatiserte tester med Lighthouse og WAVE og manuelt testet med skjermleser (NVDA) med jevne mellomrom.
-                    Vi har også prøvd å sette oss inn i vanlige tilgjengelighetsutfordringer for å sikre at nettsiden er så brukervennlig som mulig.
-                </p>
-            </section>
-
-            <img width="50%" src="media/images/accessibility/perna.png" alt="Lighthouse screenshot" class="card card-img">
-
-            <section class="card info-box card-wide">
-                <p> 
-                    All tekst på nettsiden er skalerbar, slik at brukerne kan justere skriftstørrelsen etter behov. 
-                    Dette har vi oppnådd ved å bruke relative enheter som <code>rem</code> og <code>em</code> for tekststiling. 
-                    Alt unntatt enkle ord or overskrifter er left-aligned. 
-                    Lenker er riktig fargekode iforhold til WCGA, så de er blå i utgangspunket og lilla når de har blitt besøkt. 
-                    Hvis man beveger musepekeren over lenkene i teksen får de også den klassiske underlinjen. 
-                    Alle lenker har en beskrivende tekst, så det er oversiktlig hvor man kommer.
-                </p>
-            </section>
- 
-            <img width="50%" src="media/images/accessibility/TEMP.png" alt="WAVE screenshot" class="card card-img">
- 
-            <section class="card info-box">
-                <p> 
-                    Alle bilder på nettsiden har en beskrivende <code>alt</code>-tekst, slik at de er tilgjengelige for skjermlesere og som en fail-safe om bildet ikke laster ordentlig. 
-                    For rene visuelle bilder, som ikoner, har vi satt alt-teksten til å være blank. All informasjon man eventuelt kunne satt dem til er bedre beskrevet av lenkene ved siden av. </p>
-            </section>
-
-            <section class="card info-box card-wide">
-                <p> 
-                    For å forbedre brukeropplevelsen på siden vår, har vi implementert en “hopp til hovedinnhold”-knapp, som er det første som fokuseres på når man trykker på “Tab”-tasten. 
-                    Med enkelte skjermlesere og ved bruk av tastatur er dette veldig nyttig for å slippe gjentagende informasjon som navigasjonsmenyen når man beveger seg rundty på nettstedet. 
-                    Denne funksjonen er også gjenbrukt for større lister med lenker, som innholdsfortegnelsen og studieoversikten. 
-                    Vi har også lagd en «knapp» som gjør det mulig for brukere å raskt komme tilbake til toppen av siden. Denne knappen er synlig hele tiden visuelt.
-                    Ellers er knappen plassert mellom <code>&lt;main&gt;</code> og <code>&lt;footer&gt;</code> i HTML-strukturen, så det skal være enklere å nå den for skjermlesere og tastaturbrukere. 
-                </p>
-            </section>               
-        </article>
     </main>
 
     <footer>
