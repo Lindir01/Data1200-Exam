@@ -277,7 +277,7 @@ header:not(.activity-header) {
     background-color: var(--primarycolor);
 }
 
-.navbar .active {background-color: var(--secondarycolor);}
+.navbar .active {background-color: var(--highlightcolor);}
 
 .navbar a {
     border-radius: 0.4rem;
@@ -290,7 +290,7 @@ header:not(.activity-header) {
 
 /* Change the link color tohsl(50, 100%, 40%);(darker oslometprimary) on hover accept the active one */
 
-.navbar a:hover:not(.active, .logo-a) {background-color: hsl(50, 100%, 40%);}
+.navbar a:hover:not(.active, .logo-a) {background-color: var(--secondarycolor)}
 #burger-toggle {display: none;}
 
 .hamburger-toggle-container img {height: 2.5rem;}
