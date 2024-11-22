@@ -277,6 +277,7 @@ header:not(.activity-header) {
     width: 100%;
     background-color: var(--primarycolor);
 }
+
 .navbar .active {background-color: var(--highlightcolor);}
 
 .navbar a {
@@ -286,10 +287,7 @@ header:not(.activity-header) {
     color: var(--black);
     text-align: center;
 }
-.menu{
-    background-color: var(--primarycolor);
-    padding-left: 0;
-}
+
 
 /* Change the link color tohsl(50, 100%, 40%);(darker oslometprimary) on hover accept the active one */
 
@@ -997,6 +995,8 @@ Ultrawide 1-1
     }
 
     .menu {
+        background-color: var(--primarycolor);
+        padding-left: 0;
         position: absolute;
         z-index: 10;
         top: 3.5rem;
@@ -1025,14 +1025,7 @@ Ultrawide 1-1
         height: 3rem;
         padding-top: 0.7rem;
         padding: 0.5rem;
-        background-color: var(--oslometgul);
     }
-
-    nav {
-        display: flex;
-        height: 40px;
-    }
-
 }
 
 @media (min-width:801px) {
