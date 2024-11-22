@@ -864,12 +864,12 @@ course0203-box would be the box for the third class in the second semester*/
     color: var(--white);
 }
 
-/* on hover burgermenu item in activity change color, but not logo ass it should not have hover effect */
+/* targets only the menu -> change background color on items when hovered*/
 .navbar-activity .navlist:hover:not(.active, .logo-a, .hamburger-toggle-container) {
     background-color: hsl(0, 1%, 32%);
 }
 
-/* when burger menu button clicked changes the menu element to show/expand */
+/* buger menu expands when toggled*/
 .activity-header #burger-toggle:checked~.menu li {
     position: relative;
     transition-duration: 0.3s;
