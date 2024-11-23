@@ -1,32 +1,27 @@
 /* CSS STRUCTURE
 
-    REMEMBER TO ADD SPECIFIC LINES TO FIND EACH SEGMENT
+    Line numbers || Section name
 
-    General Styles 1-1
-        Format 1-1
-        Text 1-1
-        Table 1-1
-    Site Wide 1-1
-        Utilities 1-1
-        Header 1-1
-        Body 1-1
-        Footer 1-1
-        Media 1-1
-    Page Specific 1-1
-        Index 1-1
-        Accessibility 1-1
-        Git 1-1
-        Activity 1-1
-    Media Queries 1-1
-        Thin Screen 1-1
-            Site Wide 1-1
-            Index 1-1
-
-        Ultrawide 1-1
+    28-169 || General Styles 
+        41-86 | Format 
+        88-137 | Text 
+        139-167 | Table 
+    171-425 || Site Wide 
+        187-270 | Utilities 
+        272-312 | Header 
+        314-329 | Body 
+        331-405 | Footer 
+        407-422 | Media  
+    427-927 || Page Specific 
+        442-729 | Index
+        731-750 | Accessibility
+        752-757 | Git 
+        759-924 | Activity  
+    929-1247 || Media Queries 
 */
 
-/* notater for sorterting 
-cards for sitewide */
+
+
 
 /* Ascii art made big enough to read in the editor minimap */
 
@@ -39,8 +34,10 @@ cards for sitewide */
 | | \_  )| (      | | \   || (      | (\ (   | (   ) || |              ) |   | |      ) (   | |      | (            ) |
 | (___) || (____/\| )  \  || (____/\| ) \ \__| )   ( || (____/\  /\____) |   | |      | |   | (____/\| (____/\/\____) |
 (_______)(_______/|/    )_)(_______/|/   \__/|/     \|(_______/  \_______)   )_(      \_/   (_______/(_______/\_______) 
-Format 1-1
-Text   1-1    */
+Format 41-86
+Text 88-137
+Table 149-167 */
+
 /*  -Format */
 
 html {
@@ -180,11 +177,11 @@ tbody tr:nth-child(even),thead {background-color: var(--table-even)}
       ) |   | |      | |   | (        | || || |   | |   | |   ) || (      
 /\____) |___) (___   | |   | (____/\  | () () |___) (___| (__/  )| (____/\
 \_______)\_______/   )_(   (_______/  (_______)\_______/(______/ (_______/
-Utilities 1-1
-Header 1-1
-Body 1-1
-Footer 1-1
-Media 1-1                                                                          
+Utilities 187-270
+Header 272-312
+Body 314-329
+Footer 331-405
+Media 407-422                                                                         
 */
 
 /* -Utilities */
@@ -272,7 +269,6 @@ Media 1-1
     background-color: hsl(240, 100%, 50%);
 }
 
-
 /* -Header */
 /*color on header, but not on activity since activity should be see throu*/
 header:not(.activity-header) {
@@ -315,8 +311,24 @@ header:not(.activity-header) {
     height: 3rem;
 }
 
+/* -Body */
+.section-primary-color {
+    width: 100%;
+    background-color: var(--primarycolor);
+}
 
-/* -Footer START*/
+.section-secondary-color {
+    width: 100%;
+    background-color: var(--secondarycolor);
+}
+
+.color-box {
+    height: 15vmax;
+    width: 100%;
+    background-image: linear-gradient(var(--primarycolor), var(--secondarycolor));
+}
+
+/* -Footer */
 footer {
     /* Makes it so that the footer reaches all the way to the bottom of the screen */
     bottom: 0px;
@@ -392,9 +404,6 @@ footer img {
     vertical-align: middle;
 }
 
-/* -Footer END*/
-
-
 /* -Media */
 .first-media {
     margin-top: -12%;
@@ -413,23 +422,6 @@ video {
 }
 
 
-/* -Body */
-.section-primary-color {
-    width: 100%;
-    background-color: var(--primarycolor);
-}
-
-.section-secondary-color {
-    width: 100%;
-    background-color: var(--secondarycolor);
-}
-
-.color-box {
-    height: 15vmax;
-    width: 100%;
-    background-image: linear-gradient(var(--primarycolor), var(--secondarycolor));
-}
-
 /* ────────────────────────────────────────────────────────────── */
 
 /* || Page Specific
@@ -441,10 +433,10 @@ video {
 | (      | (   ) || | \_  )| (              ) || (      | (      | |         | |   | (         | |   | |      
 | )      | )   ( || (___) || (____/\  /\____) || )      | (____/\| (____/\___) (___| )      ___) (___| (____/\
 |/       |/     \|(_______)(_______/  \_______)|/       (_______/(_______/\_______/|/       \_______/(_______/
-Index 1-1
-Accessibility 1-1
-Git 1-1
-Activity 1-1                                                                                                               
+Index 442-729
+Accessibility 731-750
+Git 752-757
+Activity 759-924                                                                                                               
 */
 
 /* -Index */
@@ -934,7 +926,7 @@ https://nestedsoftware.com/2019/11/05/card-with-expand-on-hover-effect-2ccm.2009
 
 /* ────────────────────────────────────────────────────────────── */
 
-/* || MEDIA QUERIES 
+/* || Media Queries 
  _______  _______  ______  _________ _______    _______           _______  _______ _________ _______  _______ 
 (       )(  ____ \(  __  \ \__   __/(  ___  )  (  ___  )|\     /|(  ____ \(  ____ )\__   __/(  ____ \(  ____ \
 | () () || (    \/| (  \  )   ) (   | (   ) |  | (   ) || )   ( || (    \/| (    )|   ) (   | (    \/| (    \/
@@ -942,10 +934,7 @@ https://nestedsoftware.com/2019/11/05/card-with-expand-on-hover-effect-2ccm.2009
 | |(_)| ||  __)   | |   | |   | |   |  ___  |  | |   | || |   | ||  __)   |     __)   | |   |  __)   (_____  )
 | |   | || (      | |   ) |   | |   | (   ) |  | | /\| || |   | || (      | (\ (      | |   | (            ) |
 | )   ( || (____/\| (__/  )___) (___| )   ( |  | (_\ \ || (___) || (____/\| ) \ \_____) (___| (____/\/\____) |
-|/     \|(_______/(______/ \_______/|/     \|  (____\/_)(_______)(_______/|/   \__/\_______/(_______/\_______)
-
-Thin Screen 1-1
-Ultrawide 1-1                                                                                              
+|/     \|(_______/(______/ \_______/|/     \|  (____\/_)(_______)(_______/|/   \__/\_______/(_______/\_______)                                                                                           
 */
 
 
