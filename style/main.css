@@ -1010,7 +1010,7 @@ https://nestedsoftware.com/2019/11/05/card-with-expand-on-hover-effect-2ccm.2009
     }
 
     /*make the 2 pagenav be under eachother when too small screen*/
-    .pagenavigationsection{
+    .page-navigation-section{
         flex-direction: column;
         gap: 0;
         margin-left: 13vw;
